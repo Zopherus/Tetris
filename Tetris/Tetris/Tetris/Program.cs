@@ -8,9 +8,10 @@ namespace Tetris
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        public static Tetris game;
         static void Main(string[] args)
         {
-            using (Tetris game = new Tetris())
+            using (game = new Tetris())
             {
                 game.Run();
             }
