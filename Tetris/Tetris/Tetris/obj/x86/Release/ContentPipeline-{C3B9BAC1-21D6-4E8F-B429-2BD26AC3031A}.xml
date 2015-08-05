@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\blueBlock.xnb</Output>
+      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Release\Content\Sprites\blueBlock.xnb</Output>
       <Time>2015-08-04T22:15:33.2830805-07:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\cyanBlock.xnb</Output>
+      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Release\Content\Sprites\cyanBlock.xnb</Output>
       <Time>2015-08-04T22:15:33.2830805-07:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\greenBlock.xnb</Output>
+      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Release\Content\Sprites\greenBlock.xnb</Output>
       <Time>2015-08-04T22:15:33.2840804-07:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\orangeBlock.xnb</Output>
+      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Release\Content\Sprites\orangeBlock.xnb</Output>
       <Time>2015-08-04T22:15:33.284581-07:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\purpleBlock.xnb</Output>
+      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Release\Content\Sprites\purpleBlock.xnb</Output>
       <Time>2015-08-04T22:15:33.2850814-07:00</Time>
     </Item>
     <Item>
@@ -52,7 +52,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\redBlock.xnb</Output>
+      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Release\Content\Sprites\redBlock.xnb</Output>
       <Time>2015-08-04T22:15:33.2855823-07:00</Time>
     </Item>
     <Item>
@@ -61,7 +61,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\yellowBlock.xnb</Output>
+      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Release\Content\Sprites\yellowBlock.xnb</Output>
       <Time>2015-08-04T22:15:33.2855823-07:00</Time>
     </Item>
     <Item>
@@ -70,7 +70,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Black.xnb</Output>
+      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Release\Content\Sprites\Black.xnb</Output>
       <Time>2015-08-04T22:15:33.2825808-07:00</Time>
     </Item>
     <Item>
@@ -79,20 +79,29 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\SpriteFonts\SpriteFont.xnb</Output>
+      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Release\Content\SpriteFonts\SpriteFont.xnb</Output>
       <Time>2015-08-05T00:04:30.0234983-07:00</Time>
     </Item>
-    <BuildSuccessful>true</BuildSuccessful>
+    <Item>
+      <Source>SpriteFonts\PressStart2P.ttf</Source>
+      <Name>SpriteFonts\PressStart2P</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Release\Content\SpriteFonts\PressStart2P.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <BuildSuccessful>false</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{C3B9BAC1-21D6-4E8F-B429-2BD26AC3031A}</ContentProjectGUID>
       <TargetPlatform>Windows</TargetPlatform>
       <TargetProfile>Reach</TargetProfile>
-      <BuildConfiguration>Debug</BuildConfiguration>
-      <CompressContent>false</CompressContent>
+      <BuildConfiguration>Release</BuildConfiguration>
+      <CompressContent>true</CompressContent>
       <RootDirectory>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\TetrisContent\</RootDirectory>
       <LoggerRootDirectory>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\</OutputDirectory>
+      <IntermediateDirectory>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\obj\x86\Release\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Release\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
