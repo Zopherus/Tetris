@@ -11,10 +11,10 @@ namespace Tetris
     {
         public static void UpdateMenu()
         {
-            if (Tetris.keyboard.IsKeyDown(Keys.Escape))
+            if (TetrisGame.keyboard.IsKeyDown(Keys.Escape))
                 Program.game.Exit();
-            if (Tetris.keyboard.IsKeyDown(Keys.Tab))
-                Tetris.graphics.ToggleFullScreen();
+            if (TetrisGame.keyboard.IsKeyDown(Keys.Tab))
+                TetrisGame.graphics.ToggleFullScreen();
         }
 
         public static void UpdatePlay()

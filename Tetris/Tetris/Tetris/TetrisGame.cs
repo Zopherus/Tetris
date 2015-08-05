@@ -12,7 +12,7 @@ using Microsoft.Xna.Framework.Media;
 namespace Tetris
 {
     public enum GameState { Menu, Play};
-    public class Tetris : Game
+    public class TetrisGame : Game
     {
         public static int screenWidth;
         public static int screenHeight;
@@ -38,7 +38,7 @@ namespace Tetris
 
         public static GameState gameState;
 
-        public Tetris()
+        public TetrisGame()
         {
             screenHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
             screenWidth = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width;
