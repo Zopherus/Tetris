@@ -20,6 +20,5 @@ namespace Tetris
         public static void UpdatePlay()
         {
         }
-
     }
 }
