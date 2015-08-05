@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\blueBlock.xnb</Output>
-      <Time>2015-08-04T14:48:10.5117105-07:00</Time>
+      <Time>2015-08-05T00:02:23.9876478-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\cyanBlock.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\cyanBlock.xnb</Output>
-      <Time>2015-08-04T14:48:10.5167108-07:00</Time>
+      <Time>2015-08-05T00:02:23.9906479-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\greenBlock.png</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\greenBlock.xnb</Output>
-      <Time>2015-08-04T14:48:10.537712-07:00</Time>
+      <Time>2015-08-05T00:02:24.0036487-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\orangeBlock.png</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\orangeBlock.xnb</Output>
-      <Time>2015-08-04T14:48:10.5397121-07:00</Time>
+      <Time>2015-08-05T00:02:24.0056488-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\purpleBlock.png</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\purpleBlock.xnb</Output>
-      <Time>2015-08-04T14:48:10.5407122-07:00</Time>
+      <Time>2015-08-05T00:02:24.0076489-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\redBlock.png</Source>
@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\redBlock.xnb</Output>
-      <Time>2015-08-04T14:48:10.5427123-07:00</Time>
+      <Time>2015-08-05T00:02:24.009649-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\yellowBlock.png</Source>
@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\yellowBlock.xnb</Output>
-      <Time>2015-08-04T14:48:10.5437124-07:00</Time>
+      <Time>2015-08-05T00:02:24.0126492-07:00</Time>
     </Item>
     <Item>
       <Source>SpriteFonts\SpriteFont.spritefont</Source>
@@ -71,7 +71,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\SpriteFonts\SpriteFont.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Time>2015-08-05T00:27:33.4159004-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Black.png</Source>
@@ -80,18 +80,9 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Black.xnb</Output>
-      <Time>2015-08-04T15:22:35.3418121-07:00</Time>
+      <Time>2015-08-05T00:06:21.3362233-07:00</Time>
     </Item>
-    <Item>
-      <Source>SpriteFonts\PressStart2P.ttf</Source>
-      <Name>SpriteFonts\PressStart2P</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\SpriteFonts\PressStart2P.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
-    </Item>
-    <BuildSuccessful>false</BuildSuccessful>
+    <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{C3B9BAC1-21D6-4E8F-B429-2BD26AC3031A}</ContentProjectGUID>
       <TargetPlatform>Windows</TargetPlatform>

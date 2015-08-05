@@ -85,12 +85,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TetrisContent\TetrisContent.contentproj">
-      <Name>TetrisContent</Name>
-      <XnaReferenceType>Content</XnaReferenceType>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
@@ -111,6 +105,13 @@
       <ProductName>Windows Installer 4.5</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TetrisContent\TetrisContent.contentproj">
+      <Project>{C3B9BAC1-21D6-4E8F-B429-2BD26AC3031A}</Project>
+      <Name>TetrisContent</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
