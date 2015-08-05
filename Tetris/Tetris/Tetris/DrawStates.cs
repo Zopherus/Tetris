@@ -10,6 +10,7 @@ namespace Tetris
     {
         public static void DrawMenu()
         {
+            TetrisGame.spriteBatch.DrawString(TetrisGame.spriteFont, "HELLO WORLD", new Vector2(10, 10), Color.Black);
             TetrisGame.spriteBatch.Draw(TetrisGame.CyanBlockTexture, new Rectangle(100, 100, 50, 50), Color.White);
             drawOutlineRectangle(new Rectangle());
         }
