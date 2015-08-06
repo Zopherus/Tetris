@@ -72,8 +72,12 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Block.cs" />
     <Compile Include="Board.cs" />
+=======
+    <Compile Include="Points.cs" />
+>>>>>>> origin/master
     <Compile Include="DrawStates.cs" />
     <Compile Include="Piece.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
