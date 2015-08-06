@@ -2,18 +2,22 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
+      <Source>SpriteFonts\SpriteFont.spritefont</Source>
+      <Name>SpriteFonts\SpriteFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\SpriteFonts\SpriteFont.xnb</Output>
+      <Time>2015-08-05T00:33:20.4361113-07:00</Time>
+    </Item>
+    <Item>
       <Source>Sprites\blueBlock.png</Source>
       <Name>Sprites\blueBlock</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
       <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\blueBlock.xnb</Output>
-      <Time>2015-08-04T22:15:33.2830805-07:00</Time>
-=======
-      <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\blueBlock.xnb</Output>
-      <Time>2015-08-05T00:02:23.9876478-07:00</Time>
->>>>>>> origin/master
+      <Time>2015-08-05T00:29:32.9467851-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\cyanBlock.png</Source>
@@ -21,13 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
       <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\cyanBlock.xnb</Output>
-      <Time>2015-08-04T22:15:33.2830805-07:00</Time>
-=======
-      <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\cyanBlock.xnb</Output>
-      <Time>2015-08-05T00:02:23.9906479-07:00</Time>
->>>>>>> origin/master
+      <Time>2015-08-05T00:29:32.9477858-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\greenBlock.png</Source>
@@ -35,13 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
       <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\greenBlock.xnb</Output>
-      <Time>2015-08-04T22:15:33.2840804-07:00</Time>
-=======
-      <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\greenBlock.xnb</Output>
-      <Time>2015-08-05T00:02:24.0036487-07:00</Time>
->>>>>>> origin/master
+      <Time>2015-08-05T00:29:32.9482876-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\orangeBlock.png</Source>
@@ -49,13 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
       <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\orangeBlock.xnb</Output>
-      <Time>2015-08-04T22:15:33.284581-07:00</Time>
-=======
-      <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\orangeBlock.xnb</Output>
-      <Time>2015-08-05T00:02:24.0056488-07:00</Time>
->>>>>>> origin/master
+      <Time>2015-08-05T00:29:32.9487882-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\purpleBlock.png</Source>
@@ -63,13 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
       <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\purpleBlock.xnb</Output>
-      <Time>2015-08-04T22:15:33.2850814-07:00</Time>
-=======
-      <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\purpleBlock.xnb</Output>
-      <Time>2015-08-05T00:02:24.0076489-07:00</Time>
->>>>>>> origin/master
+      <Time>2015-08-05T00:29:32.9497875-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\redBlock.png</Source>
@@ -77,13 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
       <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\redBlock.xnb</Output>
-      <Time>2015-08-04T22:15:33.2855823-07:00</Time>
-=======
-      <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\redBlock.xnb</Output>
-      <Time>2015-08-05T00:02:24.009649-07:00</Time>
->>>>>>> origin/master
+      <Time>2015-08-05T00:29:32.9502893-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\yellowBlock.png</Source>
@@ -91,22 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
       <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\yellowBlock.xnb</Output>
-      <Time>2015-08-04T22:15:33.2855823-07:00</Time>
-=======
-      <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\yellowBlock.xnb</Output>
-      <Time>2015-08-05T00:02:24.0126492-07:00</Time>
-    </Item>
-    <Item>
-      <Source>SpriteFonts\SpriteFont.spritefont</Source>
-      <Name>SpriteFonts\SpriteFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\SpriteFonts\SpriteFont.xnb</Output>
-      <Time>2015-08-05T00:27:33.4159004-07:00</Time>
->>>>>>> origin/master
+      <Time>2015-08-05T00:29:32.95129-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Black.png</Source>
@@ -114,24 +79,9 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
       <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Black.xnb</Output>
       <Time>2015-08-04T22:15:33.2825808-07:00</Time>
     </Item>
-    <Item>
-      <Source>SpriteFonts\SpriteFont.spritefont</Source>
-      <Name>SpriteFonts\SpriteFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\SpriteFonts\SpriteFont.xnb</Output>
-      <Time>2015-08-05T00:04:30.0234983-07:00</Time>
-    </Item>
-=======
-      <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Black.xnb</Output>
-      <Time>2015-08-05T00:06:21.3362233-07:00</Time>
-    </Item>
->>>>>>> origin/master
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{C3B9BAC1-21D6-4E8F-B429-2BD26AC3031A}</ContentProjectGUID>
