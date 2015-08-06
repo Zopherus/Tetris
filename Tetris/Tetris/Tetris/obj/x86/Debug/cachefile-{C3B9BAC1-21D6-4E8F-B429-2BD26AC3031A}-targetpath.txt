@@ -7,3 +7,6 @@ Content\Sprites\redBlock.xnb
 Content\Sprites\yellowBlock.xnb
 Content\SpriteFonts\SpriteFont.xnb
 Content\Sprites\Black.xnb
+Content\Sprites\Background.xnb
+Content\Sprites\Tetris Board.xnb
+Content\Sprites\Transparent Square.xnb

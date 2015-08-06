@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\blueBlock.xnb</Output>
-      <Time>2015-08-05T00:02:23.9876478-07:00</Time>
+      <Time>2015-08-05T00:29:01.0389122-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\cyanBlock.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\cyanBlock.xnb</Output>
-      <Time>2015-08-05T00:02:23.9906479-07:00</Time>
+      <Time>2015-08-05T00:29:01.0399122-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\greenBlock.png</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\greenBlock.xnb</Output>
-      <Time>2015-08-05T00:02:24.0036487-07:00</Time>
+      <Time>2015-08-05T00:29:01.0399122-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\orangeBlock.png</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\orangeBlock.xnb</Output>
-      <Time>2015-08-05T00:02:24.0056488-07:00</Time>
+      <Time>2015-08-05T00:29:01.0409123-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\purpleBlock.png</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\purpleBlock.xnb</Output>
-      <Time>2015-08-05T00:02:24.0076489-07:00</Time>
+      <Time>2015-08-05T00:29:01.0409123-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\redBlock.png</Source>
@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\redBlock.xnb</Output>
-      <Time>2015-08-05T00:02:24.009649-07:00</Time>
+      <Time>2015-08-05T00:29:01.0419123-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\yellowBlock.png</Source>
@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\yellowBlock.xnb</Output>
-      <Time>2015-08-05T00:02:24.0126492-07:00</Time>
+      <Time>2015-08-05T00:29:01.0419123-07:00</Time>
     </Item>
     <Item>
       <Source>SpriteFonts\SpriteFont.spritefont</Source>
@@ -71,7 +71,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\SpriteFonts\SpriteFont.xnb</Output>
-      <Time>2015-08-05T00:27:33.4159004-07:00</Time>
+      <Time>0001-01-01T00:00:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Black.png</Source>
@@ -82,7 +82,43 @@
       <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Black.xnb</Output>
       <Time>2015-08-05T00:06:21.3362233-07:00</Time>
     </Item>
-    <BuildSuccessful>true</BuildSuccessful>
+    <Item>
+      <Source>Sprites\Background.png</Source>
+      <Name>Sprites\Background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Background.xnb</Output>
+      <Time>2015-08-05T18:04:13.4222075-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Tetris Board.png</Source>
+      <Name>Sprites\Tetris Board</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Tetris Board.xnb</Output>
+      <Time>2015-08-05T18:09:33.9775423-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Transparent Square.png</Source>
+      <Name>Sprites\Transparent Square</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Transparent Square.xnb</Output>
+      <Time>2015-08-05T18:09:33.9715419-07:00</Time>
+    </Item>
+    <Item>
+      <Source>SpriteFonts\Press Start 2P.bmp</Source>
+      <Name>SpriteFonts\Press Start 2P</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>FontTextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\SpriteFonts\Press Start 2P.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <BuildSuccessful>false</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{C3B9BAC1-21D6-4E8F-B429-2BD26AC3031A}</ContentProjectGUID>
       <TargetPlatform>Windows</TargetPlatform>
