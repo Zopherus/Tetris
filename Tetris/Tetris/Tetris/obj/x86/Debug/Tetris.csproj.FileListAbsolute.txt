@@ -13,6 +13,11 @@ C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\S
 C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\yellowBlock.xnb
 C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\SpriteFonts\SpriteFont.xnb
 C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Black.xnb
+<<<<<<< HEAD
+C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Background.xnb
+C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Tetris Board.xnb
+C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Transparent Square.xnb
+=======
 C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\obj\x86\Debug\Tetris.exe
 C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\obj\x86\Debug\Tetris.pdb
 C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\blueBlock.xnb
@@ -28,3 +33,4 @@ C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Tet
 C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Tetris.pdb
 C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\obj\x86\Debug\Tetris.csprojResolveAssemblyReference.cache
 C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+>>>>>>> origin/master

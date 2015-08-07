@@ -12,8 +12,12 @@ using Microsoft.Xna.Framework.Media;
 namespace Tetris
 {
     public enum GameState { Menu, Play};
+    public enum BlockType { I, J, L, O, S, T, Z};
     public class TetrisGame : Game
     {
+        public const int gridWidth = 10;
+        public const int gridHeight = 20;
+
         public static int screenWidth;
         public static int screenHeight;
 
@@ -28,6 +32,9 @@ namespace Tetris
         public static Texture2D PurpleBlockTexture;
         public static Texture2D RedBlockTexture;
         public static Texture2D YellowBlockTexture;
+        public static Texture2D BackgroundTexture;
+        public static Texture2D TetrisBoardTexture;
+        public static Texture2D TransparentSquareTexture;
 
         public static SpriteFont spriteFont;
 
@@ -81,6 +88,9 @@ namespace Tetris
             PurpleBlockTexture = Content.Load<Texture2D>("Sprites/purpleBlock");
             RedBlockTexture = Content.Load<Texture2D>("Sprites/redBlock");
             YellowBlockTexture = Content.Load<Texture2D>("Sprites/yellowBlock");
+            BackgroundTexture = Content.Load<Texture2D>("Sprites/Background");
+            TetrisBoardTexture = Content.Load<Texture2D>("Sprites/Tetris Board");
+            TransparentSquareTexture = Content.Load<Texture2D>("Sprites/Transparent Square");
             spriteFont = Content.Load<SpriteFont>("SpriteFonts/SpriteFont");
             // TODO: use this.Content to load your game content here
         }

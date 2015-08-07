@@ -10,9 +10,16 @@ namespace Tetris
     {
         public static void DrawMenu()
         {
-            TetrisGame.spriteBatch.DrawString(TetrisGame.spriteFont, "HELLO WORLD", new Vector2(10, 10), Color.Black);
-            TetrisGame.spriteBatch.Draw(TetrisGame.CyanBlockTexture, new Rectangle(100, 100, 50, 50), Color.White);
-            drawOutlineRectangle(new Rectangle());
+            TetrisGame.spriteBatch.Draw(TetrisGame.BackgroundTexture, new Rectangle(0, 0, TetrisGame.screenWidth, TetrisGame.screenHeight), Color.White);
+            TetrisGame.spriteBatch.Draw(TetrisGame.TetrisBoardTexture, new Rectangle(600, 100, 350, 700), Color.White);
+            TetrisGame.spriteBatch.Draw(TetrisGame.BlueBlockTexture, new Rectangle(600, 100, 50, 50), Color.White);
+            TetrisGame.spriteBatch.Draw(TetrisGame.CyanBlockTexture, new Rectangle(600, 150, 50, 50), Color.White);
+            TetrisGame.spriteBatch.Draw(TetrisGame.GreenBlockTexture, new Rectangle(600, 200, 50, 50), Color.White);
+            TetrisGame.spriteBatch.Draw(TetrisGame.OrangeBlockTexture, new Rectangle(600, 250, 50, 50), Color.White);
+            TetrisGame.spriteBatch.Draw(TetrisGame.PurpleBlockTexture, new Rectangle(600, 300, 50, 50), Color.White);
+            TetrisGame.spriteBatch.Draw(TetrisGame.RedBlockTexture, new Rectangle(600, 350, 50, 50), Color.White);
+            TetrisGame.spriteBatch.Draw(TetrisGame.YellowBlockTexture, new Rectangle(600, 400, 50, 50), Color.White);
+            TetrisGame.spriteBatch.DrawString(TetrisGame.spriteFont, TetrisGame.mouse.ToString(), new Vector2(0, 0), Color.White);
         }
 
         public static void DrawPlay()
