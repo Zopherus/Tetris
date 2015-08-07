@@ -14,5 +14,25 @@ C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprit
 C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Transparent Square.xnb
 C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Tetris Board.xnb
 C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Background.xnb
+<<<<<<< HEAD
 C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Press Start 2P.xnb
 C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\purpleBlock.xnb
+=======
+C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Black.xnb
+C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\blueBlock.xnb
+C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\cyanBlock.xnb
+C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\greenBlock.xnb
+C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\orangeBlock.xnb
+C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\purpleBlock.xnb
+C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\redBlock.xnb
+C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\yellowBlock.xnb
+C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Transparent Square.xnb
+C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Tetris Board.xnb
+C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Background.xnb
+C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Tetris.exe
+C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Tetris.pdb
+C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\obj\x86\Debug\Tetris.csprojResolveAssemblyReference.cache
+C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\obj\x86\Debug\Tetris.exe
+C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\obj\x86\Debug\Tetris.pdb
+>>>>>>> origin/master

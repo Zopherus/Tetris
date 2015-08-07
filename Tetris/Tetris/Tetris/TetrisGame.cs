@@ -152,6 +152,10 @@ namespace Tetris
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.White);
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
             spriteBatch.Begin();
             switch (gameState)
             {
@@ -173,6 +177,7 @@ namespace Tetris
         {
             PlayerBoard = new Board(new Rectangle((screenWidth - (boardWidth * gridSize)) / 2,
                     (screenHeight - (boardHeight * gridSize)) / 2, boardWidth * gridSize, boardHeight * gridSize));
+<<<<<<< HEAD
             /*for (int counter = 1; counter <= boardWidth; counter++ )
             {
                 PlayerBoard.boardState[counter, 18] = new Block(BlockType.J, new Point(counter,18));
@@ -188,6 +193,9 @@ namespace Tetris
                 }
             }
            gameState = GameState.Play;
+=======
+            gameState = GameState.Menu;
+>>>>>>> origin/master
         }
     }
 }

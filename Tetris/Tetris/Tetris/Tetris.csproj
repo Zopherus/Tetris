@@ -74,6 +74,8 @@
   <ItemGroup>
     <Compile Include="Block.cs" />
     <Compile Include="Board.cs" />
+    <Compile Include="Menu.cs" />
+    <Compile Include="Points.cs" />
     <Compile Include="DrawStates.cs" />
     <Compile Include="Piece.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

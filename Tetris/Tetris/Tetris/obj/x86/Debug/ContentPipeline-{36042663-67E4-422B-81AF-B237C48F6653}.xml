@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Black.xnb</Output>
-      <Time>2015-07-29T12:04:49.4238189-07:00</Time>
+      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Black.xnb</Output>
+      <Time>2015-08-04T22:15:33.2825808-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Blocks\blueBlock.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\blueBlock.xnb</Output>
-      <Time>2015-08-06T14:41:51.1234027-07:00</Time>
+      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\blueBlock.xnb</Output>
+      <Time>2015-08-06T18:22:26.42433-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Blocks\cyanBlock.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\cyanBlock.xnb</Output>
-      <Time>2015-08-06T14:41:51.128403-07:00</Time>
+      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\cyanBlock.xnb</Output>
+      <Time>2015-08-06T18:22:26.4248301-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Blocks\greenBlock.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\greenBlock.xnb</Output>
-      <Time>2015-08-06T14:41:51.1304031-07:00</Time>
+      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\greenBlock.xnb</Output>
+      <Time>2015-08-06T18:22:26.4253299-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Blocks\orangeBlock.png</Source>
@@ -43,17 +43,29 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\orangeBlock.xnb</Output>
-      <Time>2015-08-06T14:41:51.1314031-07:00</Time>
+      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\orangeBlock.xnb</Output>
+      <Time>2015-08-06T18:22:26.4263306-07:00</Time>
     </Item>
     <Item>
+<<<<<<< HEAD
+=======
+      <Source>Sprites\Blocks\purpleBlock.png</Source>
+      <Name>Sprites\Blocks\purpleBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\purpleBlock.xnb</Output>
+      <Time>2015-08-06T18:22:26.4268312-07:00</Time>
+    </Item>
+    <Item>
+>>>>>>> origin/master
       <Source>Sprites\Blocks\redBlock.png</Source>
       <Name>Sprites\Blocks\redBlock</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\redBlock.xnb</Output>
-      <Time>2015-08-06T14:41:51.1334033-07:00</Time>
+      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\redBlock.xnb</Output>
+      <Time>2015-08-06T18:22:26.4273319-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Blocks\yellowBlock.png</Source>
@@ -61,8 +73,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\yellowBlock.xnb</Output>
-      <Time>2015-08-06T14:41:51.1344033-07:00</Time>
+      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\yellowBlock.xnb</Output>
+      <Time>2015-08-06T18:22:26.4278319-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Transparent Square.png</Source>
@@ -70,8 +82,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Transparent Square.xnb</Output>
-      <Time>2015-08-06T14:42:02.842073-07:00</Time>
+      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Transparent Square.xnb</Output>
+      <Time>2015-08-06T12:46:37.0803797-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Tetris Board.png</Source>
@@ -79,8 +91,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Tetris Board.xnb</Output>
       <Time>2015-08-06T20:56:02.4303699-07:00</Time>
+=======
+      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Tetris Board.xnb</Output>
+      <Time>2015-08-06T12:46:37.0798614-07:00</Time>
+>>>>>>> origin/master
     </Item>
     <Item>
       <Source>Sprites\Background.png</Source>
@@ -88,8 +105,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Background.xnb</Output>
-      <Time>2015-08-06T14:57:10.2919761-07:00</Time>
+      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Background.xnb</Output>
+      <Time>2015-08-06T12:46:37.0793613-07:00</Time>
     </Item>
     <Item>
       <Source>Press Start 2P.spritefont</Source>
@@ -116,10 +133,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\TetrisContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\TetrisContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -147,8 +164,8 @@
         <Value>2011-09-01T16:22:30-07:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2015-06-22T18:06:10.1037805-07:00</Value>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2015-08-04T23:36:25.060729-07:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
