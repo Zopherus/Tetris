@@ -9,11 +9,10 @@ namespace Tetris
     public class Piece
     {
         private BlockType pieceType;
-        private Block[] blocks;
+        private Block[] blocks = new Block[4];
 
         public Piece()
         { }
-
 
         public BlockType PieceType
         {

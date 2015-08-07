@@ -13,8 +13,11 @@ namespace Tetris
         private Rectangle position;
         //Add in borders of 1 to help detect when pieces cross border
         //value is null if no block is there
-        private Block[,] boardState = new Block[TetrisGame.boardWidth + 2, TetrisGame.boardHeight + 2];
+        public Block[,] boardState = new Block[TetrisGame.boardWidth + 2, TetrisGame.boardHeight + 2];
         private List<Piece> pieces = new List<Piece>();
+        private int points;
+        //The piece that is held by the player
+        private Piece currentPiece;
 
         public Board() { }
         public Board(Rectangle position)
@@ -35,6 +38,39 @@ namespace Tetris
         public List<Piece> Pieces
         {
             get { return pieces; }
+        }
+
+        public int Points
+        {
+            get { return points; }
+        }
+
+        public Piece CurrentPiece
+        {
+            get { return currentPiece; }
+        }
+
+        //Detects when a line is clear and clears the line
+        public void clearLines()
+        {
+            for (int row = 1; row <= TetrisGame.boardHeight; row ++)
+            {
+                bool value = true;
+                for (int column = 1; column <= TetrisGame.boardWidth; column++)
+                {
+                    if (boardState[column, row] == null)
+                    {
+                        value = false;
+                    }
+                }
+                if (value)
+                {
+                    for (int column = 1; column <= TetrisGame.boardWidth; column++)
+                    {
+                        //boardState[column, row] = null;
+                    }
+                }
+            }
         }
     }
 }

@@ -83,15 +83,6 @@
       <Time>2015-08-06T12:46:37.0803797-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprites\Tetris Board.png</Source>
-      <Name>Sprites\Tetris Board</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Tetris Board.xnb</Output>
-      <Time>2015-08-07T00:07:26.1514914-07:00</Time>
-    </Item>
-    <Item>
       <Source>Sprites\Background.png</Source>
       <Name>Sprites\Background</Name>
       <Importer>TextureImporter</Importer>
@@ -99,6 +90,24 @@
       <Options>None</Options>
       <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Background.xnb</Output>
       <Time>2015-08-06T12:46:37.0793613-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Tetris Board.png</Source>
+      <Name>Sprites\Tetris Board</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Tetris Board.xnb</Output>
+      <Time>2015-08-07T00:23:53.4577181-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Press Start 2P.spritefont</Source>
+      <Name>Press Start 2P</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Press Start 2P.xnb</Output>
+      <Time>2015-08-07T00:03:26.5489248-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

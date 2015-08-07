@@ -7,5 +7,6 @@ Content\Sprites\Blocks\purpleBlock.xnb
 Content\Sprites\Blocks\redBlock.xnb
 Content\Sprites\Blocks\yellowBlock.xnb
 Content\Sprites\Transparent Square.xnb
-Content\Sprites\Tetris Board.xnb
 Content\Sprites\Background.xnb
+Content\Sprites\Tetris Board.xnb
+Content\Press Start 2P.xnb

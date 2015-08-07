@@ -74,13 +74,12 @@
   <ItemGroup>
     <Compile Include="Block.cs" />
     <Compile Include="Board.cs" />
-    <Compile Include="Menu.cs" />
-    <Compile Include="Points.cs" />
     <Compile Include="DrawStates.cs" />
     <Compile Include="Piece.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="TetrisGame.cs" />
+    <Compile Include="Timer.cs" />
     <Compile Include="UpdateStates.cs" />
   </ItemGroup>
   <ItemGroup>
