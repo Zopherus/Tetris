@@ -10,7 +10,7 @@ namespace Tetris
     public class Block
     {
         private BlockType blockType;
-        //Describes the position of the block within the board`
+        //Describes the position of the block within the board
         private Point position;
 
 
@@ -18,7 +18,11 @@ namespace Tetris
         {
             this.blockType = blockType; 
         }
-
+        public Block(BlockType blockType, Point position)
+        {
+            this.blockType = blockType;
+            this.position = position;
+        }
 
         public BlockType BlockType
         {

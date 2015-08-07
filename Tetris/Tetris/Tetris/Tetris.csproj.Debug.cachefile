@@ -1,33 +1,12 @@
-<<<<<<< HEAD
 Content\Sprites\Black.xnb
 Content\Sprites\Blocks\blueBlock.xnb
 Content\Sprites\Blocks\cyanBlock.xnb
 Content\Sprites\Blocks\greenBlock.xnb
 Content\Sprites\Blocks\orangeBlock.xnb
-Content\Sprites\Blocks\purpleBlock.xnb
 Content\Sprites\Blocks\redBlock.xnb
 Content\Sprites\Blocks\yellowBlock.xnb
 Content\Sprites\Transparent Square.xnb
 Content\Sprites\Tetris Board.xnb
 Content\Sprites\Background.xnb
-=======
-Content\SpriteFonts\SpriteFont.xnb
-Content\Sprites\blueBlock.xnb
-Content\Sprites\cyanBlock.xnb
-Content\Sprites\greenBlock.xnb
-Content\Sprites\orangeBlock.xnb
-Content\Sprites\purpleBlock.xnb
-Content\Sprites\redBlock.xnb
-Content\Sprites\yellowBlock.xnb
-Content\Sprites\Black.xnb
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-Content\Sprites\Background.xnb
-Content\Sprites\Tetris Board.xnb
-Content\Sprites\Transparent Square.xnb
-=======
-Content\SpriteFonts\SpriteFont.xnb
->>>>>>> origin/master
->>>>>>> origin/master
->>>>>>> origin/master
+Content\Press Start 2P.xnb
+Content\Sprites\Blocks\purpleBlock.xnb
