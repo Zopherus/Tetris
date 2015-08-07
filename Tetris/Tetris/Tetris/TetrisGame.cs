@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.Media;
 
 namespace Tetris
 {
-    public enum GameState { Menu, Play}
+    public enum GameState { Menu, Play, Pause}
     //I is Cyan, O is Yellow, L is Orange, Z is Red, S is green, T is Purple, J is Blue
     public enum BlockType { I, J, L, O, S, T, Z};
 
@@ -41,14 +41,18 @@ namespace Tetris
         public static Texture2D TransparentSquareTexture;
         public static Texture2D BackgroundTexture;
 
+        public static SpriteFont PressStartFont;
+
         public static KeyboardState keyboard;
         public static KeyboardState oldKeyboard;
         public static MouseState mouse;
         public static MouseState oldMouse;
 
+        public static Random random = new Random();
+
         public static GameState gameState;
 
-        public static Board PlayerBoard = new Board();
+        public static Board PlayerBoard;
 
         public TetrisGame()
         {
@@ -58,7 +62,7 @@ namespace Tetris
             {
                 PreferredBackBufferWidth = screenWidth,
                 PreferredBackBufferHeight = screenHeight,
-                IsFullScreen = true
+                //IsFullScreen = true
             };
             IsMouseVisible = true;
             //2 spaces on top and 2 on bottom
@@ -98,6 +102,8 @@ namespace Tetris
             TetrisBoardTexture = Content.Load<Texture2D>("Sprites/Tetris Board");
             TransparentSquareTexture = Content.Load<Texture2D>("Sprites/Transparent Square");
             BackgroundTexture = Content.Load<Texture2D>("Sprites/Background");
+
+            PressStartFont = Content.Load<SpriteFont>("Press Start 2P");
             // TODO: use this.Content to load your game content here
         }
 
@@ -131,6 +137,9 @@ namespace Tetris
                 case GameState.Play:
                     UpdateStates.UpdatePlay();
                     break;
+                case GameState.Pause:
+                    UpdateStates.UpdatePause();
+                    break;
             }
 
             base.Update(gameTime);
@@ -143,7 +152,6 @@ namespace Tetris
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.White);
-
             spriteBatch.Begin();
             switch (gameState)
             {
@@ -152,6 +160,9 @@ namespace Tetris
                     break;
                 case GameState.Play:
                     DrawStates.DrawPlay();
+                    break;
+                case GameState.Pause:
+                    DrawStates.DrawPause();
                     break;
             }
             spriteBatch.End();
@@ -162,7 +173,21 @@ namespace Tetris
         {
             PlayerBoard = new Board(new Rectangle((screenWidth - (boardWidth * gridSize)) / 2,
                     (screenHeight - (boardHeight * gridSize)) / 2, boardWidth * gridSize, boardHeight * gridSize));
-            gameState = GameState.Menu;
+            /*for (int counter = 1; counter <= boardWidth; counter++ )
+            {
+                PlayerBoard.boardState[counter, 18] = new Block(BlockType.J, new Point(counter,18));
+            }*/
+            Array values = Enum.GetValues(typeof(BlockType));
+            
+            for (int x = 1; x <= boardWidth; x++ )
+            {
+                for (int y = 1; y <= boardHeight; y ++)
+                {
+                    BlockType randomBlockType = (BlockType)values.GetValue(random.Next(values.Length));
+                    PlayerBoard.boardState[x, y] = new Block(randomBlockType, new Point(x, y));
+                }
+            }
+           gameState = GameState.Play;
         }
     }
 }
