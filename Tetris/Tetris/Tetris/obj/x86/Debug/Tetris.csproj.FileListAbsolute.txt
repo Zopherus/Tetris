@@ -1,36 +1,17 @@
-C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Tetris.exe
-C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Tetris.pdb
-C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\obj\x86\Debug\Tetris.csprojResolveAssemblyReference.cache
-C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\obj\x86\Debug\Tetris.exe
-C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\obj\x86\Debug\Tetris.pdb
-C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\blueBlock.xnb
-C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\cyanBlock.xnb
-C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\greenBlock.xnb
-C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\orangeBlock.xnb
-C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\purpleBlock.xnb
-C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\redBlock.xnb
-C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\yellowBlock.xnb
-C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\SpriteFonts\SpriteFont.xnb
-C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Black.xnb
-<<<<<<< HEAD
-C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Background.xnb
-C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Tetris Board.xnb
-C:\Users\Eric\Desktop\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Transparent Square.xnb
-=======
-C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\obj\x86\Debug\Tetris.exe
-C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\obj\x86\Debug\Tetris.pdb
-C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\blueBlock.xnb
-C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\cyanBlock.xnb
-C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\greenBlock.xnb
-C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\orangeBlock.xnb
-C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\purpleBlock.xnb
-C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\redBlock.xnb
-C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\yellowBlock.xnb
-C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Black.xnb
-C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\SpriteFonts\SpriteFont.xnb
-C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Tetris.exe
-C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Tetris.pdb
-C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\obj\x86\Debug\Tetris.csprojResolveAssemblyReference.cache
-C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
->>>>>>> origin/master
+C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Tetris.exe
+C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Tetris.pdb
+C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\obj\x86\Debug\Tetris.csprojResolveAssemblyReference.cache
+C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\obj\x86\Debug\Tetris.exe
+C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\obj\x86\Debug\Tetris.pdb
+C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Black.xnb
+C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\blueBlock.xnb
+C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\cyanBlock.xnb
+C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\greenBlock.xnb
+C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\orangeBlock.xnb
+C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\purpleBlock.xnb
+C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\redBlock.xnb
+C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\yellowBlock.xnb
+C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Transparent Square.xnb
+C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Tetris Board.xnb
+C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Background.xnb

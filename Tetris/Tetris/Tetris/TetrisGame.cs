@@ -11,15 +11,20 @@ using Microsoft.Xna.Framework.Media;
 
 namespace Tetris
 {
-    public enum GameState { Menu, Play};
+    public enum GameState { Menu, Play}
+    //I is Cyan, O is Yellow, L is Orange, Z is Red, S is green, T is Purple, J is Blue
     public enum BlockType { I, J, L, O, S, T, Z};
+
     public class TetrisGame : Game
     {
-        public const int gridWidth = 10;
-        public const int gridHeight = 20;
+        //Grid sizes
+        public const int boardWidth = 10;
+        public const int boardHeight = 20;
 
         public static int screenWidth;
         public static int screenHeight;
+
+        public static int gridSize;
 
         public static GraphicsDeviceManager graphics;
         public static SpriteBatch spriteBatch;
@@ -32,11 +37,9 @@ namespace Tetris
         public static Texture2D PurpleBlockTexture;
         public static Texture2D RedBlockTexture;
         public static Texture2D YellowBlockTexture;
-        public static Texture2D BackgroundTexture;
         public static Texture2D TetrisBoardTexture;
         public static Texture2D TransparentSquareTexture;
-
-        public static SpriteFont spriteFont;
+        public static Texture2D BackgroundTexture;
 
         public static KeyboardState keyboard;
         public static KeyboardState oldKeyboard;
@@ -45,18 +48,22 @@ namespace Tetris
 
         public static GameState gameState;
 
+        public static Board PlayerBoard = new Board();
+
         public TetrisGame()
         {
-            screenHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
             screenWidth = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width;
+            screenHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
             graphics = new GraphicsDeviceManager(this)
             {
-                IsFullScreen = true,
-                PreferredBackBufferWidth =  screenWidth,
-                PreferredBackBufferHeight = screenHeight
+                PreferredBackBufferWidth = screenWidth,
+                PreferredBackBufferHeight = screenHeight,
+                IsFullScreen = true
             };
-            Content.RootDirectory = "Content";
             IsMouseVisible = true;
+            //2 spaces on top and 2 on bottom
+            gridSize = (int)screenHeight / (4 + boardHeight);
+            Content.RootDirectory = "Content";
         }
 
         /// <summary>
@@ -68,7 +75,7 @@ namespace Tetris
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-            gameState = GameState.Menu;
+            Start();
             base.Initialize();
         }
 
@@ -81,17 +88,16 @@ namespace Tetris
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             BlackTexture = Content.Load<Texture2D>("Sprites/Black");
-            BlueBlockTexture = Content.Load<Texture2D>("Sprites/blueBlock");
-            CyanBlockTexture = Content.Load<Texture2D>("Sprites/cyanBlock");
-            GreenBlockTexture = Content.Load<Texture2D>("Sprites/greenBlock");
-            OrangeBlockTexture = Content.Load<Texture2D>("Sprites/orangeBlock");
-            PurpleBlockTexture = Content.Load<Texture2D>("Sprites/purpleBlock");
-            RedBlockTexture = Content.Load<Texture2D>("Sprites/redBlock");
-            YellowBlockTexture = Content.Load<Texture2D>("Sprites/yellowBlock");
-            BackgroundTexture = Content.Load<Texture2D>("Sprites/Background");
+            BlueBlockTexture = Content.Load<Texture2D>("Sprites/Blocks/blueBlock");
+            CyanBlockTexture = Content.Load<Texture2D>("Sprites/Blocks/cyanBlock");
+            GreenBlockTexture = Content.Load<Texture2D>("Sprites/Blocks/greenBlock");
+            OrangeBlockTexture = Content.Load<Texture2D>("Sprites/Blocks/orangeBlock");
+            PurpleBlockTexture = Content.Load<Texture2D>("Sprites/Blocks/purpleBlock");
+            RedBlockTexture = Content.Load<Texture2D>("Sprites/Blocks/redBlock");
+            YellowBlockTexture = Content.Load<Texture2D>("Sprites/Blocks/yellowBlock");
             TetrisBoardTexture = Content.Load<Texture2D>("Sprites/Tetris Board");
             TransparentSquareTexture = Content.Load<Texture2D>("Sprites/Transparent Square");
-            spriteFont = Content.Load<SpriteFont>("SpriteFonts/SpriteFont");
+            BackgroundTexture = Content.Load<Texture2D>("Sprites/Background");
             // TODO: use this.Content to load your game content here
         }
 
@@ -115,6 +121,8 @@ namespace Tetris
             oldMouse = mouse;
             keyboard = Keyboard.GetState();
             mouse = Mouse.GetState();
+            if (keyboard.IsKeyDown(Keys.Escape))
+                this.Exit();
             switch(gameState)
             {
                 case GameState.Menu:
@@ -124,6 +132,7 @@ namespace Tetris
                     UpdateStates.UpdatePlay();
                     break;
             }
+
             base.Update(gameTime);
         }
 
@@ -133,7 +142,6 @@ namespace Tetris
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.White);
             spriteBatch.Begin();
             switch (gameState)
             {
@@ -146,6 +154,13 @@ namespace Tetris
             }
             spriteBatch.End();
             base.Draw(gameTime);
+        }
+
+        public static void Start()
+        {
+            PlayerBoard = new Board(new Rectangle((screenWidth - (boardWidth * gridSize)) / 2,
+                    (screenHeight - (boardHeight * gridSize)) / 2, boardWidth * gridSize, boardHeight * gridSize));
+            gameState = GameState.Play;
         }
     }
 }

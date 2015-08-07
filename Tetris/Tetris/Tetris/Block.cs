@@ -6,23 +6,31 @@ using Microsoft.Xna.Framework;
 
 namespace Tetris
 {
-    class Block
+    //A single square in a piece
+    public class Block
     {
         private BlockType blockType;
-        //Describes the position within the grid
+        //Describes the position of the block within the board`
         private Point position;
+
+
+        public Block(BlockType blockType)
+        {
+            this.blockType = blockType; 
+        }
+
 
         public BlockType BlockType
         {
             get { return blockType; }
         }
-
+        
         public Point Position
         {
             get { return position; }
             set
             {
-                if (value.X > 0 && value.X <= TetrisGame.gridWidth && value.Y > 0 && value.Y <= TetrisGame.gridHeight)
+                if (value.X >= 1 && value.X <= TetrisGame.boardWidth && value.Y >= 1 && value.Y <= TetrisGame.boardHeight)
                     position = value;
             }
         }
