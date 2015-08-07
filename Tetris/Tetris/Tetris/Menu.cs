@@ -8,6 +8,7 @@ namespace Tetris
 {
     class Menu
     {
-        private static PlayRectangle = new Rectangle
+        //private static PlayRectangle = new Rectangle
     }
+
 }

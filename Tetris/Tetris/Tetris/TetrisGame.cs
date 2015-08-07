@@ -162,7 +162,7 @@ namespace Tetris
         {
             PlayerBoard = new Board(new Rectangle((screenWidth - (boardWidth * gridSize)) / 2,
                     (screenHeight - (boardHeight * gridSize)) / 2, boardWidth * gridSize, boardHeight * gridSize));
-            gameState = GameState.Menu;
+            gameState = GameState.Play;
         }
     }
 }
