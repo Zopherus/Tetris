@@ -142,6 +142,8 @@ namespace Tetris
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
+            GraphicsDevice.Clear(Color.White);
+
             spriteBatch.Begin();
             switch (gameState)
             {
@@ -160,7 +162,7 @@ namespace Tetris
         {
             PlayerBoard = new Board(new Rectangle((screenWidth - (boardWidth * gridSize)) / 2,
                     (screenHeight - (boardHeight * gridSize)) / 2, boardWidth * gridSize, boardHeight * gridSize));
-            gameState = GameState.Play;
+            gameState = GameState.Menu;
         }
     }
 }

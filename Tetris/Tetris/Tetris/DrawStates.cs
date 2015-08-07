@@ -10,7 +10,7 @@ namespace Tetris
     {
         public static void DrawMenu()
         {
-
+            TetrisGame.spriteBatch.Draw(TetrisGame.BackgroundTexture, new Rectangle(0, 0, TetrisGame.screenWidth, TetrisGame.screenHeight), Color.White);
         }
 
         public static void DrawPlay()
