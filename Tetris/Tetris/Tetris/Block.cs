@@ -10,18 +10,23 @@ namespace Tetris
     public class Block
     {
         private BlockType blockType;
+
         //Describes the position of the block within the board
         private Point position;
 
+        //The piece that the block is in
+        private Piece piece;
 
         public Block(BlockType blockType)
         {
             this.blockType = blockType; 
         }
-        public Block(BlockType blockType, Point position)
+
+        public Block(BlockType blockType, Point position, Piece piece)
         {
             this.blockType = blockType;
             this.position = position;
+            this.piece = piece;
         }
 
         public BlockType BlockType
@@ -34,9 +39,18 @@ namespace Tetris
             get { return position; }
             set
             {
-                if (value.X >= 1 && value.X <= TetrisGame.boardWidth && value.Y >= 1 && value.Y <= TetrisGame.boardHeight)
+                if (value.X >= Board.leftBorder && value.X <  TetrisGame.boardWidth + Board.leftBorder 
+                    && value.Y >= Board.topBorder && value.Y < TetrisGame.boardHeight + Board.topBorder)
                     position = value;
             }
+        }
+
+        public bool canFall()
+        {
+            return position.Y + 1 < TetrisGame.boardHeight + Board.topBorder &&
+                ((piece.Blocks.Contains(TetrisGame.PlayerBoard.BoardState[position.X, position.Y + 1]) 
+                && TetrisGame.PlayerBoard.BoardState[position.X, position.Y + 1].canFall())
+                || TetrisGame.PlayerBoard.BoardState[position.X, position.Y + 1] == null);
         }
     }
 }

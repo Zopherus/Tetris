@@ -14,6 +14,9 @@ namespace Tetris
     public enum GameState { Menu, Play, Pause}
     //I is Cyan, O is Yellow, L is Orange, Z is Red, S is green, T is Purple, J is Blue
     public enum BlockType { I, J, L, O, S, T, Z};
+    //Rotation states based off of http://vignette1.wikia.nocookie.net/tetrisconcept/images/3/3d/SRS-pieces.png/revision/latest?cb=20060626173148
+    public enum RotationState { One, Two, Three, Four};
+
 
     public class TetrisGame : Game
     {
@@ -37,7 +40,6 @@ namespace Tetris
         public static Texture2D PurpleBlockTexture;
         public static Texture2D RedBlockTexture;
         public static Texture2D YellowBlockTexture;
-        public static Texture2D TetrisBoardTexture;
         public static Texture2D TransparentSquareTexture;
         public static Texture2D BackgroundTexture;
 
@@ -52,6 +54,7 @@ namespace Tetris
 
         public static GameState gameState;
 
+        public static List<Board> GameBoards = new List<Board>();
         public static Board PlayerBoard;
 
         public TetrisGame()
@@ -62,10 +65,10 @@ namespace Tetris
             {
                 PreferredBackBufferWidth = screenWidth,
                 PreferredBackBufferHeight = screenHeight,
-                //IsFullScreen = true
+                IsFullScreen = true
             };
             IsMouseVisible = true;
-            //2 spaces on top and 2 on bottom
+            //2 extra gridsizes on top and 2 on bottom
             gridSize = (int)screenHeight / (4 + boardHeight);
             Content.RootDirectory = "Content";
         }
@@ -99,7 +102,6 @@ namespace Tetris
             PurpleBlockTexture = Content.Load<Texture2D>("Sprites/Blocks/purpleBlock");
             RedBlockTexture = Content.Load<Texture2D>("Sprites/Blocks/redBlock");
             YellowBlockTexture = Content.Load<Texture2D>("Sprites/Blocks/yellowBlock");
-            TetrisBoardTexture = Content.Load<Texture2D>("Sprites/Tetris Board");
             TransparentSquareTexture = Content.Load<Texture2D>("Sprites/Transparent Square");
             BackgroundTexture = Content.Load<Texture2D>("Sprites/Background");
 
@@ -127,7 +129,7 @@ namespace Tetris
             oldMouse = mouse;
             keyboard = Keyboard.GetState();
             mouse = Mouse.GetState();
-            if (keyboard.IsKeyDown(Keys.Escape))
+            if (keyboard.IsKeyDown(Keys.F1))
                 this.Exit();
             switch(gameState)
             {
@@ -135,7 +137,7 @@ namespace Tetris
                     UpdateStates.UpdateMenu();
                     break;
                 case GameState.Play:
-                    UpdateStates.UpdatePlay();
+                    UpdateStates.UpdatePlay(gameTime);
                     break;
                 case GameState.Pause:
                     UpdateStates.UpdatePause();
@@ -173,22 +175,9 @@ namespace Tetris
         {
             PlayerBoard = new Board(new Rectangle((screenWidth - (boardWidth * gridSize)) / 2,
                     (screenHeight - (boardHeight * gridSize)) / 2, boardWidth * gridSize, boardHeight * gridSize));
+            GameBoards.Add(PlayerBoard);
             gameState = GameState.Play;
-            /*for (int counter = 1; counter <= boardWidth; counter++ )
-            {
-                PlayerBoard.boardState[counter, 18] = new Block(BlockType.J, new Point(counter,18));
-            }*/
-            Array values = Enum.GetValues(typeof(BlockType));
-            
-            for (int x = 1; x <= boardWidth; x++ )
-            {
-                for (int y = 1; y <= boardHeight; y ++)
-                {
-                    BlockType randomBlockType = (BlockType)values.GetValue(random.Next(values.Length));
-                    PlayerBoard.boardState[x, y] = new Block(randomBlockType, new Point(x, y));
-                }
-            }
-           gameState = GameState.Play;
+            PlayerBoard.CurrentPiece = new Piece(BlockType.J);   
         }
     }
 }
