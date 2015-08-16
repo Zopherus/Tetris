@@ -29,16 +29,16 @@ namespace Tetris
                     blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 6, Board.topBorder), this);
                     break;
                 case BlockType.J:
-                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder), this);
-                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder - 1), this);
-                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder), this);
-                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 6, Board.topBorder), this);
+                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 3, Board.topBorder), this);
+                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 3, Board.topBorder - 1), this);
+                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder), this);
+                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder), this);
                     break;
                 case BlockType.L:
-                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder), this);
-                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder), this);
-                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 6, Board.topBorder), this);
-                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 6, Board.topBorder - 1), this);
+                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 3, Board.topBorder), this);
+                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder), this);
+                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder), this);
+                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder - 1), this);
                     break;
                 case BlockType.O:
                     blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder), this);
@@ -47,22 +47,22 @@ namespace Tetris
                     blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder - 1), this);
                     break;
                 case BlockType.S:
-                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder), this);
-                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder), this);
-                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder - 1), this);
-                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 6, Board.topBorder - 1), this);
+                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 3, Board.topBorder), this);
+                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder), this);
+                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder - 1), this);
+                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder - 1), this);
                     break;
                 case BlockType.T:
-                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder), this);
-                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder), this);
-                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder - 1), this);
-                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 6, Board.topBorder), this);
+                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 3, Board.topBorder), this);
+                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder), this);
+                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder - 1), this);
+                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder), this);
                     break;
                 case BlockType.Z:
-                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder - 1), this);
-                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder), this);
-                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder - 1), this);
-                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 6, Board.topBorder), this);
+                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 3, Board.topBorder - 1), this);
+                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder), this);
+                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder - 1), this);
+                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder), this);
                     break;
             }
         }
@@ -89,8 +89,13 @@ namespace Tetris
             {
                 foreach(Block block in blocks)
                 {
+                    TetrisGame.PlayerBoard.BoardState[block.Position.X, block.Position.Y] = null;
                     block.Position = new Point(block.Position.X, block.Position.Y + 1);
                 }
+            }
+            else
+            {
+                TetrisGame.PlayerBoard.changeCurrentPiece();
             }
         }
 
@@ -107,6 +112,7 @@ namespace Tetris
             {
                 foreach(Block block in blocks)
                 {
+                    TetrisGame.PlayerBoard.BoardState[block.Position.X, block.Position.Y] = null;
                     block.Position = new Point(block.Position.X + 1, block.Position.Y);
                 }
             }
@@ -125,6 +131,7 @@ namespace Tetris
             {
                 foreach (Block block in blocks)
                 {
+                    TetrisGame.PlayerBoard.BoardState[block.Position.X, block.Position.Y] = null;
                     block.Position = new Point(block.Position.X - 1, block.Position.Y);
                 }
             }

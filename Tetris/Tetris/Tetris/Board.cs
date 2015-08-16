@@ -119,6 +119,11 @@ namespace Tetris
 
         }
 
+        public void changeCurrentPiece()
+        {
+            currentPiece = upcomingPieces.Dequeue();
+        }
+
         public void changeHoldPiece()
         {
             if (holdPiece == null)
@@ -135,9 +140,16 @@ namespace Tetris
 
         public void fillUpcomingPieces()
         {
-            if (upcomingPieces.Count == 0)
+            if (upcomingPieces.Count < 14) //Double the count of the blocktypes
             {
-                Array values = Enum.GetValues(typeof(BlockType));
+                List<int> values = Enumerable.Range(0, Enum.GetValues(typeof(BlockType)).Length).ToList<int>();
+                Random random = new Random();
+                while (values.Count > 0)
+                {
+                    int number = values.ElementAt(random.Next(values.Count));
+                    values.Remove(number);
+                    upcomingPieces.Enqueue(new Piece((BlockType)number));
+                }
             }
         }
     }

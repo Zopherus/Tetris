@@ -24,7 +24,6 @@ namespace Tetris
 
         public static void UpdatePlay(GameTime gameTime)
         {
-            TetrisGame.PlayerBoard.updatePosition();
             foreach(Timer timer in fallBlockTimers)
             {
                 timer.start();
@@ -113,6 +112,8 @@ namespace Tetris
                         break;
                 }
             }
+            TetrisGame.PlayerBoard.updatePosition();
+            TetrisGame.PlayerBoard.fillUpcomingPieces();
         }
 
         public static void UpdatePause()
