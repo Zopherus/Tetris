@@ -42,8 +42,6 @@ namespace Tetris
             {
                 timer.tick(gameTime);
             }
-
-            TetrisGame.PlayerBoard.clearLines();
             /*
              * Esc = Pause
              * Left Shift = Hold
@@ -114,6 +112,7 @@ namespace Tetris
             }
             TetrisGame.PlayerBoard.updatePosition();
             TetrisGame.PlayerBoard.fillUpcomingPieces();
+            TetrisGame.PlayerBoard.clearLines();
         }
 
         public static void UpdatePause()

@@ -91,7 +91,7 @@ namespace Tetris
                     linesCleared++;
                     for (int column = 1; column <= TetrisGame.boardWidth; column++)
                     {
-                        //boardState[column, row] = null;
+                        boardState[column, row] = null;
                     }
                 }
             }
@@ -116,7 +116,6 @@ namespace Tetris
         {
             return point.X >= rightBorder && point.X < rightBorder + TetrisGame.boardWidth
                 && point.Y >= topBorder && point.Y < topBorder + TetrisGame.boardHeight;
-
         }
 
         public void changeCurrentPiece()

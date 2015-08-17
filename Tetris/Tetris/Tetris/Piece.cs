@@ -87,9 +87,9 @@ namespace Tetris
             }
             if (value)
             {
+                clearOldPosition();
                 foreach(Block block in blocks)
                 {
-                    TetrisGame.PlayerBoard.BoardState[block.Position.X, block.Position.Y] = null;
                     block.Position = new Point(block.Position.X, block.Position.Y + 1);
                 }
             }
@@ -104,15 +104,14 @@ namespace Tetris
             bool value = true;
             foreach (Block block in blocks)
             {
-                Point point = new Point(block.Position.X + 1, block.Position.Y);
-                if (!TetrisGame.PlayerBoard.checkOnBoard(point))
+                if (!block.canMoveRight() || !TetrisGame.PlayerBoard.checkOnBoard(block.Position))
                     value = false;
             }
             if (value)
             {
+                clearOldPosition();
                 foreach(Block block in blocks)
                 {
-                    TetrisGame.PlayerBoard.BoardState[block.Position.X, block.Position.Y] = null;
                     block.Position = new Point(block.Position.X + 1, block.Position.Y);
                 }
             }
@@ -123,15 +122,14 @@ namespace Tetris
             bool value = true;
             foreach (Block block in blocks)
             {
-                Point point = new Point(block.Position.X - 1, block.Position.Y); 
-                if (!TetrisGame.PlayerBoard.checkOnBoard(point))
+                if (!block.canMoveLeft() || !TetrisGame.PlayerBoard.checkOnBoard(block.Position))
                     value = false;
             }
             if (value)
             {
+                clearOldPosition();
                 foreach (Block block in blocks)
                 {
-                    TetrisGame.PlayerBoard.BoardState[block.Position.X, block.Position.Y] = null;
                     block.Position = new Point(block.Position.X - 1, block.Position.Y);
                 }
             }
@@ -149,9 +147,16 @@ namespace Tetris
             rotationState = (RotationState)((mod((int)rotationState - 1, 4)));
         }
 
-        public void softDrop() { }
-
         public void hardDrop() { }
+
+        private void clearOldPosition()
+        {
+            foreach(Block block in blocks)
+            {
+                TetrisGame.PlayerBoard.BoardState[block.Position.X, block.Position.Y] = null;
+            }
+        }
+
 
         //returns the mod of x in base m, % is the remainder function not mod function
         private int mod(int x, int m)
