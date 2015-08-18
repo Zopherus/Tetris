@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.Media;
 
 namespace Tetris
 {
-    public enum GameState { Menu, Play, Pause}
+    public enum GameState { Menu, Play, Pause, Options, Highscore}
     //I is Cyan, O is Yellow, L is Orange, Z is Red, S is green, T is Purple, J is Blue
     public enum BlockType { I, J, L, O, S, T, Z};
     //Rotation states based off of http://vignette1.wikia.nocookie.net/tetrisconcept/images/3/3d/SRS-pieces.png/revision/latest?cb=20060626173148
@@ -43,6 +43,16 @@ namespace Tetris
         public static Texture2D TransparentSquareTexture;
         public static Texture2D BackgroundTexture;
 
+        public static Texture2D OptionsButtonPressedTexture;
+        public static Texture2D OptionsButtonUnpressedTexture;
+        public static Texture2D PlayButtonPressedTexture;
+        public static Texture2D PlayButtonUnpressedTexture;
+        public static Texture2D pokemonsunsetTexture;
+        public static Texture2D QuitButtonPressedTexture;
+        public static Texture2D QuitButtonUnpressedTexture;
+        public static Texture2D HighscoreButtonPressedTexture;
+        public static Texture2D HighscoreButtonUnpressedTexture;
+
         public static SpriteFont PressStartFont;
 
         public static KeyboardState keyboard;
@@ -65,7 +75,7 @@ namespace Tetris
             {
                 PreferredBackBufferWidth = screenWidth,
                 PreferredBackBufferHeight = screenHeight,
-                //IsFullScreen = true
+                IsFullScreen = true
             };
             IsMouseVisible = true;
             //2 extra gridsizes on top and 2 on bottom
@@ -104,6 +114,16 @@ namespace Tetris
             YellowBlockTexture = Content.Load<Texture2D>("Sprites/Blocks/yellowBlock");
             TransparentSquareTexture = Content.Load<Texture2D>("Sprites/Transparent Square");
             BackgroundTexture = Content.Load<Texture2D>("Sprites/Background");
+
+            OptionsButtonPressedTexture = Content.Load<Texture2D>("Sprites/Menu Sprites/Options Button Pressed");
+            OptionsButtonUnpressedTexture = Content.Load<Texture2D>("Sprites/Menu Sprites/Options Button Unpressed");
+            PlayButtonPressedTexture = Content.Load<Texture2D>("Sprites/Menu Sprites/Play Button Pressed");
+            PlayButtonUnpressedTexture = Content.Load<Texture2D>("Sprites/Menu Sprites/Play Button Unpressed");
+            pokemonsunsetTexture = Content.Load<Texture2D>("Sprites/Menu Sprites/pokemon sunset");
+            QuitButtonPressedTexture = Content.Load<Texture2D>("Sprites/Menu Sprites/Quit Button Pressed");
+            QuitButtonUnpressedTexture = Content.Load<Texture2D>("Sprites/Menu Sprites/Quit Button Unpressed");
+            HighscoreButtonPressedTexture = Content.Load<Texture2D>("Sprites/Menu Sprites/HighscoreButtonPressed");
+            HighscoreButtonUnpressedTexture = Content.Load<Texture2D>("Sprites/Menu Sprites/HighscoreButtonUnpressed");
 
             PressStartFont = Content.Load<SpriteFont>("Press Start 2P");
             // TODO: use this.Content to load your game content here
@@ -176,9 +196,8 @@ namespace Tetris
             PlayerBoard = new Board(new Rectangle((screenWidth - (boardWidth * gridSize)) / 2,
                     (screenHeight - (boardHeight * gridSize)) / 2, boardWidth * gridSize, boardHeight * gridSize));
             GameBoards.Add(PlayerBoard);
-            gameState = GameState.Play;
-            PlayerBoard.fillUpcomingPieces();
-            PlayerBoard.CurrentPiece = new Piece(BlockType.I);
+            gameState = GameState.Menu;
+            PlayerBoard.CurrentPiece = new Piece(BlockType.J);   
         }
     }
 }

@@ -29,16 +29,16 @@ namespace Tetris
                     blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 6, Board.topBorder), this);
                     break;
                 case BlockType.J:
-                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 3, Board.topBorder), this);
-                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 3, Board.topBorder - 1), this);
-                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder), this);
-                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder), this);
+                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder), this);
+                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder - 1), this);
+                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder), this);
+                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 6, Board.topBorder), this);
                     break;
                 case BlockType.L:
-                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 3, Board.topBorder), this);
-                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder), this);
-                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder), this);
-                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder - 1), this);
+                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder), this);
+                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder), this);
+                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 6, Board.topBorder), this);
+                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 6, Board.topBorder - 1), this);
                     break;
                 case BlockType.O:
                     blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder), this);
@@ -47,22 +47,22 @@ namespace Tetris
                     blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder - 1), this);
                     break;
                 case BlockType.S:
-                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 3, Board.topBorder), this);
-                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder), this);
-                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder - 1), this);
-                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder - 1), this);
+                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder), this);
+                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder), this);
+                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder - 1), this);
+                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 6, Board.topBorder - 1), this);
                     break;
                 case BlockType.T:
-                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 3, Board.topBorder), this);
-                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder), this);
-                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder - 1), this);
-                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder), this);
+                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder), this);
+                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder), this);
+                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder - 1), this);
+                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 6, Board.topBorder), this);
                     break;
                 case BlockType.Z:
-                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 3, Board.topBorder - 1), this);
-                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder), this);
-                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder - 1), this);
-                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder), this);
+                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder - 1), this);
+                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder), this);
+                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder - 1), this);
+                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 6, Board.topBorder), this);
                     break;
             }
         }
@@ -87,16 +87,10 @@ namespace Tetris
             }
             if (value)
             {
-                clearOldPosition();
                 foreach(Block block in blocks)
                 {
                     block.Position = new Point(block.Position.X, block.Position.Y + 1);
                 }
-            }
-            else
-            {
-                TetrisGame.PlayerBoard.changeCurrentPiece();
-                TetrisGame.PlayerBoard.clearLines();
             }
         }
 
@@ -105,12 +99,12 @@ namespace Tetris
             bool value = true;
             foreach (Block block in blocks)
             {
-                if (!block.canMoveRight() || !TetrisGame.PlayerBoard.checkOnBoard(block.Position))
+                Point point = new Point(block.Position.X + 1, block.Position.Y);
+                if (!TetrisGame.PlayerBoard.checkOnBoard(point))
                     value = false;
             }
             if (value)
             {
-                clearOldPosition();
                 foreach(Block block in blocks)
                 {
                     block.Position = new Point(block.Position.X + 1, block.Position.Y);
@@ -123,12 +117,12 @@ namespace Tetris
             bool value = true;
             foreach (Block block in blocks)
             {
-                if (!block.canMoveLeft() || !TetrisGame.PlayerBoard.checkOnBoard(block.Position))
+                Point point = new Point(block.Position.X - 1, block.Position.Y); 
+                if (!TetrisGame.PlayerBoard.checkOnBoard(point))
                     value = false;
             }
             if (value)
             {
-                clearOldPosition();
                 foreach (Block block in blocks)
                 {
                     block.Position = new Point(block.Position.X - 1, block.Position.Y);
@@ -148,16 +142,9 @@ namespace Tetris
             rotationState = (RotationState)((mod((int)rotationState - 1, 4)));
         }
 
+        public void softDrop() { }
+
         public void hardDrop() { }
-
-        private void clearOldPosition()
-        {
-            foreach(Block block in blocks)
-            {
-                TetrisGame.PlayerBoard.BoardState[block.Position.X, block.Position.Y] = null;
-            }
-        }
-
 
         //returns the mod of x in base m, % is the remainder function not mod function
         private int mod(int x, int m)
