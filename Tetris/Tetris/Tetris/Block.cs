@@ -46,7 +46,6 @@ namespace Tetris
             }
         }
 
-
         public bool canMoveRight()
         {
             return position.X + 1 < TetrisGame.boardWidth + Board.rightBorder &&
@@ -62,7 +61,6 @@ namespace Tetris
                && TetrisGame.PlayerBoard.BoardState[position.X - 1, position.Y].canMoveLeft())
                || TetrisGame.PlayerBoard.BoardState[position.X - 1, position.Y] == null);
         }
-
 
         public bool canFall()
         {

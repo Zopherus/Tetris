@@ -96,6 +96,7 @@ namespace Tetris
             else
             {
                 TetrisGame.PlayerBoard.changeCurrentPiece();
+                TetrisGame.PlayerBoard.clearLines();
             }
         }
 

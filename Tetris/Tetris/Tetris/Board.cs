@@ -76,10 +76,10 @@ namespace Tetris
         public void clearLines()
         {
             int linesCleared = 0;
-            for (int row = 2; row <= TetrisGame.boardHeight; row ++)
+            for (int row = topBorder; row < TetrisGame.boardHeight + topBorder; row ++)
             {
                 bool value = true;
-                for (int column = 1; column <= TetrisGame.boardWidth; column++)
+                for (int column = rightBorder; column < TetrisGame.boardWidth + rightBorder; column++)
                 {
                     if (boardState[column, row] == null)
                     {
@@ -89,7 +89,7 @@ namespace Tetris
                 if (value)
                 {
                     linesCleared++;
-                    for (int column = 1; column <= TetrisGame.boardWidth; column++)
+                    for (int column = rightBorder; column < TetrisGame.boardWidth + rightBorder; column++)
                     {
                         boardState[column, row] = null;
                     }

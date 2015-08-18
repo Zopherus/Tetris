@@ -14,7 +14,6 @@ namespace Tetris
         //The interval at which to do things
         private int interval;
         //true if the timer is running
-        private bool started;
 
         public Timer(int interval)
         {
@@ -47,20 +46,14 @@ namespace Tetris
             }
         }
 
-        public void start() 
-        {
-            started = true;
-        }
-
         //Add the time in milliseconds to the timer if the timer is started
         public void tick(GameTime gameTime) 
         {
-            if (started)
-                timeMilliseconds += gameTime.ElapsedGameTime.Milliseconds;
+            timeMilliseconds += gameTime.ElapsedGameTime.Milliseconds;
         }
 
         //Resets the time to 0
-        public void resetTimer()
+        public void reset()
         {
             timeMilliseconds = 0;
         }
