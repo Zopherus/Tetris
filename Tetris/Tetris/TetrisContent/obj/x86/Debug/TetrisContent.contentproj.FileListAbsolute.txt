@@ -1,1 +1,2 @@
 C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\TetrisContent\obj\x86\Debug\TetrisContent.contentprojResolveAssemblyReference.cache
+C:\Users\Eric\Desktop\Tetris\Tetris\TetrisContent\obj\x86\Debug\TetrisContent.contentprojResolveAssemblyReference.cache

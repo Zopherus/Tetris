@@ -26,7 +26,19 @@ namespace Tetris
 
         public static void UpdateMenu()
         {
+            Point mouse = new Point(TetrisGame.mouse.X, TetrisGame.mouse.Y);
 
+            if (TetrisGame.keyboard.IsKeyDown(Keys.Tab) && TetrisGame.oldKeyboard.IsKeyUp(Keys.Tab))
+                TetrisGame.graphics.ToggleFullScreen();
+
+            if (TetrisGame.mouse.LeftButton == ButtonState.Pressed)
+            {
+                if (Menu.PlayRectangle.Contains(mouse))
+                    TetrisGame.gameState = GameState.Play;
+
+                if (Menu.QuitRectangle.Contains(mouse))
+                    Program.game.Exit();
+            }
         }
 
         public static void UpdatePlay(GameTime gameTime)
@@ -119,6 +131,9 @@ namespace Tetris
         {
             if (TetrisGame.keyboard.IsKeyDown(Keys.Escape) && TetrisGame.oldKeyboard.IsKeyUp(Keys.Escape))
                 TetrisGame.gameState = GameState.Play;
+
+            if (TetrisGame.keyboard.IsKeyDown(Keys.M))
+                TetrisGame.gameState = GameState.Menu;
         }
     }
 }

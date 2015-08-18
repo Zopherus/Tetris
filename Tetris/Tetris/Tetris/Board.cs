@@ -73,6 +73,7 @@ namespace Tetris
         }
 
         //Detects when a line is clear and clears the line
+        //drops the lines above after a line is cleared
         public void clearLines()
         {
             int linesCleared = 0;
@@ -92,6 +93,16 @@ namespace Tetris
                     for (int column = rightBorder; column < TetrisGame.boardWidth + rightBorder; column++)
                     {
                         boardState[column, row] = null;
+                    }
+                    for(int y = row - 1; y >= topBorder; y--)
+                    {
+                        for (int x = rightBorder; x < TetrisGame.boardWidth + rightBorder; x++)
+                        {
+                            if (boardState[x,y] != null)
+                            {
+                                boardState[x, y + 1] = boardState[x, y];
+                            }
+                        }
                     }
                 }
             }
