@@ -98,7 +98,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Press Start 2P.xnb</Output>
-      <Time>2015-08-16T00:26:49.3806915-07:00</Time>
+      <Time>2015-08-16T11:02:05.9631416-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Menu Sprites\Options Button Pressed.png</Source>
@@ -107,7 +107,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Menu Sprites\Options Button Pressed.xnb</Output>
-      <Time>2015-08-15T22:53:03.583152-07:00</Time>
+      <Time>2015-08-16T11:02:05.9661435-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Menu Sprites\Options Button Unpressed.png</Source>
@@ -116,7 +116,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Menu Sprites\Options Button Unpressed.xnb</Output>
-      <Time>2015-08-15T22:53:03.5856547-07:00</Time>
+      <Time>2015-08-16T11:02:05.9666447-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Menu Sprites\Play Button Pressed.png</Source>
@@ -125,7 +125,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Menu Sprites\Play Button Pressed.xnb</Output>
-      <Time>2015-08-15T22:53:03.587154-07:00</Time>
+      <Time>2015-08-16T11:02:05.9671447-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Menu Sprites\Play Button Unpressed.png</Source>
@@ -134,7 +134,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Menu Sprites\Play Button Unpressed.xnb</Output>
-      <Time>2015-08-15T22:53:03.5886551-07:00</Time>
+      <Time>2015-08-16T11:02:05.9676448-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Menu Sprites\pokemon sunset.png</Source>
@@ -143,7 +143,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Menu Sprites\pokemon sunset.xnb</Output>
-      <Time>2015-08-15T22:53:03.5931583-07:00</Time>
+      <Time>2015-08-16T11:02:05.9731484-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Menu Sprites\Quit Button Pressed.png</Source>
@@ -152,7 +152,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Menu Sprites\Quit Button Pressed.xnb</Output>
-      <Time>2015-08-15T22:53:03.5946605-07:00</Time>
+      <Time>2015-08-16T11:02:05.9681452-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Menu Sprites\Quit Button Unpressed.png</Source>
@@ -161,7 +161,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Menu Sprites\Quit Button Unpressed.xnb</Output>
-      <Time>2015-08-15T22:53:03.596671-07:00</Time>
+      <Time>2015-08-16T11:02:05.9686455-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Menu Sprites\HighscoreButtonUnpressed.png</Source>
@@ -170,7 +170,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Menu Sprites\HighscoreButtonUnpressed.xnb</Output>
-      <Time>2015-08-16T10:38:51.1090434-07:00</Time>
+      <Time>2015-08-16T11:02:05.9651436-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Menu Sprites\HighscoreButtonPressed.png</Source>
@@ -179,7 +179,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Menu Sprites\HighscoreButtonPressed.xnb</Output>
-      <Time>2015-08-16T10:38:54.1196543-07:00</Time>
+      <Time>2015-08-16T11:02:05.9641432-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
