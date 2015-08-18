@@ -11,6 +11,61 @@ namespace Tetris
     {
         public static void DrawMenu()
         {
+            TetrisGame.spriteBatch.Draw(TetrisGame.pokemonsunsetTexture, new Rectangle(0, 0, TetrisGame.screenWidth, TetrisGame.screenHeight), Color.White);
+
+            Point Mouse = new Point (TetrisGame.mouse.X,TetrisGame.mouse.Y);
+
+            if (Menu.PlayRectangle.Contains(Mouse))
+            {
+                TetrisGame.spriteBatch.Draw(TetrisGame.PlayButtonPressedTexture, Menu.PlayRectangle, Color.White);
+            }
+            else
+            {
+                TetrisGame.spriteBatch.Draw(TetrisGame.PlayButtonUnpressedTexture, Menu.PlayRectangle, Color.White);
+            }
+
+            if (Menu.OptionsRectangle.Contains(Mouse))
+            {
+                TetrisGame.spriteBatch.Draw(TetrisGame.OptionsButtonPressedTexture, Menu.OptionsRectangle, Color.White);
+            }
+            else
+            {
+                TetrisGame.spriteBatch.Draw(TetrisGame.OptionsButtonUnpressedTexture, Menu.OptionsRectangle, Color.White);
+            }
+
+            if (Menu.QuitRectangle.Contains(Mouse))
+            {
+                TetrisGame.spriteBatch.Draw(TetrisGame.QuitButtonPressedTexture, Menu.QuitRectangle, Color.White);
+            }
+            else
+            {
+                TetrisGame.spriteBatch.Draw(TetrisGame.QuitButtonUnpressedTexture, Menu.QuitRectangle, Color.White);
+            }
+
+            if (Menu.HighscoreRectangle.Contains(Mouse))
+            {
+                TetrisGame.spriteBatch.Draw(TetrisGame.HighscoreButtonPressedTexture, Menu.HighscoreRectangle, Color.White);
+            }
+            else
+            {
+                TetrisGame.spriteBatch.Draw(TetrisGame.HighscoreButtonUnpressedTexture, Menu.HighscoreRectangle, Color.White);
+            }
+            TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "Play",
+                new Vector2(Menu.PlayRectangle.Center.X - TetrisGame.PressStartFont.MeasureString("Play").X/2,
+                    Menu.PlayRectangle.Center.Y - TetrisGame.PressStartFont.MeasureString("Play").Y/2), Color.Black);
+
+            TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "Options",
+                new Vector2(Menu.OptionsRectangle.Center.X - TetrisGame.PressStartFont.MeasureString("Options").X/2,
+                    Menu.OptionsRectangle.Center.Y - TetrisGame.PressStartFont.MeasureString("Options").Y/2), Color.Black);
+
+            TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "Quit",
+                new Vector2(Menu.QuitRectangle.Center.X - TetrisGame.PressStartFont.MeasureString("Quit").X / 2,
+                    Menu.QuitRectangle.Center.Y - TetrisGame.PressStartFont.MeasureString("Quit").Y / 2), Color.Black);
+
+            TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "Highscore",
+                new Vector2(Menu.HighscoreRectangle.Center.X - TetrisGame.PressStartFont.MeasureString("Highscore").X / 2,
+                    Menu.HighscoreRectangle.Center.Y - TetrisGame.PressStartFont.MeasureString("Highscore").Y / 2), Color.Black);
+
 
             TetrisGame.spriteBatch.Draw(TetrisGame.pokemonsunsetTexture, new Rectangle(0, 0, TetrisGame.screenWidth, TetrisGame.screenHeight), Color.White);
 
