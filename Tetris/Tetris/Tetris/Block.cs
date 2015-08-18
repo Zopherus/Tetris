@@ -40,9 +40,26 @@ namespace Tetris
             set
             {
                 if (value.X >= Board.leftBorder && value.X <  TetrisGame.boardWidth + Board.leftBorder 
-                    && value.Y >= Board.topBorder && value.Y < TetrisGame.boardHeight + Board.topBorder)
+                    && value.Y >= Board.topBorder && value.Y < TetrisGame.boardHeight + Board.topBorder
+                    && TetrisGame.PlayerBoard.BoardState[value.X,value.Y] == null)
                     position = value;
             }
+        }
+
+        public bool canMoveRight()
+        {
+            return position.X + 1 < TetrisGame.boardWidth + Board.rightBorder &&
+               ((piece.Blocks.Contains(TetrisGame.PlayerBoard.BoardState[position.X + 1, position.Y])
+               && TetrisGame.PlayerBoard.BoardState[position.X + 1, position.Y].canMoveRight())
+               || TetrisGame.PlayerBoard.BoardState[position.X + 1, position.Y] == null);
+        }
+
+        public bool canMoveLeft()
+        {
+             return position.X - 1 >= Board.rightBorder &&
+               ((piece.Blocks.Contains(TetrisGame.PlayerBoard.BoardState[position.X - 1, position.Y])
+               && TetrisGame.PlayerBoard.BoardState[position.X - 1, position.Y].canMoveLeft())
+               || TetrisGame.PlayerBoard.BoardState[position.X - 1, position.Y] == null);
         }
 
         public bool canFall()

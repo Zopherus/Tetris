@@ -197,12 +197,8 @@ namespace Tetris
                     (screenHeight - (boardHeight * gridSize)) / 2, boardWidth * gridSize, boardHeight * gridSize));
             GameBoards.Add(PlayerBoard);
             gameState = GameState.Menu;
-<<<<<<< HEAD
             PlayerBoard.fillUpcomingPieces();
             PlayerBoard.CurrentPiece = new Piece(BlockType.I);   
-=======
-            PlayerBoard.CurrentPiece = new Piece(BlockType.J);   
->>>>>>> origin/master
         }
     }
 }

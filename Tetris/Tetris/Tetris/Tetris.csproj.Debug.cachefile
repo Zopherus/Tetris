@@ -8,11 +8,8 @@ Content\Sprites\Blocks\redBlock.xnb
 Content\Sprites\Blocks\yellowBlock.xnb
 Content\Sprites\Transparent Square.xnb
 Content\Sprites\Background.xnb
-<<<<<<< HEAD
 Content\Sprites\Menu Sprites\HighscoreButtonPressed.xnb
 Content\Sprites\Menu Sprites\HighscoreButtonUnpressed.xnb
-=======
->>>>>>> origin/master
 Content\Sprites\Menu Sprites\Options Button Pressed.xnb
 Content\Sprites\Menu Sprites\Options Button Unpressed.xnb
 Content\Sprites\Menu Sprites\Play Button Pressed.xnb
@@ -20,9 +17,4 @@ Content\Sprites\Menu Sprites\Play Button Unpressed.xnb
 Content\Sprites\Menu Sprites\pokemon sunset.xnb
 Content\Sprites\Menu Sprites\Quit Button Pressed.xnb
 Content\Sprites\Menu Sprites\Quit Button Unpressed.xnb
-<<<<<<< HEAD
-=======
-Content\Sprites\Menu Sprites\HighscoreButtonUnpressed.xnb
-Content\Sprites\Menu Sprites\HighscoreButtonPressed.xnb
->>>>>>> origin/master
 Content\Press Start 2P.xnb

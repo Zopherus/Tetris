@@ -77,10 +77,10 @@ namespace Tetris
         public void clearLines()
         {
             int linesCleared = 0;
-            for (int row = 2; row <= TetrisGame.boardHeight; row ++)
+            for (int row = topBorder; row < TetrisGame.boardHeight + topBorder; row ++)
             {
                 bool value = true;
-                for (int column = 1; column <= TetrisGame.boardWidth; column++)
+                for (int column = rightBorder; column < TetrisGame.boardWidth + rightBorder; column++)
                 {
                     if (boardState[column, row] == null)
                     {
@@ -90,9 +90,9 @@ namespace Tetris
                 if (value)
                 {
                     linesCleared++;
-                    for (int column = 1; column <= TetrisGame.boardWidth; column++)
+                    for (int column = rightBorder; column < TetrisGame.boardWidth + rightBorder; column++)
                     {
-                        //boardState[column, row] = null;
+                        boardState[column, row] = null;
                     }
                     for(int y = row - 1; y >= topBorder; y--)
                     {
@@ -127,7 +127,11 @@ namespace Tetris
         {
             return point.X >= rightBorder && point.X < rightBorder + TetrisGame.boardWidth
                 && point.Y >= topBorder && point.Y < topBorder + TetrisGame.boardHeight;
+        }
 
+        public void changeCurrentPiece()
+        {
+            currentPiece = upcomingPieces.Dequeue();
         }
 
         public void changeHoldPiece()
@@ -146,9 +150,16 @@ namespace Tetris
 
         public void fillUpcomingPieces()
         {
-            if (upcomingPieces.Count == 0)
+            if (upcomingPieces.Count < 14) //Double the count of the blocktypes
             {
-                Array values = Enum.GetValues(typeof(BlockType));
+                List<int> values = Enumerable.Range(0, Enum.GetValues(typeof(BlockType)).Length).ToList<int>();
+                Random random = new Random();
+                while (values.Count > 0)
+                {
+                    int number = values.ElementAt(random.Next(values.Count));
+                    values.Remove(number);
+                    upcomingPieces.Enqueue(new Piece((BlockType)number));
+                }
             }
         }
     }

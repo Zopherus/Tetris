@@ -9,23 +9,25 @@ namespace Tetris
 {
     class UpdateStates
     {
+        //The intervals at which the piece does something in milliseconds
         private static int fallBlockStartingInterval = 650;
         private static int softDropStartingInterval = 50;
         private static int moveLateralStartingInterval = 80;
+        //Create the fall block timers as started
         private static List<Timer> fallBlockTimers = (List<Timer>)Timer.Create(TetrisGame.GameBoards.Count, fallBlockStartingInterval);
         private static List<Timer> softDropTimers = (List<Timer>)Timer.Create(TetrisGame.GameBoards.Count, softDropStartingInterval);
         private static List<Timer> moveLateralTimers = (List<Timer>)Timer.Create(TetrisGame.GameBoards.Count, moveLateralStartingInterval);
-
+        private static List<List<Timer>> timers = new List<List<Timer>>
+        {
+            fallBlockTimers,
+            softDropTimers,
+            moveLateralTimers
+        };
 
         public static void UpdateMenu()
         {
             Point mouse = new Point(TetrisGame.mouse.X, TetrisGame.mouse.Y);
 
-<<<<<<< HEAD
-=======
-            Point mouse = new Point(TetrisGame.mouse.X, TetrisGame.mouse.Y);
-
->>>>>>> origin/master
             if (TetrisGame.keyboard.IsKeyDown(Keys.Tab) && TetrisGame.oldKeyboard.IsKeyUp(Keys.Tab))
                 TetrisGame.graphics.ToggleFullScreen();
 
@@ -41,27 +43,21 @@ namespace Tetris
 
         public static void UpdatePlay(GameTime gameTime)
         {
-            TetrisGame.PlayerBoard.updatePosition();
+            foreach(List<Timer> list in timers)
+            {
+                foreach(Timer timer in list)
+                {
+                    timer.tick(gameTime);
+                }
+            }
             foreach(Timer timer in fallBlockTimers)
             {
-                timer.start();
-                timer.tick(gameTime);
                 if (timer.TimeMilliseconds > timer.Interval)
                 {
                     TetrisGame.PlayerBoard.CurrentPiece.fall();
-                    timer.resetTimer();
+                    timer.reset();
                 }
             }
-            foreach(Timer timer in softDropTimers)
-            {
-                timer.tick(gameTime);
-            }
-            foreach(Timer timer in moveLateralTimers)
-            {
-                timer.tick(gameTime);
-            }
-
-            TetrisGame.PlayerBoard.clearLines();
             /*
              * Esc = Pause
              * Left Shift = Hold
@@ -103,33 +99,32 @@ namespace Tetris
                         break;
                     case Keys.Right:
                         Timer timer = moveLateralTimers.ElementAt(0);
-                        timer.start();
                         if (timer.TimeMilliseconds > timer.Interval)
                         {
                             TetrisGame.PlayerBoard.CurrentPiece.moveRight();
-                            timer.resetTimer();
+                            timer.reset();
                         }
                         break;
                     case Keys.Down:
                         timer = softDropTimers.ElementAt<Timer>(0);
-                        timer.start();
                         if (timer.TimeMilliseconds > timer.Interval)
                         {
                             TetrisGame.PlayerBoard.CurrentPiece.fall();
-                            timer.resetTimer();
+                            timer.reset();
                         }
                         break;
                     case Keys.Left:
                         timer = moveLateralTimers.ElementAt(0);
-                        timer.start();
                         if (timer.TimeMilliseconds > timer.Interval)
                         {
                             TetrisGame.PlayerBoard.CurrentPiece.moveLeft();
-                            timer.resetTimer();
+                            timer.reset();
                         }
                         break;
                 }
             }
+            TetrisGame.PlayerBoard.updatePosition();
+            TetrisGame.PlayerBoard.fillUpcomingPieces();
         }
 
         public static void UpdatePause()

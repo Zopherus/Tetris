@@ -3,10 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
 namespace Tetris
 {
     class Menu
@@ -39,25 +36,5 @@ namespace Tetris
         {
             get { return highscoreRectangle; }
         }
-<<<<<<< HEAD
-=======
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-  
->>>>>>> origin/master
     }
 }

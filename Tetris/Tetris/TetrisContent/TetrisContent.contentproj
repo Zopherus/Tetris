@@ -94,7 +94,6 @@
       <Processor>FontDescriptionProcessor</Processor>
     </Compile>
   </ItemGroup>
-<<<<<<< HEAD
   <ItemGroup />
   <ItemGroup>
     <Compile Include="Sprites\Menu Sprites\HighscoreButtonPressed.png">
@@ -107,9 +106,6 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-=======
-  <ItemGroup>
->>>>>>> origin/master
     <Compile Include="Sprites\Menu Sprites\Options Button Pressed.png">
       <Name>Options Button Pressed</Name>
       <Importer>TextureImporter</Importer>
@@ -146,23 +142,6 @@
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
-<<<<<<< HEAD
-=======
-  <ItemGroup>
-    <Compile Include="Sprites\Menu Sprites\HighscoreButtonUnpressed.png">
-      <Name>HighscoreButtonUnpressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Sprites\Menu Sprites\HighscoreButtonPressed.png">
-      <Name>HighscoreButtonPressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
->>>>>>> origin/master
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
   <!--  To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
