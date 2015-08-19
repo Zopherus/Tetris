@@ -16,7 +16,7 @@ namespace Tetris
     public enum BlockType { I, J, L, O, S, T, Z};
     //Rotation states based off of http://vignette1.wikia.nocookie.net/tetrisconcept/images/3/3d/SRS-pieces.png/revision/latest?cb=20060626173148
     public enum RotationState { One, Two, Three, Four};
-
+     
 
     public class TetrisGame : Game
     {
@@ -85,7 +85,7 @@ namespace Tetris
             {
                 PreferredBackBufferWidth = screenWidth,
                 PreferredBackBufferHeight = screenHeight,
-                IsFullScreen = true
+                //IsFullScreen = true
             };
             IsMouseVisible = true;
             //2 extra gridsizes on top and 2 on bottom
@@ -230,16 +230,7 @@ namespace Tetris
             GameBoards.Add(PlayerBoard);
             gameState = GameState.Menu;
             PlayerBoard.fillUpcomingPieces();
-            PlayerBoard.CurrentPiece = new Piece(BlockType.I);   
-        }
-
-        //Back button
-
-        private static Rectangle backrectangle = new Rectangle(TetrisGame.screenWidth / 15, TetrisGame.screenHeight / 15, TetrisGame.screenWidth / 3, TetrisGame.screenHeight / 10);
-
-        public static Rectangle Backrectangle
-        {
-            get { return backrectangle; }
+            PlayerBoard.CurrentPiece = new Piece(BlockType.I);
         }
     }
 }

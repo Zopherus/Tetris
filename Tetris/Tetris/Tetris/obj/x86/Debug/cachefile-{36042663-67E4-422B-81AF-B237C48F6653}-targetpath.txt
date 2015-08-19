@@ -8,6 +8,13 @@ Content\Sprites\Blocks\redBlock.xnb
 Content\Sprites\Blocks\yellowBlock.xnb
 Content\Sprites\Transparent Square.xnb
 Content\Sprites\Background.xnb
+Content\Sprites\Full Blocks\Iblock.xnb
+Content\Sprites\Full Blocks\Jblock.xnb
+Content\Sprites\Full Blocks\Lblock.xnb
+Content\Sprites\Full Blocks\Oblock.xnb
+Content\Sprites\Full Blocks\Sblock.xnb
+Content\Sprites\Full Blocks\Tblock.xnb
+Content\Sprites\Full Blocks\Zblock.xnb
 Content\Sprites\Menu Sprites\HighscoreButtonPressed.xnb
 Content\Sprites\Menu Sprites\HighscoreButtonUnpressed.xnb
 Content\Sprites\Menu Sprites\Options Button Pressed.xnb
@@ -18,11 +25,4 @@ Content\Sprites\Menu Sprites\pokemon sunset.xnb
 Content\Sprites\Menu Sprites\Quit Button Pressed.xnb
 Content\Sprites\Menu Sprites\Quit Button Unpressed.xnb
 Content\Press Start 2P.xnb
-Content\Sprites\Full Blocks\Iblock.xnb
-Content\Sprites\Full Blocks\Jblock.xnb
-Content\Sprites\Full Blocks\Lblock.xnb
-Content\Sprites\Full Blocks\Oblock.xnb
-Content\Sprites\Full Blocks\Sblock.xnb
-Content\Sprites\Full Blocks\Tblock.xnb
-Content\Sprites\Full Blocks\Zblock.xnb
 Content\Sprites\Blocks\bordersquare.xnb

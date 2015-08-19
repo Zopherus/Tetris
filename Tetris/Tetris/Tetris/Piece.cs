@@ -79,13 +79,7 @@ namespace Tetris
 
         public void fall()
         {
-            bool value = true;
-            foreach(Block block in blocks)
-            {
-                if (!block.canFall())
-                    value = false;
-            }
-            if (value)
+            if (canFall())
             {
                 clearOldPosition();
                 foreach(Block block in blocks)
@@ -150,6 +144,18 @@ namespace Tetris
 
         public void hardDrop() { }
 
+        public bool canFall()
+        {
+            bool value = true;
+            foreach (Block block in blocks)
+            {
+                if (!block.canFall())
+                    value = false;
+            }
+            return value;
+        }
+
+
         private void clearOldPosition()
         {
             foreach(Block block in blocks)
@@ -157,7 +163,6 @@ namespace Tetris
                 TetrisGame.PlayerBoard.BoardState[block.Position.X, block.Position.Y] = null;
             }
         }
-
 
         //returns the mod of x in base m, % is the remainder function not mod function
         private int mod(int x, int m)

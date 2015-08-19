@@ -40,8 +40,7 @@ namespace Tetris
             set
             {
                 if (value.X >= Board.leftBorder && value.X <  TetrisGame.boardWidth + Board.leftBorder 
-                    && value.Y >= Board.topBorder && value.Y < TetrisGame.boardHeight + Board.topBorder
-                    && TetrisGame.PlayerBoard.BoardState[value.X,value.Y] == null)
+                    && value.Y >= Board.topBorder && value.Y < TetrisGame.boardHeight + Board.topBorder)
                     position = value;
             }
         }

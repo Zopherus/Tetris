@@ -49,14 +49,14 @@ namespace Tetris
 
         public static void UpdatePlay(GameTime gameTime)
         {
-            foreach (List<Timer> list in timers)
+            foreach(List<Timer> list in timers)
             {
-                foreach (Timer timer in list)
+                foreach(Timer timer in list)
                 {
                     timer.tick(gameTime);
                 }
             }
-            foreach (Timer timer in fallBlockTimers)
+            foreach(Timer timer in fallBlockTimers)
             {
                 if (timer.TimeMilliseconds > timer.Interval)
                 {
@@ -77,9 +77,9 @@ namespace Tetris
              * Left Arrow = Move Left
              * Down Arrow = Soft Drop
              */
-            foreach (Keys Key in TetrisGame.keyboard.GetPressedKeys())
+            foreach(Keys Key in TetrisGame.keyboard.GetPressedKeys())
             {
-                switch (Key)
+                switch(Key)
                 {
                     case Keys.Tab:
                         TetrisGame.graphics.ToggleFullScreen();
@@ -93,15 +93,31 @@ namespace Tetris
                         TetrisGame.PlayerBoard.changeHoldPiece();
                         break;
                     case Keys.LeftControl:
+                        if (TetrisGame.oldKeyboard.IsKeyUp(Keys.LeftControl))
+                            TetrisGame.PlayerBoard.CurrentPiece.rotateLeft();
+                        break;
                     case Keys.Z:
-                        TetrisGame.PlayerBoard.CurrentPiece.rotateLeft();
+                        if (TetrisGame.oldKeyboard.IsKeyUp(Keys.Z))
+                            TetrisGame.PlayerBoard.CurrentPiece.rotateLeft();
                         break;
                     case Keys.Space:
-                        TetrisGame.PlayerBoard.CurrentPiece.hardDrop();
+                        if (TetrisGame.oldKeyboard.IsKeyUp(Keys.Space))
+                        {
+                            while (TetrisGame.PlayerBoard.CurrentPiece.canFall())
+                            {
+                                TetrisGame.PlayerBoard.CurrentPiece.fall();
+                            }
+                            //cause the block to fall right away which will switch the current piece
+                            fallBlockTimers.ElementAt(0).TimeMilliseconds = fallBlockStartingInterval;
+                        }
                         break;
                     case Keys.X:
+                        if (TetrisGame.oldKeyboard.IsKeyUp(Keys.X))
+                            TetrisGame.PlayerBoard.CurrentPiece.rotateRight();
+                        break;
                     case Keys.Up:
-                        TetrisGame.PlayerBoard.CurrentPiece.rotateRight();
+                        if (TetrisGame.oldKeyboard.IsKeyUp(Keys.Up))
+                            TetrisGame.PlayerBoard.CurrentPiece.rotateRight();
                         break;
                     case Keys.Right:
                         Timer timer = moveLateralTimers.ElementAt(0);

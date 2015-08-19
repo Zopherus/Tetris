@@ -80,7 +80,7 @@ namespace Tetris
             for (int row = topBorder; row < TetrisGame.boardHeight + topBorder; row ++)
             {
                 bool value = true;
-                for (int column = rightBorder; column < TetrisGame.boardWidth + rightBorder; column++)
+                for (int column = leftBorder; column < TetrisGame.boardWidth + leftBorder; column++)
                 {
                     if (boardState[column, row] == null)
                     {
@@ -90,23 +90,25 @@ namespace Tetris
                 if (value)
                 {
                     linesCleared++;
-                    for (int column = rightBorder; column < TetrisGame.boardWidth + rightBorder; column++)
+                    for (int column = leftBorder; column < TetrisGame.boardWidth + leftBorder; column++)
                     {
                         boardState[column, row] = null;
                     }
-                    for(int y = row - 1; y >= topBorder; y--)
+                    for (int y = row; y >= topBorder; y--)
                     {
-                        for (int x = rightBorder; x < TetrisGame.boardWidth + rightBorder; x++)
+                        for (int x = leftBorder; x < TetrisGame.boardWidth + leftBorder; x++)
                         {
-                            if (boardState[x,y] != null)
+                            if (boardState[x, y] != null)
                             {
+                                boardState[x, y].Position = new Point(x, y + 1);
                                 boardState[x, y + 1] = boardState[x, y];
+                                boardState[x, y] = null;
                             }
                         }
                     }
                 }
             }
-            switch(linesCleared)
+            switch (linesCleared)
             {
                 case 1:
                     points += 100;
@@ -150,7 +152,7 @@ namespace Tetris
 
         public void fillUpcomingPieces()
         {
-            if (upcomingPieces.Count < 14) //Double the count of the blocktypes
+            while (upcomingPieces.Count < 70) //Quadruple the count of the blocktypes
             {
                 List<int> values = Enumerable.Range(0, Enum.GetValues(typeof(BlockType)).Length).ToList<int>();
                 Random random = new Random();
