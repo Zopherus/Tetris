@@ -18,3 +18,11 @@ Content\Sprites\Menu Sprites\pokemon sunset.xnb
 Content\Sprites\Menu Sprites\Quit Button Pressed.xnb
 Content\Sprites\Menu Sprites\Quit Button Unpressed.xnb
 Content\Press Start 2P.xnb
+Content\Sprites\Full Blocks\Iblock.xnb
+Content\Sprites\Full Blocks\Jblock.xnb
+Content\Sprites\Full Blocks\Lblock.xnb
+Content\Sprites\Full Blocks\Oblock.xnb
+Content\Sprites\Full Blocks\Sblock.xnb
+Content\Sprites\Full Blocks\Tblock.xnb
+Content\Sprites\Full Blocks\Zblock.xnb
+Content\Sprites\Blocks\bordersquare.xnb

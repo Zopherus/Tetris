@@ -36,6 +36,12 @@ namespace Tetris
                 if (Menu.PlayRectangle.Contains(mouse))
                     TetrisGame.gameState = GameState.Play;
 
+                if (Menu.OptionsRectangle.Contains(mouse))
+                    TetrisGame.gameState = GameState.Options;
+
+                if (Menu.HighscoreRectangle.Contains(mouse))
+                    TetrisGame.gameState = GameState.Highscore;
+
                 if (Menu.QuitRectangle.Contains(mouse))
                     Program.game.Exit();
             }
@@ -43,14 +49,14 @@ namespace Tetris
 
         public static void UpdatePlay(GameTime gameTime)
         {
-            foreach(List<Timer> list in timers)
+            foreach (List<Timer> list in timers)
             {
-                foreach(Timer timer in list)
+                foreach (Timer timer in list)
                 {
                     timer.tick(gameTime);
                 }
             }
-            foreach(Timer timer in fallBlockTimers)
+            foreach (Timer timer in fallBlockTimers)
             {
                 if (timer.TimeMilliseconds > timer.Interval)
                 {
@@ -71,9 +77,9 @@ namespace Tetris
              * Left Arrow = Move Left
              * Down Arrow = Soft Drop
              */
-            foreach(Keys Key in TetrisGame.keyboard.GetPressedKeys())
+            foreach (Keys Key in TetrisGame.keyboard.GetPressedKeys())
             {
-                switch(Key)
+                switch (Key)
                 {
                     case Keys.Tab:
                         TetrisGame.graphics.ToggleFullScreen();
@@ -133,6 +139,33 @@ namespace Tetris
                 TetrisGame.gameState = GameState.Play;
 
             if (TetrisGame.keyboard.IsKeyDown(Keys.M))
+                TetrisGame.gameState = GameState.Menu;
+        }
+
+        public static void UpdateOptions()
+        {
+            Point mouse = new Point(TetrisGame.mouse.X, TetrisGame.mouse.Y);
+
+            if (TetrisGame.mouse.LeftButton == ButtonState.Pressed)
+            {
+                if (Options.Fullrectangle.Contains(mouse))
+                    TetrisGame.graphics.ToggleFullScreen();
+
+            } if (TetrisGame.keyboard.IsKeyDown(Keys.Escape))
+                TetrisGame.gameState = GameState.Menu;
+        }
+
+        public static void UpdateHighscore()
+        {
+            Point mouse = new Point(TetrisGame.mouse.X, TetrisGame.mouse.Y);
+
+            if (TetrisGame.mouse.LeftButton == ButtonState.Pressed)
+            {
+                if (Options.Backrectangle.Contains(mouse))
+                    TetrisGame.gameState = GameState.Menu;
+            }
+
+            if (TetrisGame.keyboard.IsKeyDown(Keys.Escape))
                 TetrisGame.gameState = GameState.Menu;
         }
     }

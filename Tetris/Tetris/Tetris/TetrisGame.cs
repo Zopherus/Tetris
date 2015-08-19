@@ -53,6 +53,16 @@ namespace Tetris
         public static Texture2D HighscoreButtonPressedTexture;
         public static Texture2D HighscoreButtonUnpressedTexture;
 
+        public static Texture2D IblockTexture;
+        public static Texture2D JblockTexture;
+        public static Texture2D LblockTexture;
+        public static Texture2D OblockTexture;
+        public static Texture2D SblockTexture;
+        public static Texture2D TblockTexture;
+        public static Texture2D ZblockTexture;
+
+        public static Texture2D bordersquareTexture;
+
         public static SpriteFont PressStartFont;
 
         public static KeyboardState keyboard;
@@ -125,6 +135,16 @@ namespace Tetris
             HighscoreButtonPressedTexture = Content.Load<Texture2D>("Sprites/Menu Sprites/HighscoreButtonPressed");
             HighscoreButtonUnpressedTexture = Content.Load<Texture2D>("Sprites/Menu Sprites/HighscoreButtonUnpressed");
 
+            IblockTexture = Content.Load<Texture2D>("Sprites/Full Blocks/Iblock");
+            JblockTexture = Content.Load<Texture2D>("Sprites/Full Blocks/Jblock");
+            LblockTexture = Content.Load<Texture2D>("Sprites/Full Blocks/Lblock");
+            OblockTexture = Content.Load<Texture2D>("Sprites/Full Blocks/Oblock");
+            SblockTexture = Content.Load<Texture2D>("Sprites/Full Blocks/Sblock");
+            TblockTexture = Content.Load<Texture2D>("Sprites/Full Blocks/Tblock");
+            ZblockTexture = Content.Load<Texture2D>("Sprites/Full Blocks/Zblock");
+
+            bordersquareTexture = Content.Load<Texture2D>("Sprites/Blocks/bordersquare");
+
             PressStartFont = Content.Load<SpriteFont>("Press Start 2P");
             // TODO: use this.Content to load your game content here
         }
@@ -162,6 +182,12 @@ namespace Tetris
                 case GameState.Pause:
                     UpdateStates.UpdatePause();
                     break;
+                case GameState.Options:
+                    UpdateStates.UpdateOptions();
+                    break;
+                case GameState.Highscore:
+                    UpdateStates.UpdateHighscore();
+                    break;
             }
 
             base.Update(gameTime);
@@ -186,6 +212,12 @@ namespace Tetris
                 case GameState.Pause:
                     DrawStates.DrawPause();
                     break;
+                case GameState.Options:
+                    DrawStates.DrawOptions();
+                    break;
+                case GameState.Highscore:
+                    DrawStates.DrawHighscore();
+                    break;
             }
             spriteBatch.End();
             base.Draw(gameTime);
@@ -199,6 +231,15 @@ namespace Tetris
             gameState = GameState.Menu;
             PlayerBoard.fillUpcomingPieces();
             PlayerBoard.CurrentPiece = new Piece(BlockType.I);   
+        }
+
+        //Back button
+
+        private static Rectangle backrectangle = new Rectangle(TetrisGame.screenWidth / 15, TetrisGame.screenHeight / 15, TetrisGame.screenWidth / 3, TetrisGame.screenHeight / 10);
+
+        public static Rectangle Backrectangle
+        {
+            get { return backrectangle; }
         }
     }
 }
