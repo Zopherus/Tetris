@@ -187,10 +187,18 @@ namespace Tetris
 
         public static void DrawOptions()
         {
-            TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "Select to toggle fullscreen",
-            new Vector2(5, 5), Color.Black);
+            TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "*Toggle fullscreen",
+            new Vector2(TetrisGame.screenWidth / 6, TetrisGame.screenHeight / 8 + TetrisGame.PressStartFont.MeasureString("*Toggle fullscreen").Y/3), Color.Black);
+
+            TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "*Additional Options",
+            new Vector2(TetrisGame.screenWidth / 6, 2 * TetrisGame.screenHeight / 8 + TetrisGame.PressStartFont.MeasureString("*").Y / 3), Color.Black);
 
             TetrisGame.spriteBatch.Draw(TetrisGame.bordersquareTexture, Options.Fullrectangle, Color.White);
+
+            TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "OPTIONS",
+                new Vector2(TetrisGame.screenWidth / 2 - TetrisGame.PressStartFont.MeasureString("OPTIONS").X / 2, 5), Color.Black);
+
+            TetrisGame.spriteBatch.Draw(TetrisGame.bordersquareTexture, Options.Backrectangle, Color.White);
         }
 
         public static void DrawHighscore()

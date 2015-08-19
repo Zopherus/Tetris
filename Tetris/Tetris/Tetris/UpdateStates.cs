@@ -167,6 +167,9 @@ namespace Tetris
                 if (Options.Fullrectangle.Contains(mouse))
                     TetrisGame.graphics.ToggleFullScreen();
 
+                if (Options.Backrectangle.Contains(mouse))
+                    TetrisGame.gameState = GameState.Menu;
+
             } if (TetrisGame.keyboard.IsKeyDown(Keys.Escape))
                 TetrisGame.gameState = GameState.Menu;
         }
