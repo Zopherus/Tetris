@@ -113,66 +113,65 @@ namespace Tetris
                         break;
                 }
 
-                TetrisGame.spriteBatch.Draw(texture, new Rectangle(TetrisGame.PlayerBoard.Position.Right + TetrisGame.screenWidth / 90 + TetrisGame.screenWidth / 180, TetrisGame.PlayerBoard.Position.Top + TetrisGame.screenHeight / 15 - TetrisGame.screenHeight / 30, TetrisGame.screenWidth / 20, TetrisGame.screenHeight / 9), Color.White);
+                TetrisGame.spriteBatch.Draw(texture, new Rectangle(TetrisGame.PlayerBoard.Position.Right + TetrisGame.screenWidth / 90 + TetrisGame.screenWidth / 90, TetrisGame.PlayerBoard.Position.Top + TetrisGame.screenHeight/10 + TetrisGame.screenHeight / 10 * counter , TetrisGame.screenWidth / 20, TetrisGame.screenHeight / 20), Color.White);
+            }
+            //Draws the hold block section
 
-                //Draws the hold block section
+            TetrisGame.spriteBatch.Draw(TetrisGame.TransparentSquareTexture, new Rectangle(TetrisGame.PlayerBoard.Position.Left - TetrisGame.screenWidth / 15 - TetrisGame.screenWidth / 90, TetrisGame.PlayerBoard.Position.Top + TetrisGame.screenHeight / 15, TetrisGame.screenWidth / 15, TetrisGame.screenWidth / 15), Color.White);
 
-                TetrisGame.spriteBatch.Draw(TetrisGame.TransparentSquareTexture, new Rectangle(TetrisGame.PlayerBoard.Position.Left - TetrisGame.screenWidth / 15 - TetrisGame.screenWidth / 90, TetrisGame.PlayerBoard.Position.Top + TetrisGame.screenHeight / 15, TetrisGame.screenWidth / 15, TetrisGame.screenWidth / 15), Color.White);
+            TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "HOLD",
+                new Vector2(TetrisGame.PlayerBoard.Position.Left - TetrisGame.screenWidth / 15 - TetrisGame.screenWidth / 90, TetrisGame.PlayerBoard.Position.Top + TetrisGame.screenHeight / 15 - TetrisGame.PressStartFont.MeasureString("HOLD").Y), Color.Black);
 
-                TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "HOLD",
-                    new Vector2(TetrisGame.PlayerBoard.Position.Left - TetrisGame.screenWidth / 15 - TetrisGame.screenWidth / 90, TetrisGame.PlayerBoard.Position.Top + TetrisGame.screenHeight / 15 - TetrisGame.PressStartFont.MeasureString("HOLD").Y), Color.Black);
+            //Draw the lines of the Tetris Board
+            for (int x = TetrisGame.PlayerBoard.Position.X; x <= TetrisGame.PlayerBoard.Position.Right; x += TetrisGame.gridSize)
+            {
+                TetrisGame.spriteBatch.Draw(TetrisGame.BlackTexture,
+                    new Rectangle(x, TetrisGame.PlayerBoard.Position.Y, 1, TetrisGame.PlayerBoard.Position.Height), Color.Black);
+            }
+            for (int y = TetrisGame.PlayerBoard.Position.Y; y <= TetrisGame.PlayerBoard.Position.Bottom; y += TetrisGame.gridSize)
+            {
+                TetrisGame.spriteBatch.Draw(TetrisGame.BlackTexture,
+                    new Rectangle(TetrisGame.PlayerBoard.Position.X, y, TetrisGame.PlayerBoard.Position.Width, 1), Color.Black);
+            }
 
-                //Draw the lines of the Tetris Board
-                for (int x = TetrisGame.PlayerBoard.Position.X; x <= TetrisGame.PlayerBoard.Position.Right; x += TetrisGame.gridSize)
+            //Draw all the blocks on the board
+            foreach (Block block in TetrisGame.PlayerBoard.BoardState)
+            {
+                //only draws the block if it is not null and is within the boundaries of the board
+                if (block != null && block.Position.X >= Board.leftBorder && block.Position.X < TetrisGame.boardWidth + Board.leftBorder
+                    && block.Position.Y >= Board.topBorder && block.Position.Y < TetrisGame.boardHeight + Board.topBorder)
                 {
-                    TetrisGame.spriteBatch.Draw(TetrisGame.BlackTexture,
-                        new Rectangle(x, TetrisGame.PlayerBoard.Position.Y, 1, TetrisGame.PlayerBoard.Position.Height), Color.Black);
-                }
-                for (int y = TetrisGame.PlayerBoard.Position.Y; y <= TetrisGame.PlayerBoard.Position.Bottom; y += TetrisGame.gridSize)
-                {
-                    TetrisGame.spriteBatch.Draw(TetrisGame.BlackTexture,
-                        new Rectangle(TetrisGame.PlayerBoard.Position.X, y, TetrisGame.PlayerBoard.Position.Width, 1), Color.Black);
-                }
-
-                //Draw all the blocks on the board
-                foreach (Block block in TetrisGame.PlayerBoard.BoardState)
-                {
-                    //only draws the block if it is not null and is within the boundaries of the board
-                    if (block != null && block.Position.X >= Board.leftBorder && block.Position.X < TetrisGame.boardWidth + Board.leftBorder
-                        && block.Position.Y >= Board.topBorder && block.Position.Y < TetrisGame.boardHeight + Board.topBorder)
+                    Texture2D texture = null;
+                    switch (block.BlockType)
                     {
-                        texture = null;
-                        switch (block.BlockType)
-                        {
-                            //I is Cyan, O is Yellow, L is Orange, Z is Red, S is green, T is Purple, J is Blue
-                            case BlockType.I:
-                                texture = TetrisGame.CyanBlockTexture;
-                                break;
-                            case BlockType.J:
-                                texture = TetrisGame.BlueBlockTexture;
-                                break;
-                            case BlockType.L:
-                                texture = TetrisGame.OrangeBlockTexture;
-                                break;
-                            case BlockType.O:
-                                texture = TetrisGame.YellowBlockTexture;
-                                break;
-                            case BlockType.S:
-                                texture = TetrisGame.GreenBlockTexture;
-                                break;
-                            case BlockType.T:
-                                texture = TetrisGame.PurpleBlockTexture;
-                                break;
-                            case BlockType.Z:
-                                texture = TetrisGame.RedBlockTexture;
-                                break;
-                        }
-                        //The actual board starts on the 3rd row and 2nd column so subtract to compensate for the shift
-                        TetrisGame.spriteBatch.Draw(texture,
-                            new Rectangle(TetrisGame.PlayerBoard.Position.X + TetrisGame.gridSize * (block.Position.X - Board.rightBorder),
-                            TetrisGame.PlayerBoard.Position.Y + TetrisGame.gridSize * (block.Position.Y - Board.topBorder),
-                            TetrisGame.gridSize, TetrisGame.gridSize), Color.White);
+                        //I is Cyan, O is Yellow, L is Orange, Z is Red, S is green, T is Purple, J is Blue
+                        case BlockType.I:
+                            texture = TetrisGame.CyanBlockTexture;
+                            break;
+                        case BlockType.J:
+                            texture = TetrisGame.BlueBlockTexture;
+                            break;
+                        case BlockType.L:
+                            texture = TetrisGame.OrangeBlockTexture;
+                            break;
+                        case BlockType.O:
+                            texture = TetrisGame.YellowBlockTexture;
+                            break;
+                        case BlockType.S:
+                            texture = TetrisGame.GreenBlockTexture;
+                            break;
+                        case BlockType.T:
+                            texture = TetrisGame.PurpleBlockTexture;
+                            break;
+                        case BlockType.Z:
+                            texture = TetrisGame.RedBlockTexture;
+                            break;
                     }
+                    //The actual board starts on the 3rd row and 2nd column so subtract to compensate for the shift
+                    TetrisGame.spriteBatch.Draw(texture,
+                        new Rectangle(TetrisGame.PlayerBoard.Position.X + TetrisGame.gridSize * (block.Position.X - Board.rightBorder),
+                        TetrisGame.PlayerBoard.Position.Y + TetrisGame.gridSize * (block.Position.Y - Board.topBorder),
+                        TetrisGame.gridSize, TetrisGame.gridSize), Color.White);
                 }
             }
         }

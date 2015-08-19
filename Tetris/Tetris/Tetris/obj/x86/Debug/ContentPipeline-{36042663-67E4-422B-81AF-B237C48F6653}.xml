@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Black.xnb</Output>
-      <Time>2015-08-04T22:15:33.2825808-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Black.xnb</Output>
+      <Time>2015-07-29T12:04:49.4238189-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Blocks\blueBlock.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\blueBlock.xnb</Output>
-      <Time>2015-08-15T22:43:20.4096797-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\blueBlock.xnb</Output>
+      <Time>2015-08-07T16:52:48.4104787-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Blocks\cyanBlock.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\cyanBlock.xnb</Output>
-      <Time>2015-08-15T22:43:20.4106804-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\cyanBlock.xnb</Output>
+      <Time>2015-08-07T16:52:48.4124788-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Blocks\greenBlock.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\greenBlock.xnb</Output>
-      <Time>2015-08-15T22:43:20.4111807-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\greenBlock.xnb</Output>
+      <Time>2015-08-07T16:52:48.3744766-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Blocks\orangeBlock.png</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\orangeBlock.xnb</Output>
-      <Time>2015-08-15T22:43:20.4121814-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\orangeBlock.xnb</Output>
+      <Time>2015-08-07T16:52:48.4014782-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Blocks\purpleBlock.png</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\purpleBlock.xnb</Output>
-      <Time>2015-08-15T22:43:20.4126818-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\purpleBlock.xnb</Output>
+      <Time>2015-08-15T22:32:19.0426444-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Blocks\redBlock.png</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\redBlock.xnb</Output>
-      <Time>2015-08-15T22:43:20.4136825-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\redBlock.xnb</Output>
+      <Time>2015-08-07T16:52:48.4054784-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Blocks\yellowBlock.png</Source>
@@ -70,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\yellowBlock.xnb</Output>
-      <Time>2015-08-15T22:43:20.4141829-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\yellowBlock.xnb</Output>
+      <Time>2015-08-07T16:52:48.4084786-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Transparent Square.png</Source>
@@ -79,8 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Transparent Square.xnb</Output>
-      <Time>2015-08-15T22:43:20.4151836-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Transparent Square.xnb</Output>
+      <Time>2015-08-11T14:10:21.5542426-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Background.png</Source>
@@ -88,8 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Background.xnb</Output>
-      <Time>2015-08-06T12:46:37.0793613-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Background.xnb</Output>
+      <Time>2015-08-06T14:57:10.2919761-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Full Blocks\Iblock.png</Source>
@@ -97,8 +97,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Full Blocks\Iblock.xnb</Output>
-      <Time>2015-08-17T22:49:53.5979189-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Full Blocks\Iblock.xnb</Output>
+      <Time>2015-08-18T18:58:27.8440448-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Full Blocks\Jblock.png</Source>
@@ -106,8 +106,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Full Blocks\Jblock.xnb</Output>
-      <Time>2015-08-17T22:49:53.5999206-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Full Blocks\Jblock.xnb</Output>
+      <Time>2015-08-18T18:58:27.8460449-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Full Blocks\Lblock.png</Source>
@@ -115,8 +115,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Full Blocks\Lblock.xnb</Output>
-      <Time>2015-08-17T22:49:53.6019217-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Full Blocks\Lblock.xnb</Output>
+      <Time>2015-08-18T18:58:27.847045-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Full Blocks\Oblock.png</Source>
@@ -124,8 +124,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Full Blocks\Oblock.xnb</Output>
-      <Time>2015-08-17T22:49:53.6029225-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Full Blocks\Oblock.xnb</Output>
+      <Time>2015-08-18T18:58:27.848045-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Full Blocks\Sblock.png</Source>
@@ -133,8 +133,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Full Blocks\Sblock.xnb</Output>
-      <Time>2015-08-17T22:49:53.6049239-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Full Blocks\Sblock.xnb</Output>
+      <Time>2015-08-18T18:58:27.8490451-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Full Blocks\Tblock.png</Source>
@@ -142,8 +142,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Full Blocks\Tblock.xnb</Output>
-      <Time>2015-08-17T22:49:53.6069253-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Full Blocks\Tblock.xnb</Output>
+      <Time>2015-08-18T18:58:27.8510452-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Full Blocks\Zblock.png</Source>
@@ -151,8 +151,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Full Blocks\Zblock.xnb</Output>
-      <Time>2015-08-17T22:49:53.607926-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Full Blocks\Zblock.xnb</Output>
+      <Time>2015-08-18T18:58:27.8520453-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Menu Sprites\HighscoreButtonPressed.png</Source>
@@ -160,8 +160,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Menu Sprites\HighscoreButtonPressed.xnb</Output>
-      <Time>2015-08-16T10:38:54.1196543-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Menu Sprites\HighscoreButtonPressed.xnb</Output>
+      <Time>2015-08-17T19:45:25.7291818-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Menu Sprites\HighscoreButtonUnpressed.png</Source>
@@ -169,8 +169,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Menu Sprites\HighscoreButtonUnpressed.xnb</Output>
-      <Time>2015-08-16T10:38:51.1090434-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Menu Sprites\HighscoreButtonUnpressed.xnb</Output>
+      <Time>2015-08-17T19:45:25.7311819-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Menu Sprites\Options Button Pressed.png</Source>
@@ -178,8 +178,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Menu Sprites\Options Button Pressed.xnb</Output>
-      <Time>2015-08-15T22:53:03.583152-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Menu Sprites\Options Button Pressed.xnb</Output>
+      <Time>2015-08-17T19:45:25.732182-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Menu Sprites\Options Button Unpressed.png</Source>
@@ -187,8 +187,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Menu Sprites\Options Button Unpressed.xnb</Output>
-      <Time>2015-08-15T22:53:03.5856547-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Menu Sprites\Options Button Unpressed.xnb</Output>
+      <Time>2015-08-17T19:45:25.7341821-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Menu Sprites\Play Button Pressed.png</Source>
@@ -196,8 +196,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Menu Sprites\Play Button Pressed.xnb</Output>
-      <Time>2015-08-15T22:53:03.587154-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Menu Sprites\Play Button Pressed.xnb</Output>
+      <Time>2015-08-17T19:45:25.7361822-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Menu Sprites\Play Button Unpressed.png</Source>
@@ -205,8 +205,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Menu Sprites\Play Button Unpressed.xnb</Output>
-      <Time>2015-08-15T22:53:03.5886551-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Menu Sprites\Play Button Unpressed.xnb</Output>
+      <Time>2015-08-17T19:45:25.7201813-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Menu Sprites\pokemon sunset.png</Source>
@@ -214,8 +214,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Menu Sprites\pokemon sunset.xnb</Output>
-      <Time>2015-08-15T22:53:03.5931583-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Menu Sprites\pokemon sunset.xnb</Output>
+      <Time>2015-08-17T19:45:25.7231815-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Menu Sprites\Quit Button Pressed.png</Source>
@@ -223,8 +223,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Menu Sprites\Quit Button Pressed.xnb</Output>
-      <Time>2015-08-15T22:53:03.5946605-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Menu Sprites\Quit Button Pressed.xnb</Output>
+      <Time>2015-08-17T19:45:25.7251816-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Menu Sprites\Quit Button Unpressed.png</Source>
@@ -232,8 +232,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Menu Sprites\Quit Button Unpressed.xnb</Output>
-      <Time>2015-08-15T22:53:03.596671-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Menu Sprites\Quit Button Unpressed.xnb</Output>
+      <Time>2015-08-17T19:45:25.7261816-07:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Blocks\bordersquare.png</Source>
@@ -241,8 +241,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\bordersquare.xnb</Output>
-      <Time>2015-08-18T03:04:26.2769741-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Sprites\Blocks\bordersquare.xnb</Output>
+      <Time>2015-08-18T19:05:11.2121161-07:00</Time>
     </Item>
     <Item>
       <Source>Press Start 2P.spritefont</Source>
@@ -250,8 +250,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Press Start 2P.xnb</Output>
-      <Time>2015-08-17T20:00:35.6730666-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Press Start 2P.xnb</Output>
+      <Time>2015-08-06T20:45:09.8920468-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -260,10 +260,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\TetrisContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\TetrisContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Eric\Desktop\XNA Games\Tetris\Tetris\Tetris\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -291,8 +291,8 @@
         <Value>2011-09-01T16:22:30-07:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2015-08-04T23:36:25.060729-07:00</Value>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2015-06-22T18:06:10.1037805-07:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
