@@ -4,11 +4,16 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
+using System.IO;
 
 namespace Tetris
 {
     class UpdateStates
     {
+        private static bool EnterName = true;
+        private static bool HighScore = true;
+
+
         //The intervals at which the piece does something in milliseconds
         private static int fallBlockStartingInterval = 650;
         private static int softDropStartingInterval = 50;
@@ -49,14 +54,14 @@ namespace Tetris
 
         public static void UpdatePlay(GameTime gameTime)
         {
-            foreach(List<Timer> list in timers)
+            foreach (List<Timer> list in timers)
             {
-                foreach(Timer timer in list)
+                foreach (Timer timer in list)
                 {
                     timer.tick(gameTime);
                 }
             }
-            foreach(Timer timer in fallBlockTimers)
+            foreach (Timer timer in fallBlockTimers)
             {
                 if (timer.TimeMilliseconds > timer.Interval)
                 {
@@ -77,9 +82,9 @@ namespace Tetris
              * Left Arrow = Move Left
              * Down Arrow = Soft Drop
              */
-            foreach(Keys Key in TetrisGame.keyboard.GetPressedKeys())
+            foreach (Keys Key in TetrisGame.keyboard.GetPressedKeys())
             {
-                switch(Key)
+                switch (Key)
                 {
                     case Keys.Tab:
                         TetrisGame.graphics.ToggleFullScreen();
@@ -186,6 +191,134 @@ namespace Tetris
 
             if (TetrisGame.keyboard.IsKeyDown(Keys.Escape))
                 TetrisGame.gameState = GameState.Menu;
+        }
+
+        public static void UpdateEnterName()
+        {
+            if (EnterName)
+            {
+                using (StreamReader sr = new StreamReader("Content/Name.txt"))
+                {
+                    string line = sr.ReadLine();
+                    if (line == null)
+                        Highscore.currentName = "";
+                    else
+                        Highscore.currentName = line;
+                }
+                EnterName = false;
+            }
+            if (Highscore.currentName.Length < 16)
+            {
+                foreach (Keys key in TetrisGame.keyboard.GetPressedKeys())
+                {
+                    if (TetrisGame.oldKeyboard.IsKeyUp(key))
+                    {
+                        switch (key)
+                        {
+                            case Keys.A:
+                                Highscore.currentName += "A";
+                                break;
+                            case Keys.B:
+                                Highscore.currentName += "B";
+                                break;
+                            case Keys.C:
+                                Highscore.currentName += "C";
+                                break;
+                            case Keys.D:
+                                Highscore.currentName += "D";
+                                break;
+                            case Keys.E:
+                                Highscore.currentName += "E";
+                                break;
+                            case Keys.F:
+                                Highscore.currentName += "F";
+                                break;
+                            case Keys.G:
+                                Highscore.currentName += "G";
+                                break;
+                            case Keys.H:
+                                Highscore.currentName += "H";
+                                break;
+                            case Keys.I:
+                                Highscore.currentName += "I";
+                                break;
+                            case Keys.J:
+                                Highscore.currentName += "J";
+                                break;
+                            case Keys.K:
+                                Highscore.currentName += "K";
+                                break;
+                            case Keys.L:
+                                Highscore.currentName += "L";
+                                break;
+                            case Keys.M:
+                                Highscore.currentName += "M";
+                                break;
+                            case Keys.N:
+                                Highscore.currentName += "N";
+                                break;
+                            case Keys.O:
+                                Highscore.currentName += "O";
+                                break;
+                            case Keys.P:
+                                Highscore.currentName += "P";
+                                break;
+                            case Keys.Q:
+                                Highscore.currentName += "Q";
+                                break;
+                            case Keys.R:
+                                Highscore.currentName += "R";
+                                break;
+                            case Keys.S:
+                                Highscore.currentName += "S";
+                                break;
+                            case Keys.T:
+                                Highscore.currentName += "T";
+                                break;
+                            case Keys.U:
+                                Highscore.currentName += "U";
+                                break;
+                            case Keys.V:
+                                Highscore.currentName += "V";
+                                break;
+                            case Keys.W:
+                                Highscore.currentName += "W";
+                                break;
+                            case Keys.X:
+                                Highscore.currentName += "X";
+                                break;
+                            case Keys.Y:
+                                Highscore.currentName += "Y";
+                                break;
+                            case Keys.Z:
+                                Highscore.currentName += "Z";
+                                break;
+                            case Keys.Space:
+                                Highscore.currentName += " ";
+                                break;
+                            case Keys.Tab:
+                                TetrisGame.gameState = GameState.Play;
+                                break;
+                            case Keys.Enter:
+                                using (StreamWriter sw = new StreamWriter("Content/Name.txt"))
+                                {
+                                    sw.WriteLine(Highscore.currentName);
+                                    sw.Close();
+                                }
+                                Highscore.addScore(new Score(Highscore.currentName.Trim(), TetrisGame.PlayerBoard.Points));
+                                TetrisGame.gameState = GameState.Play;
+                                HighScore = true;
+                                EnterName = true;
+                                break;
+                        }
+                    }
+                }
+            }
+            if (TetrisGame.keyboard.IsKeyDown(Keys.Back))
+            {
+                if (Highscore.currentName.Length > 0)
+                    Highscore.currentName = Highscore.currentName.Remove(Highscore.currentName.Length - 1);
+            }
         }
     }
 }

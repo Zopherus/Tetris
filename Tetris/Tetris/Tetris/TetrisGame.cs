@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.Media;
 
 namespace Tetris
 {
-    public enum GameState { Menu, Play, Pause, Options, Highscore}
+    public enum GameState { Menu, Play, Pause, Options, Highscore, EnterName}
     //I is Cyan, O is Yellow, L is Orange, Z is Red, S is green, T is Purple, J is Blue
     public enum BlockType { I, J, L, O, S, T, Z};
     //Rotation states based off of http://vignette1.wikia.nocookie.net/tetrisconcept/images/3/3d/SRS-pieces.png/revision/latest?cb=20060626173148
@@ -188,6 +188,9 @@ namespace Tetris
                 case GameState.Highscore:
                     UpdateStates.UpdateHighscore();
                     break;
+                case GameState.EnterName:
+                    UpdateStates.UpdateEnterName();
+                    break;
             }
 
             base.Update(gameTime);
@@ -217,6 +220,9 @@ namespace Tetris
                     break;
                 case GameState.Highscore:
                     DrawStates.DrawHighscore();
+                    break;
+                case GameState.EnterName:
+                    DrawStates.DrawEnterName();
                     break;
             }
             spriteBatch.End();

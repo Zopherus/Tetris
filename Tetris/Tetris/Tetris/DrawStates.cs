@@ -9,6 +9,7 @@ namespace Tetris
 {
     class DrawStates
     {
+        private const int lineSpacing = 20;
         public static void DrawMenu()
         {
 
@@ -66,6 +67,9 @@ namespace Tetris
             TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "Highscore",
                 new Vector2(Menu.HighscoreRectangle.Center.X - TetrisGame.PressStartFont.MeasureString("Highscore").X / 2,
                     Menu.HighscoreRectangle.Center.Y - TetrisGame.PressStartFont.MeasureString("Highscore").Y / 2), Color.Black);
+
+            TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "TETRIS",
+                new Vector2(TetrisGame.screenWidth / 2 - TetrisGame.PressStartFont.MeasureString("TETRIS").X / 2, TetrisGame.screenHeight / 20), Color.Black);
         }
 
         public static void DrawPlay()
@@ -207,6 +211,25 @@ namespace Tetris
                 new Vector2(TetrisGame.screenWidth / 2 - TetrisGame.PressStartFont.MeasureString("HIGHSCORES").X / 2, 5), Color.Black);
 
             TetrisGame.spriteBatch.Draw(TetrisGame.bordersquareTexture, Options.Backrectangle, Color.White);
+
+            for (int counter = 1; counter < Highscore.Scores.Length + 1; counter ++)
+            {
+                if(Highscore.Scores[counter - 1] != null)
+                {
+                    TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, counter.ToString() + ". " + Highscore.Scores[counter - 1].ToString(),
+                        new Vector2(TetrisGame.screenWidth / 3, (counter - 1) * lineSpacing), Color.Black);
+                }
+            }
+        }
+
+        public static void DrawEnterName()
+        {
+            string value = "Your Score:" + TetrisGame.PlayerBoard.ToString();
+            TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, value, new Vector2(0, 0), Color.Black);
+            TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "Name" + Highscore.currentName,
+                new Vector2(0, TetrisGame.PressStartFont.MeasureString(TetrisGame.PlayerBoard.ToString()).Y + lineSpacing), Color.Black);
+            TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "Press TAB to play again!",
+                new Vector2(0, TetrisGame.PressStartFont.MeasureString(TetrisGame.PlayerBoard.ToString()).Y + TetrisGame.PressStartFont.MeasureString("Name").Y + 2 * lineSpacing), Color.Black);
         }
 
         //Used to draw only the outline of a rectangle using a black sprite
