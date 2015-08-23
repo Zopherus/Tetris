@@ -237,6 +237,7 @@ namespace Tetris
             gameState = GameState.Menu;
             PlayerBoard.fillUpcomingPieces();
             PlayerBoard.CurrentPiece = new Piece(BlockType.I);
+            Highscore.ReadFromFile();
         }
     }
 }

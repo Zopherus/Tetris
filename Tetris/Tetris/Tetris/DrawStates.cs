@@ -217,16 +217,16 @@ namespace Tetris
                 if(Highscore.Scores[counter - 1] != null)
                 {
                     TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, counter.ToString() + ". " + Highscore.Scores[counter - 1].ToString(),
-                        new Vector2(TetrisGame.screenWidth / 3, (counter - 1) * lineSpacing), Color.Black);
+                        new Vector2(TetrisGame.screenWidth / 3, TetrisGame.screenHeight / 15 + (counter - 1) * lineSpacing * 4), Color.Black);
                 }
             }
         }
 
         public static void DrawEnterName()
         {
-            string value = "Your Score:" + TetrisGame.PlayerBoard.ToString();
+            string value = "Your Score:" + TetrisGame.PlayerBoard.Points.ToString();
             TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, value, new Vector2(0, 0), Color.Black);
-            TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "Name" + Highscore.currentName,
+            TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "Name : " + Highscore.currentName,
                 new Vector2(0, TetrisGame.PressStartFont.MeasureString(TetrisGame.PlayerBoard.ToString()).Y + lineSpacing), Color.Black);
             TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "Press TAB to play again!",
                 new Vector2(0, TetrisGame.PressStartFont.MeasureString(TetrisGame.PlayerBoard.ToString()).Y + TetrisGame.PressStartFont.MeasureString("Name").Y + 2 * lineSpacing), Color.Black);

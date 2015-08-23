@@ -179,20 +179,6 @@ namespace Tetris
                 TetrisGame.gameState = GameState.Menu;
         }
 
-        public static void UpdateHighscore()
-        {
-            Point mouse = new Point(TetrisGame.mouse.X, TetrisGame.mouse.Y);
-
-            if (TetrisGame.mouse.LeftButton == ButtonState.Pressed)
-            {
-                if (Options.Backrectangle.Contains(mouse))
-                    TetrisGame.gameState = GameState.Menu;
-            }
-
-            if (TetrisGame.keyboard.IsKeyDown(Keys.Escape))
-                TetrisGame.gameState = GameState.Menu;
-        }
-
         public static void UpdateEnterName()
         {
             if (EnterName)
@@ -296,7 +282,37 @@ namespace Tetris
                             case Keys.Space:
                                 Highscore.currentName += " ";
                                 break;
-                            case Keys.Tab:
+                            case Keys.D1:
+                                Highscore.currentName += "1";
+                                break;
+                            case Keys.D2:
+                                Highscore.currentName += "2";
+                                break;
+                            case Keys.D3:
+                                Highscore.currentName += "3";
+                                break;
+                            case Keys.D4:
+                                Highscore.currentName += "4";
+                                break;
+                            case Keys.D5:
+                                Highscore.currentName += "5";
+                                break;
+                            case Keys.D6:
+                                Highscore.currentName += "6";
+                                break;
+                            case Keys.D7:
+                                Highscore.currentName += "7";
+                                break;
+                            case Keys.D8:
+                                Highscore.currentName += "8";
+                                break;
+                            case Keys.D9:
+                                Highscore.currentName += "9";
+                                break;
+                            case Keys.D0:
+                                Highscore.currentName += "0";
+                                break;
+                            case Keys.LeftShift:
                                 TetrisGame.gameState = GameState.Play;
                                 break;
                             case Keys.Enter:
@@ -306,7 +322,7 @@ namespace Tetris
                                     sw.Close();
                                 }
                                 Highscore.addScore(new Score(Highscore.currentName.Trim(), TetrisGame.PlayerBoard.Points));
-                                TetrisGame.gameState = GameState.Play;
+                                TetrisGame.gameState = GameState.Menu;
                                 HighScore = true;
                                 EnterName = true;
                                 break;
@@ -320,5 +336,27 @@ namespace Tetris
                     Highscore.currentName = Highscore.currentName.Remove(Highscore.currentName.Length - 1);
             }
         }
+
+              public static void UpdateHighscore()
+        {
+            Point mouse = new Point(TetrisGame.mouse.X, TetrisGame.mouse.Y);
+
+            if (TetrisGame.mouse.LeftButton == ButtonState.Pressed)
+            {
+                if (Options.Backrectangle.Contains(mouse))
+                    TetrisGame.gameState = GameState.Menu;
+            }
+
+            if (TetrisGame.keyboard.IsKeyDown(Keys.Escape))
+                TetrisGame.gameState = GameState.Menu;
+
+            if (HighScore)
+            {
+                Highscore.ReadFromFile();
+                HighScore = false;
+            }
+            if (TetrisGame.keyboard.IsKeyDown(Keys.LeftShift))
+                TetrisGame.gameState = GameState.Menu;
+            }
+        }
     }
-}

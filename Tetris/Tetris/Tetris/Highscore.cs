@@ -10,7 +10,7 @@ namespace Tetris
     class Highscore
     {
         public static string currentName = "";
-        private static Score[] scores = new Score[20];
+        private static Score[] scores = new Score[10];
 
         public static Score[] Scores
         {
@@ -61,7 +61,7 @@ namespace Tetris
 
         public static void addScore(Score score)
         {
-            for (int counter = 0; counter < 20; counter++)
+            for (int counter = 0; counter < 10; counter++)
             {
                 if (scores[counter] == null || scores[counter].Points < score.Points)
                 {

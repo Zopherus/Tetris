@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Tetris
 {
-    class Score
+    class Score : IComparable<Score>
     {
         private string name;
         private int points;
