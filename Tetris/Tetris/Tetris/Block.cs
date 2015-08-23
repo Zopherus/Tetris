@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework;
 
 namespace Tetris
 {
+    [Serializable]
     //A single square in a piece
     public class Block
     {
@@ -15,7 +16,7 @@ namespace Tetris
         private Point position;
 
         //The piece that the block is in
-        private Piece piece;
+        public Piece piece;
 
         public Block(BlockType blockType)
         {
@@ -40,7 +41,7 @@ namespace Tetris
             set
             {
                 if (value.X >= Board.leftBorder && value.X <  TetrisGame.boardWidth + Board.leftBorder 
-                    && value.Y >= Board.topBorder && value.Y < TetrisGame.boardHeight + Board.topBorder)
+                    && value.Y >= Board.topBorder - 2 && value.Y < TetrisGame.boardHeight + Board.topBorder)
                     position = value;
             }
         }
@@ -58,7 +59,8 @@ namespace Tetris
              return position.X - 1 >= Board.rightBorder &&
                ((piece.Blocks.Contains(TetrisGame.PlayerBoard.BoardState[position.X - 1, position.Y])
                && TetrisGame.PlayerBoard.BoardState[position.X - 1, position.Y].canMoveLeft())
-               || TetrisGame.PlayerBoard.BoardState[position.X - 1, position.Y] == null);
+               || TetrisGame.PlayerBoard.BoardState[position.X - 1, position.Y] == null
+                );
         }
 
         public bool canFall()
@@ -67,6 +69,18 @@ namespace Tetris
                 ((piece.Blocks.Contains(TetrisGame.PlayerBoard.BoardState[position.X, position.Y + 1]) 
                 && TetrisGame.PlayerBoard.BoardState[position.X, position.Y + 1].canFall())
                 || TetrisGame.PlayerBoard.BoardState[position.X, position.Y + 1] == null);
+        }
+
+        private bool inCurrentPiece(Block block)
+        {
+            if (block.piece == TetrisGame.PlayerBoard.CurrentPiece)
+                return false;
+            foreach(Block currentBlock in TetrisGame.PlayerBoard.CurrentPiece.Blocks)
+            {
+                if (block.Position.X == currentBlock.Position.X && block.Position.Y == currentBlock.Position.Y)
+                    return true;
+            }
+            return false;
         }
     }
 }

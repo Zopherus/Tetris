@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
-using System.IO;
 
 namespace Tetris
 {
@@ -12,7 +12,6 @@ namespace Tetris
     {
         private static bool EnterName = true;
         private static bool HighScore = true;
-
 
         //The intervals at which the piece does something in milliseconds
         private static int fallBlockStartingInterval = 650;
@@ -54,14 +53,15 @@ namespace Tetris
 
         public static void UpdatePlay(GameTime gameTime)
         {
-            foreach (List<Timer> list in timers)
+            TetrisGame.PlayerBoard.oldBoardState = ObjectCopier.Clone<Block[,]>(TetrisGame.PlayerBoard.BoardState);
+            foreach(List<Timer> list in timers)
             {
-                foreach (Timer timer in list)
+                foreach(Timer timer in list)
                 {
                     timer.tick(gameTime);
                 }
             }
-            foreach (Timer timer in fallBlockTimers)
+            foreach(Timer timer in fallBlockTimers)
             {
                 if (timer.TimeMilliseconds > timer.Interval)
                 {
@@ -82,9 +82,9 @@ namespace Tetris
              * Left Arrow = Move Left
              * Down Arrow = Soft Drop
              */
-            foreach (Keys Key in TetrisGame.keyboard.GetPressedKeys())
+            foreach(Keys Key in TetrisGame.keyboard.GetPressedKeys())
             {
-                switch (Key)
+                switch(Key)
                 {
                     case Keys.Tab:
                         TetrisGame.graphics.ToggleFullScreen();
@@ -94,8 +94,12 @@ namespace Tetris
                             TetrisGame.gameState = GameState.Pause;
                         break;
                     case Keys.LeftShift:
+                        if (TetrisGame.oldKeyboard.IsKeyUp(Keys.LeftShift))
+                            TetrisGame.PlayerBoard.changeHoldPiece();
+                        break;
                     case Keys.C:
-                        TetrisGame.PlayerBoard.changeHoldPiece();
+                        if (TetrisGame.oldKeyboard.IsKeyUp(Keys.C))
+                            TetrisGame.PlayerBoard.changeHoldPiece();
                         break;
                     case Keys.LeftControl:
                         if (TetrisGame.oldKeyboard.IsKeyUp(Keys.LeftControl))
@@ -152,6 +156,8 @@ namespace Tetris
             }
             TetrisGame.PlayerBoard.updatePosition();
             TetrisGame.PlayerBoard.fillUpcomingPieces();
+            if (TetrisGame.PlayerBoard.checkLose())
+                TetrisGame.gameState = GameState.EnterName;
         }
 
         public static void UpdatePause()
@@ -171,9 +177,6 @@ namespace Tetris
             {
                 if (Options.Fullrectangle.Contains(mouse))
                     TetrisGame.graphics.ToggleFullScreen();
-
-                if (Options.Backrectangle.Contains(mouse))
-                    TetrisGame.gameState = GameState.Menu;
 
             } if (TetrisGame.keyboard.IsKeyDown(Keys.Escape))
                 TetrisGame.gameState = GameState.Menu;
@@ -312,7 +315,7 @@ namespace Tetris
                             case Keys.D0:
                                 Highscore.currentName += "0";
                                 break;
-                            case Keys.LeftShift:
+                            case Keys.Tab:
                                 TetrisGame.gameState = GameState.Play;
                                 break;
                             case Keys.Enter:
@@ -337,7 +340,7 @@ namespace Tetris
             }
         }
 
-              public static void UpdateHighscore()
+        public static void UpdateHighscore()
         {
             Point mouse = new Point(TetrisGame.mouse.X, TetrisGame.mouse.Y);
 
@@ -357,6 +360,11 @@ namespace Tetris
             }
             if (TetrisGame.keyboard.IsKeyDown(Keys.LeftShift))
                 TetrisGame.gameState = GameState.Menu;
-            }
+        }
+
+        public static void UpdateLose()
+        {
+
         }
     }
+}

@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.Media;
 
 namespace Tetris
 {
-    public enum GameState { Menu, Play, Pause, Options, Highscore, EnterName}
+    public enum GameState { Menu, Play, Pause, Options, Highscore, EnterName, Lose}
     //I is Cyan, O is Yellow, L is Orange, Z is Red, S is green, T is Purple, J is Blue
     public enum BlockType { I, J, L, O, S, T, Z};
     //Rotation states based off of http://vignette1.wikia.nocookie.net/tetrisconcept/images/3/3d/SRS-pieces.png/revision/latest?cb=20060626173148
@@ -41,6 +41,7 @@ namespace Tetris
         public static Texture2D RedBlockTexture;
         public static Texture2D YellowBlockTexture;
         public static Texture2D TransparentSquareTexture;
+        public static Texture2D ShadowBlockTexture;
         public static Texture2D BackgroundTexture;
 
         public static Texture2D OptionsButtonPressedTexture;
@@ -62,6 +63,8 @@ namespace Tetris
         public static Texture2D ZblockTexture;
 
         public static Texture2D bordersquareTexture;
+
+        public static Texture2D emptyTexture;
 
         public static SpriteFont PressStartFont;
 
@@ -123,6 +126,7 @@ namespace Tetris
             RedBlockTexture = Content.Load<Texture2D>("Sprites/Blocks/redBlock");
             YellowBlockTexture = Content.Load<Texture2D>("Sprites/Blocks/yellowBlock");
             TransparentSquareTexture = Content.Load<Texture2D>("Sprites/Transparent Square");
+            ShadowBlockTexture = Content.Load<Texture2D>("Sprites/Blocks/shadowBlock");
             BackgroundTexture = Content.Load<Texture2D>("Sprites/Background");
 
             OptionsButtonPressedTexture = Content.Load<Texture2D>("Sprites/Menu Sprites/Options Button Pressed");
@@ -144,6 +148,8 @@ namespace Tetris
             ZblockTexture = Content.Load<Texture2D>("Sprites/Full Blocks/Zblock");
 
             bordersquareTexture = Content.Load<Texture2D>("Sprites/Blocks/bordersquare");
+
+            emptyTexture = Content.Load<Texture2D>("Sprites/empty");
 
             PressStartFont = Content.Load<SpriteFont>("Press Start 2P");
             // TODO: use this.Content to load your game content here
@@ -191,6 +197,9 @@ namespace Tetris
                 case GameState.EnterName:
                     UpdateStates.UpdateEnterName();
                     break;
+                case GameState.Lose:
+                    UpdateStates.UpdateLose();
+                    break;
             }
 
             base.Update(gameTime);
@@ -224,6 +233,9 @@ namespace Tetris
                 case GameState.EnterName:
                     DrawStates.DrawEnterName();
                     break;
+                case GameState.Lose:
+                    DrawStates.DrawLose();
+                    break;
             }
             spriteBatch.End();
             base.Draw(gameTime);
@@ -234,9 +246,9 @@ namespace Tetris
             PlayerBoard = new Board(new Rectangle((screenWidth - (boardWidth * gridSize)) / 2,
                     (screenHeight - (boardHeight * gridSize)) / 2, boardWidth * gridSize, boardHeight * gridSize));
             GameBoards.Add(PlayerBoard);
-            gameState = GameState.Menu;
+            gameState = GameState.Play;
             PlayerBoard.fillUpcomingPieces();
-            PlayerBoard.CurrentPiece = new Piece(BlockType.I);
+            PlayerBoard.CurrentPiece = new Piece(BlockType.Z);
             Highscore.ReadFromFile();
         }
     }

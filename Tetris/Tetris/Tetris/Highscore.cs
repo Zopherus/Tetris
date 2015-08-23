@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
-using Microsoft.Xna.Framework;
 
 namespace Tetris
 {
@@ -25,10 +24,10 @@ namespace Tetris
             {
                 while (true)
                 {
-                    for (int counter = 0; counter < scores.Length; counter ++)
+                    for (int counter = 0; counter < scores.Length; counter++)
                     {
                         line = sr.ReadLine();
-                        if(line == null)
+                        if (line == null)
                         {
                             break;
                         }
@@ -48,7 +47,7 @@ namespace Tetris
                 foreach (Score score in scores)
                 {
                     if (score != null)
-                        sw.WriteLine(score.Name.Trim()+ "," + score.Points);
+                        sw.WriteLine(score.Name.Trim() + "," + score.Points);
                 }
                 sw.Close();
             }
@@ -73,7 +72,7 @@ namespace Tetris
             }
         }
 
-        private static void insert (Score score, int position)
+        private static void insert(Score score, int position)
         {
             for (int counter = 8; counter >= position; counter--)
             {

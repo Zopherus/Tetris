@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework;
 
 namespace Tetris
 {
+    [Serializable]
     //Comprised of four blocks
     public class Piece
     {
@@ -23,48 +24,53 @@ namespace Tetris
             switch(pieceType)
             {
                 case BlockType.I:
-                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 3, Board.topBorder), this);
-                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder), this);
-                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder), this);
-                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 6, Board.topBorder), this);
+                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 3, Board.topBorder - 1), this);
+                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder - 1), this);
+                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder - 1), this);
+                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 6, Board.topBorder - 1), this);
                     break;
                 case BlockType.J:
-                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 3, Board.topBorder), this);
-                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 3, Board.topBorder - 1), this);
-                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder), this);
-                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder), this);
+                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 3, Board.topBorder - 1), this);
+                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 3, Board.topBorder - 2), this);
+                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder - 1), this);
+                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder - 1), this);
                     break;
                 case BlockType.L:
-                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 3, Board.topBorder), this);
-                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder), this);
-                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder), this);
-                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder - 1), this);
+                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 3, Board.topBorder - 1), this);
+                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder - 1), this);
+                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder - 1), this);
+                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder - 2), this);
                     break;
                 case BlockType.O:
-                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder), this);
-                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder - 1), this);
-                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder), this);
-                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder - 1), this);
+                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder - 1), this);
+                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder - 2), this);
+                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder - 1), this);
+                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder - 2), this);
                     break;
                 case BlockType.S:
-                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 3, Board.topBorder), this);
-                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder), this);
-                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder - 1), this);
-                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder - 1), this);
+                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 3, Board.topBorder - 1), this);
+                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder - 1), this);
+                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder - 2), this);
+                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder - 2), this);
                     break;
                 case BlockType.T:
-                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 3, Board.topBorder), this);
-                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder), this);
-                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder - 1), this);
-                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder), this);
+                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 3, Board.topBorder - 1), this);
+                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder - 1), this);
+                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder - 2), this);
+                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder - 1), this);
                     break;
                 case BlockType.Z:
-                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 3, Board.topBorder - 1), this);
-                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder), this);
-                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder - 1), this);
-                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder), this);
+                    blocks[0] = new Block(pieceType, new Point(Board.rightBorder + 3, Board.topBorder - 2), this);
+                    blocks[1] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder - 1), this);
+                    blocks[2] = new Block(pieceType, new Point(Board.rightBorder + 4, Board.topBorder - 2), this);
+                    blocks[3] = new Block(pieceType, new Point(Board.rightBorder + 5, Board.topBorder - 1), this);
                     break;
             }
+        }
+
+        public Piece(Block[] blocks)
+        {
+            this.blocks = blocks;
         }
 
         public BlockType PieceType
@@ -75,6 +81,7 @@ namespace Tetris
         public Block[] Blocks
         {
             get { return blocks; }
+            set { blocks = value; }
         }
 
         public void fall()
@@ -99,7 +106,7 @@ namespace Tetris
             bool value = true;
             foreach (Block block in blocks)
             {
-                if (!block.canMoveRight() || !TetrisGame.PlayerBoard.checkOnBoard(block.Position))
+                if (!block.canMoveRight())
                     value = false;
             }
             if (value)
@@ -117,7 +124,7 @@ namespace Tetris
             bool value = true;
             foreach (Block block in blocks)
             {
-                if (!block.canMoveLeft() || !TetrisGame.PlayerBoard.checkOnBoard(block.Position))
+                if (!block.canMoveLeft())
                     value = false;
             }
             if (value)
@@ -154,7 +161,6 @@ namespace Tetris
             }
             return value;
         }
-
 
         private void clearOldPosition()
         {

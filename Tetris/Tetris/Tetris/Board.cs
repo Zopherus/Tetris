@@ -19,13 +19,24 @@ namespace Tetris
         //actual board goes from 1 to boardWidth by 2 to boardHeight, all inclusive
         //value is null if no block is there
         private Block[,] boardState = new Block[TetrisGame.boardWidth + leftBorder + rightBorder, TetrisGame.boardHeight + topBorder + bottomBorder];
+        //store the top two lines for checkLose()
+        public Block[,] oldBoardState = new Block[TetrisGame.boardWidth + leftBorder + rightBorder, TetrisGame.boardHeight + topBorder + bottomBorder];
         private List<Piece> pieces = new List<Piece>();
         private Queue<Piece> upcomingPieces = new Queue<Piece>();
         private int points;
         //The piece that is held by the player
         private Piece currentPiece;
+
         //The piece that is in the hold spot
         private Piece holdPiece;
+
+        //The piece that shows where the currentPiece will be if hard dropped
+        public Piece ShadowPiece = new Piece();
+
+
+        //true if player can use hold
+        private bool canHold = true;
+
 
         public Board() { }
         public Board(Rectangle position)
@@ -59,6 +70,11 @@ namespace Tetris
             set { currentPiece = value; }
         }
 
+        public Piece HoldPiece
+        {
+            get { return holdPiece; }
+        }
+
         public Queue<Piece> UpcomingPieces
         {
             get { return upcomingPieces; }
@@ -68,7 +84,7 @@ namespace Tetris
         {
             foreach (Block block in currentPiece.Blocks)
             {
-                boardState[block.Position.X, block.Position.Y] = block;
+                 boardState[block.Position.X, block.Position.Y] = block;
             }
         }
 
@@ -134,25 +150,42 @@ namespace Tetris
         public void changeCurrentPiece()
         {
             currentPiece = upcomingPieces.Dequeue();
+            canHold = true;
         }
 
         public void changeHoldPiece()
         {
-            if (holdPiece == null)
+            if (canHold)
             {
-                holdPiece = currentPiece;
-            }
-            else
-            {
-                Piece value = holdPiece;
-                holdPiece = currentPiece;
-                currentPiece = value;
+                bool value = true;
+                foreach (Block block in currentPiece.Blocks)
+                {
+                    if (!checkOnBoard(block.Position))
+                        value = false;
+                }
+                if (value)
+                {
+                    if (holdPiece == null)
+                    {
+                        holdPiece = currentPiece;
+                        removeCurrentPiece();
+                        changeCurrentPiece();
+                    }
+                    else
+                    {
+                        Piece pieceValue = holdPiece;
+                        holdPiece = currentPiece;
+                        removeCurrentPiece();
+                        currentPiece = new Piece(pieceValue.PieceType);
+                    }
+                    canHold = false;
+                }
             }
         }
 
         public void fillUpcomingPieces()
         {
-            while (upcomingPieces.Count < 70) //Quadruple the count of the blocktypes
+            while (upcomingPieces.Count < 140) //Ten times the count of the blocktypes
             {
                 List<int> values = Enumerable.Range(0, Enum.GetValues(typeof(BlockType)).Length).ToList<int>();
                 Random random = new Random();
@@ -165,6 +198,29 @@ namespace Tetris
             }
         }
 
-        
+        public bool checkLose()
+        {
+            for (int x = rightBorder; x < rightBorder + TetrisGame.boardWidth; x++)
+            {
+                for (int y = 0; y < topBorder; y++)
+                {
+                    if (oldBoardState[x, y] != null && boardState[x,y] != null && oldBoardState[x, y].BlockType != boardState[x, y].BlockType)
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        private void removeCurrentPiece()
+        {
+            for (int counter = 0; counter < currentPiece.Blocks.Length; counter++ )
+            {
+                boardState[currentPiece.Blocks[counter].Position.X, currentPiece.Blocks[counter].Position.Y] = null;
+                currentPiece.Blocks[counter] = null;
+            }
+            currentPiece = null;
+        }
     }
 }
