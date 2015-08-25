@@ -18,7 +18,7 @@ namespace Tetris
         private static int fallBlockStartingInterval = 650;
         private static int softDropStartingInterval = 50;
         private static int moveLateralStartingInterval = 80;
-        //Create the fall block timers as started
+        //Create a number of timers equal to the number of boards with the intervals
         private static List<Timer> fallBlockTimers = (List<Timer>)Timer.Create(TetrisGame.GameBoards.Count, fallBlockStartingInterval);
         private static List<Timer> softDropTimers = (List<Timer>)Timer.Create(TetrisGame.GameBoards.Count, softDropStartingInterval);
         private static List<Timer> moveLateralTimers = (List<Timer>)Timer.Create(TetrisGame.GameBoards.Count, moveLateralStartingInterval);
@@ -36,6 +36,7 @@ namespace Tetris
             if (TetrisGame.keyboard.IsKeyDown(Keys.Tab) && TetrisGame.oldKeyboard.IsKeyUp(Keys.Tab))
                 TetrisGame.graphics.ToggleFullScreen();
 
+            //if the mouse button is pressed and is in one of the rectangles, change the gamestate
             if (TetrisGame.mouse.LeftButton == ButtonState.Pressed)
             {
                 if (Menu.PlayRectangle.Contains(mouse))
@@ -52,6 +53,7 @@ namespace Tetris
             }
         }
 
+        //Take in the gameTime to use for the timers
         public static void UpdatePlay(GameTime gameTime)
         {
             if (reset)
@@ -59,7 +61,9 @@ namespace Tetris
                 TetrisGame.Start();
                 reset = false;
             }
+            //Create a copy of the boardState in the oldBoardState to hold the boardState of the last frame
             TetrisGame.PlayerBoard.oldBoardState = ObjectCopier.Clone<Block[,]>(TetrisGame.PlayerBoard.BoardState);
+            //Make each timer tick
             foreach(List<Timer> list in timers)
             {
                 foreach(Timer timer in list)
@@ -93,7 +97,8 @@ namespace Tetris
                 switch(Key)
                 {
                     case Keys.Tab:
-                        TetrisGame.graphics.ToggleFullScreen();
+                        if (TetrisGame.oldKeyboard.IsKeyUp(Keys.Tab))
+                            TetrisGame.graphics.ToggleFullScreen();
                         break;
                     case Keys.Escape:
                         if (TetrisGame.oldKeyboard.IsKeyUp(Keys.Escape))
@@ -118,6 +123,7 @@ namespace Tetris
                     case Keys.Space:
                         if (TetrisGame.oldKeyboard.IsKeyUp(Keys.Space))
                         {
+                            //Make the piece keep falling until it can't fall anymore
                             while (TetrisGame.PlayerBoard.CurrentPiece.canFall())
                             {
                                 TetrisGame.PlayerBoard.CurrentPiece.fall();
@@ -160,6 +166,7 @@ namespace Tetris
                         break;
                 }
             }
+            UpdateShadowBlock();
             TetrisGame.PlayerBoard.updatePosition();
             TetrisGame.PlayerBoard.fillUpcomingPieces();
             if (TetrisGame.PlayerBoard.checkLose())
@@ -183,8 +190,9 @@ namespace Tetris
             {
                 if (Options.Fullrectangle.Contains(mouse))
                     TetrisGame.graphics.ToggleFullScreen();
+            }
 
-            } if (TetrisGame.keyboard.IsKeyDown(Keys.Escape))
+            if (TetrisGame.keyboard.IsKeyDown(Keys.Escape))
                 TetrisGame.gameState = GameState.Menu;
         }
 
@@ -369,9 +377,17 @@ namespace Tetris
                 TetrisGame.gameState = GameState.Menu;
         }
 
-        public static void UpdateLose()
+        private static void UpdateShadowBlock()
         {
-
+            //Start the shadowPiece where the currentPiece is, create deep copy not reference 
+            TetrisGame.PlayerBoard.ShadowPiece.Blocks = new Block[] { ObjectCopier.Clone<Block>(TetrisGame.PlayerBoard.CurrentPiece.Blocks[0]),
+                                                ObjectCopier.Clone<Block>(TetrisGame.PlayerBoard.CurrentPiece.Blocks[1]),
+                                                ObjectCopier.Clone<Block>(TetrisGame.PlayerBoard.CurrentPiece.Blocks[2]),
+                                                ObjectCopier.Clone<Block>(TetrisGame.PlayerBoard.CurrentPiece.Blocks[3])};
+            while (TetrisGame.PlayerBoard.ShadowPiece.canFall())
+            {
+                TetrisGame.PlayerBoard.ShadowPiece.fall();
+            }
         }
     }
 }

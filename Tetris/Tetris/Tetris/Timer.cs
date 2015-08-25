@@ -11,9 +11,9 @@ namespace Tetris
     {
         //Time in milliseconds
         private int timeMilliseconds = 0;
+
         //The interval at which to do things
         private int interval;
-        //true if the timer is running
 
         public Timer(int interval)
         {
@@ -46,7 +46,7 @@ namespace Tetris
             }
         }
 
-        //Add the time in milliseconds to the timer if the timer is started
+        //Add the time in milliseconds since the last frame to the timer using the GameTime class
         public void tick(GameTime gameTime) 
         {
             timeMilliseconds += gameTime.ElapsedGameTime.Milliseconds;

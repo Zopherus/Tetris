@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.Media;
 
 namespace Tetris
 {
-    public enum GameState { Menu, Play, Pause, Options, Highscore, EnterName, Lose}
+    public enum GameState { Menu, Play, Pause, Options, Highscore, EnterName}
     //I is Cyan, O is Yellow, L is Orange, Z is Red, S is green, T is Purple, J is Blue
     public enum BlockType { I, J, L, O, S, T, Z};
     //Rotation states based off of http://vignette1.wikia.nocookie.net/tetrisconcept/images/3/3d/SRS-pieces.png/revision/latest?cb=20060626173148
@@ -175,8 +175,10 @@ namespace Tetris
             oldMouse = mouse;
             keyboard = Keyboard.GetState();
             mouse = Mouse.GetState();
+            //Used to exit the program
             if (keyboard.IsKeyDown(Keys.F1))
                 this.Exit();
+            //Run a switch on the gameState to see which update method to run
             switch(gameState)
             {
                 case GameState.Menu:
@@ -197,9 +199,6 @@ namespace Tetris
                 case GameState.EnterName:
                     UpdateStates.UpdateEnterName();
                     break;
-                case GameState.Lose:
-                    UpdateStates.UpdateLose();
-                    break;
             }
 
             base.Update(gameTime);
@@ -213,6 +212,7 @@ namespace Tetris
         {
             GraphicsDevice.Clear(Color.White);
             spriteBatch.Begin();
+            //Run a switch on the gameState to see which draw method to run
             switch (gameState)
             {
                 case GameState.Menu:
@@ -233,14 +233,12 @@ namespace Tetris
                 case GameState.EnterName:
                     DrawStates.DrawEnterName();
                     break;
-                case GameState.Lose:
-                    DrawStates.DrawLose();
-                    break;
             }
             spriteBatch.End();
             base.Draw(gameTime);
         }
 
+        //Run to start/reset the game
         public static void Start()
         {
             PlayerBoard = new Board(new Rectangle((screenWidth - (boardWidth * gridSize)) / 2,

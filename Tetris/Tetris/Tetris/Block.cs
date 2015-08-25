@@ -46,31 +46,43 @@ namespace Tetris
             }
         }
 
+        //True if the block is able to move right
         public bool canMoveRight()
         {
+            //first line checks if the block will still be on the board after it moves one to the right
+            //second and third line checks if the space one to the right is also a block in the same piece and if that block can also move right
+            //fourth line checks if the space one to the right is empty
             return position.X + 1 < TetrisGame.boardWidth + Board.rightBorder &&
                ((piece.Blocks.Contains(TetrisGame.PlayerBoard.BoardState[position.X + 1, position.Y])
                && TetrisGame.PlayerBoard.BoardState[position.X + 1, position.Y].canMoveRight())
                || TetrisGame.PlayerBoard.BoardState[position.X + 1, position.Y] == null);
         }
 
+        //True if the block is able to move left
         public bool canMoveLeft()
         {
+            //first line checks if the block will still be on the board after it moves one to the left
+            //second and third line checks if the space one to the left is also a block in the same piece and if that block can also move left
+            //fourth line checks if the space one to the left is empty
              return position.X - 1 >= Board.rightBorder &&
                ((piece.Blocks.Contains(TetrisGame.PlayerBoard.BoardState[position.X - 1, position.Y])
                && TetrisGame.PlayerBoard.BoardState[position.X - 1, position.Y].canMoveLeft())
-               || TetrisGame.PlayerBoard.BoardState[position.X - 1, position.Y] == null
-                );
+               || TetrisGame.PlayerBoard.BoardState[position.X - 1, position.Y] == null);
         }
 
+        //True if the block is able to fall
         public bool canFall()
         {
+            //first line checks if the block will still be on the board after it moves one down
+            //second and third line checks if the space one down is also a block in the same piece and if that block can also move down
+            //fourth line checks if the space one down is empty
             return position.Y + 1 < TetrisGame.boardHeight + Board.topBorder &&
                 ((piece.Blocks.Contains(TetrisGame.PlayerBoard.BoardState[position.X, position.Y + 1]) 
                 && TetrisGame.PlayerBoard.BoardState[position.X, position.Y + 1].canFall())
                 || TetrisGame.PlayerBoard.BoardState[position.X, position.Y + 1] == null);
         }
 
+        //Return true if the current block is in the currentPiece of the board
         private bool inCurrentPiece(Block block)
         {
             if (block.piece == TetrisGame.PlayerBoard.CurrentPiece)
@@ -81,6 +93,26 @@ namespace Tetris
                     return true;
             }
             return false;
+        }
+
+        //override the default equals, is true when the position and blockType are the same
+        public override bool Equals(object obj)
+        {
+            if (obj == null)
+                return false;
+
+            //If parameter cannot be cast to Rectangle return false
+            Block block = obj as Block;
+            if ((Object)block == null)
+                return false;
+
+            //Return true if the two rectangles match
+            return position == block.position && blockType == block.blockType;
+        }
+
+        public bool Equals(Block block)
+        {
+            return position == block.position && blockType == block.blockType;
         }
     }
 }

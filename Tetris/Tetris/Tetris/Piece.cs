@@ -20,7 +20,7 @@ namespace Tetris
         public Piece(BlockType pieceType)
         {
             this.pieceType = pieceType;
-            //When the constructor is used, the piece is placed at the starting position
+            //When a new piece object is created, the piece is placed at the starting position
             switch(pieceType)
             {
                 case BlockType.I:
@@ -96,6 +96,8 @@ namespace Tetris
             }
             else
             {
+                if (!TetrisGame.PlayerBoard.checkOnBoard(TetrisGame.PlayerBoard.CurrentPiece))
+                    TetrisGame.gameState = GameState.EnterName;
                 TetrisGame.PlayerBoard.changeCurrentPiece();
                 TetrisGame.PlayerBoard.clearLines();
             }

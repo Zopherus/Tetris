@@ -5,6 +5,7 @@ using System.Text;
 
 namespace Tetris
 {
+    //Score is comprised of a name and the number of points scored
     class Score : IComparable<Score>
     {
         private string name;
@@ -31,11 +32,13 @@ namespace Tetris
             get { return points; }
         }
 
+        //Override the default ToString method for use in displaying highscores
         public override string ToString()
         {
             return name + ": " + points.ToString();
         }
 
+        //Used in Array.Sort, scores are compared by the points
         public int CompareTo(Score other)
         {
             if (other == null)
