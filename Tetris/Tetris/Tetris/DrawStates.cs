@@ -185,6 +185,8 @@ namespace Tetris
 
             TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "*Additonal Options",
                 new Vector2(TetrisGame.screenWidth / 5, TetrisGame.screenHeight / 4 + 7 * lineSpacing + TetrisGame.PressStartFont.MeasureString("Additonal Options").Y / 2), Color.Black);
+
+            TetrisGame.spriteBatch.Draw(TetrisGame.bordersquareTexture, Options.Backrectangle, Color.White);
         }
 
         public static void DrawHighscore()

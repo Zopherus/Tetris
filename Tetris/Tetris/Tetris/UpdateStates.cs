@@ -181,11 +181,12 @@ namespace Tetris
 
             if (TetrisGame.mouse.LeftButton == ButtonState.Pressed)
             {
-                if (Options.Fullrectangle.Contains(mouse))
+                if (Options.Checkrectangle.Contains(mouse))
                     TetrisGame.graphics.ToggleFullScreen();
 
-            } if (TetrisGame.keyboard.IsKeyDown(Keys.Escape))
-                TetrisGame.gameState = GameState.Menu;
+                if (Options.Backrectangle.Contains(mouse))
+                    TetrisGame.gameState = GameState.Menu;
+            }
         }
 
         public static void UpdateEnterName()
