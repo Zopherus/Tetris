@@ -8,6 +8,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Tetris
 {
+    //Copied from the internet idk how it works
     public static class ObjectCopier
     {
         /// <summary>
