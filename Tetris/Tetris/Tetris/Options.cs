@@ -10,6 +10,7 @@ namespace Tetris
     {
         private static Rectangle fullrectangle = new Rectangle(TetrisGame.screenWidth / 15, TetrisGame.screenHeight / 15, TetrisGame.screenWidth / 3, TetrisGame.screenHeight / 10);
         private static Rectangle backrectangle = new Rectangle(7 * TetrisGame.screenWidth / 8, 7 * TetrisGame.screenHeight / 8, TetrisGame.screenWidth / 10, TetrisGame.screenHeight / 10);
+        private static Rectangle checkrectangle = new Rectangle(TetrisGame.screenWidth / 10, TetrisGame.screenHeight / 4, TetrisGame.screenWidth / 15, TetrisGame.screenHeight / 15);
         
         public static Rectangle Fullrectangle
         {
@@ -19,6 +20,11 @@ namespace Tetris
         public static Rectangle Backrectangle
         {
             get { return backrectangle; }
+        }
+
+        public static Rectangle Checkrectangle
+        {
+            get { return checkrectangle; }
         }
     }
 }

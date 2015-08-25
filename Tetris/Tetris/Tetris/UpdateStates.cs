@@ -12,6 +12,7 @@ namespace Tetris
     {
         private static bool EnterName = true;
         private static bool HighScore = true;
+        private static bool reset = false;
 
         //The intervals at which the piece does something in milliseconds
         private static int fallBlockStartingInterval = 650;
@@ -53,6 +54,11 @@ namespace Tetris
 
         public static void UpdatePlay(GameTime gameTime)
         {
+            if (reset)
+            {
+                TetrisGame.Start();
+                reset = false;
+            }
             TetrisGame.PlayerBoard.oldBoardState = ObjectCopier.Clone<Block[,]>(TetrisGame.PlayerBoard.BoardState);
             foreach(List<Timer> list in timers)
             {
@@ -184,6 +190,7 @@ namespace Tetris
 
         public static void UpdateEnterName()
         {
+            reset = true;
             if (EnterName)
             {
                 using (StreamReader sr = new StreamReader("Content/Name.txt"))

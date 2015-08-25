@@ -246,7 +246,7 @@ namespace Tetris
             PlayerBoard = new Board(new Rectangle((screenWidth - (boardWidth * gridSize)) / 2,
                     (screenHeight - (boardHeight * gridSize)) / 2, boardWidth * gridSize, boardHeight * gridSize));
             GameBoards.Add(PlayerBoard);
-            gameState = GameState.Play;
+            gameState = GameState.Menu;
             PlayerBoard.fillUpcomingPieces();
             PlayerBoard.CurrentPiece = new Piece(BlockType.Z);
             Highscore.ReadFromFile();

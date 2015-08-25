@@ -175,10 +175,16 @@ namespace Tetris
 
         public static void DrawOptions()
         {
-            TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "Select to toggle fullscreen",
-            new Vector2(5, 5), Color.Black);
+            TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "OPTIONS",
+                new Vector2(TetrisGame.screenWidth / 2 - TetrisGame.PressStartFont.MeasureString("OPTIONS").X / 2, TetrisGame.screenHeight / 60), Color.Black);
 
-            TetrisGame.spriteBatch.Draw(TetrisGame.bordersquareTexture, Options.Fullrectangle, Color.White);
+            TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "*Select to toggle fullscreen",
+                new Vector2(TetrisGame.screenWidth / 5, TetrisGame.screenHeight / 4 + TetrisGame.PressStartFont.MeasureString("*Select to toggle fullscreen").Y / 2), Color.Black);
+
+            TetrisGame.spriteBatch.Draw(TetrisGame.bordersquareTexture, Options.Checkrectangle, Color.White);
+
+            TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "*Additonal Options",
+                new Vector2(TetrisGame.screenWidth / 5, TetrisGame.screenHeight / 4 + 7 * lineSpacing + TetrisGame.PressStartFont.MeasureString("Additonal Options").Y / 2), Color.Black);
         }
 
         public static void DrawHighscore()
@@ -201,11 +207,18 @@ namespace Tetris
         public static void DrawEnterName()
         {
             string value = "Your Score:" + TetrisGame.PlayerBoard.Points.ToString();
-            TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, value, new Vector2(0, 0), Color.Black);
+            TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, value,  
+                new Vector2(TetrisGame.screenWidth / 2 - TetrisGame.PressStartFont.MeasureString ("Your Score:").X / 2, TetrisGame.screenHeight / 2), Color.Black);
+
+
             TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "Name : " + Highscore.currentName,
-                new Vector2(0, TetrisGame.PressStartFont.MeasureString(TetrisGame.PlayerBoard.ToString()).Y + lineSpacing), Color.Black);
+                 new Vector2(3 * TetrisGame.screenWidth / 8, 7 * TetrisGame.screenHeight / 12 ), Color.Black);
+
             TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "Press TAB to play again!",
-                new Vector2(0, TetrisGame.PressStartFont.MeasureString(TetrisGame.PlayerBoard.ToString()).Y + TetrisGame.PressStartFont.MeasureString("Name").Y + 2 * lineSpacing), Color.Black);
+                new Vector2(TetrisGame.screenWidth / 2 - TetrisGame.PressStartFont.MeasureString("Press TAB to play again!").X / 2, 2 * TetrisGame.screenHeight / 3), Color.Black);
+
+            TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "GAME OVER",
+                new Vector2(TetrisGame.screenWidth / 2 - TetrisGame.PressStartFont.MeasureString("GAME OVER").X / 2, TetrisGame.screenHeight / 6), Color.Black);
         }
 
         public static void DrawLose()

@@ -213,14 +213,17 @@ namespace Tetris
             return false;
         }
 
+
         private void removeCurrentPiece()
         {
-            for (int counter = 0; counter < currentPiece.Blocks.Length; counter++ )
+            for (int counter = 0; counter < currentPiece.Blocks.Length; counter++)
             {
                 boardState[currentPiece.Blocks[counter].Position.X, currentPiece.Blocks[counter].Position.Y] = null;
                 currentPiece.Blocks[counter] = null;
             }
             currentPiece = null;
-        }
+        }  
     }
 }
+
+

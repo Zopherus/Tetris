@@ -1,0 +1,2 @@
+Install the Press Start 2P into the file so users won't have to manually download
+Make the block instantly go right/left when button is pressed and then use the interval afterwards
