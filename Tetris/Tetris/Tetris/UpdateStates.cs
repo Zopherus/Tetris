@@ -13,6 +13,7 @@ namespace Tetris
         private static bool EnterName = true;
         private static bool HighScore = true;
         private static bool reset = false;
+        private static bool fall = true;
 
         //The intervals at which the piece does something in milliseconds
         private static int fallBlockStartingInterval = 650;
@@ -56,6 +57,7 @@ namespace Tetris
         //Take in the gameTime to use for the timers
         public static void UpdatePlay(GameTime gameTime)
         {
+            fall = true;
             if (reset)
             {
                 TetrisGame.Start();
@@ -73,10 +75,11 @@ namespace Tetris
             }
             foreach(Timer timer in fallBlockTimers)
             {
-                if (timer.TimeMilliseconds > timer.Interval)
+                if (timer.TimeMilliseconds > timer.Interval && fall)
                 {
                     TetrisGame.PlayerBoard.CurrentPiece.fall();
                     timer.reset();
+                    fall = false;
                 }
             }
             /*
@@ -121,7 +124,7 @@ namespace Tetris
                             TetrisGame.PlayerBoard.CurrentPiece.rotateLeft();
                         break;
                     case Keys.Space:
-                        if (TetrisGame.oldKeyboard.IsKeyUp(Keys.Space))
+                        if (TetrisGame.oldKeyboard.IsKeyUp(Keys.Space) && fall)
                         {
                             //Make the piece keep falling until it can't fall anymore
                             while (TetrisGame.PlayerBoard.CurrentPiece.canFall())
@@ -130,6 +133,7 @@ namespace Tetris
                             }
                             //cause the block to fall right away which will switch the current piece
                             fallBlockTimers.ElementAt(0).TimeMilliseconds = fallBlockStartingInterval;
+                            fall = false;
                         }
                         break;
                     case Keys.X:
@@ -150,10 +154,11 @@ namespace Tetris
                         break;
                     case Keys.Down:
                         timer = softDropTimers.ElementAt<Timer>(0);
-                        if (timer.TimeMilliseconds > timer.Interval)
+                        if (timer.TimeMilliseconds > timer.Interval && fall)
                         {
                             TetrisGame.PlayerBoard.CurrentPiece.fall();
                             timer.reset();
+                            fall = false;
                         }
                         break;
                     case Keys.Left:
@@ -391,11 +396,6 @@ namespace Tetris
             {
                 TetrisGame.PlayerBoard.ShadowPiece.fall();
             }
-        }
-
-        private static void CATCHTHEFUCKINGBUG()
-        {
-
         }
     }
 }

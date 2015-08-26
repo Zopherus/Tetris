@@ -86,7 +86,7 @@ namespace Tetris
             {
                 PreferredBackBufferWidth = screenWidth,
                 PreferredBackBufferHeight = screenHeight,
-                IsFullScreen = true
+                //IsFullScreen = true
             };
             IsMouseVisible = true;
             //2 extra gridsizes on top and 2 on bottom
@@ -242,9 +242,9 @@ namespace Tetris
             PlayerBoard = new Board(new Rectangle((screenWidth - (boardWidth * gridSize)) / 2,
                     (screenHeight - (boardHeight * gridSize)) / 2, boardWidth * gridSize, boardHeight * gridSize));
             GameBoards.Add(PlayerBoard);
-            gameState = GameState.Play;
+            gameState = GameState.Play; 
             PlayerBoard.fillUpcomingPieces();
-            PlayerBoard.CurrentPiece = new Piece(BlockType.Z);
+            PlayerBoard.changeCurrentPiece();
             Highscore.ReadFromFile();
         }
     }

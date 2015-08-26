@@ -89,7 +89,7 @@ namespace Tetris
             if (canFall())
             {
                 clearOldPosition();
-                foreach(Block block in blocks)
+                foreach (Block block in blocks)
                 {
                     block.Position = new Point(block.Position.X, block.Position.Y + 1);
                 }
@@ -105,16 +105,10 @@ namespace Tetris
 
         public void moveRight() 
         {
-            bool value = true;
-            foreach (Block block in blocks)
-            {
-                if (!block.canMoveRight())
-                    value = false;
-            }
-            if (value)
+            if (canMoveRight())
             {
                 clearOldPosition();
-                foreach(Block block in blocks)
+                foreach (Block block in blocks)
                 {
                     block.Position = new Point(block.Position.X + 1, block.Position.Y);
                 }
@@ -123,13 +117,7 @@ namespace Tetris
 
         public void moveLeft()
         {
-            bool value = true;
-            foreach (Block block in blocks)
-            {
-                if (!block.canMoveLeft())
-                    value = false;
-            }
-            if (value)
+            if (canMoveLeft())
             {
                 clearOldPosition();
                 foreach (Block block in blocks)
@@ -151,14 +139,34 @@ namespace Tetris
             rotationState = (RotationState)((mod((int)rotationState - 1, 4)));
         }
 
-        public void hardDrop() { }
-
         public bool canFall()
         {
             bool value = true;
             foreach (Block block in blocks)
             {
                 if (!block.canFall())
+                    value = false;
+            }
+            return value;
+        }
+
+        private bool canMoveRight()
+        {
+            bool value = true;
+            foreach (Block block in blocks)
+            {
+                if (!block.canMoveRight())
+                    value = false;
+            }
+            return value;
+        }
+
+        private bool canMoveLeft()
+        {
+            bool value = true;
+            foreach (Block block in blocks)
+            {
+                if (!block.canMoveLeft())
                     value = false;
             }
             return value;
