@@ -204,6 +204,8 @@ namespace Tetris
         //checks if the board has lost
         public bool checkLose()
         {
+            if (!canHold)
+                return false;
             for (int x = rightBorder; x < rightBorder + TetrisGame.boardWidth; x++)
             {
                 for (int y = 0; y < topBorder; y++)

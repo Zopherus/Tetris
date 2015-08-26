@@ -13,6 +13,8 @@ namespace Tetris
         private static bool EnterName = true;
         private static bool HighScore = true;
         private static bool reset = false;
+
+        //Makes sure the block only falls/hard drops once a frame otherwise the piece will disappear
         private static bool fall = true;
 
         //The intervals at which the piece does something in milliseconds
