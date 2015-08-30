@@ -16,7 +16,7 @@ namespace Tetris
     public enum BlockType { I, J, L, O, S, T, Z};
     //Rotation states based off of http://vignette1.wikia.nocookie.net/tetrisconcept/images/3/3d/SRS-pieces.png/revision/latest?cb=20060626173148
     public enum RotationState { One, Two, Three, Four};
-     
+    //Block positions as shown in http://imgur.com/7bjA0d9 sorry I can't draw for my life
 
     public class TetrisGame : Game
     {

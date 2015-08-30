@@ -119,7 +119,7 @@ namespace Tetris
             {
                 //only draws the block if it is not null and is within the boundaries of the board
                 if (block != null && block.Position.X >= Board.leftBorder && block.Position.X < TetrisGame.boardWidth + Board.leftBorder
-                    && block.Position.Y >= Board.topBorder && block.Position.Y < TetrisGame.boardHeight + Board.topBorder)
+                    && block.Position.Y >= Board.topBorder - 5 && block.Position.Y < TetrisGame.boardHeight + Board.topBorder)
                 {
                     Texture2D texture = blockTextureForBlock(block);
                     //The actual board starts on the 3rd row and 2nd column so subtract to compensate for the shift
@@ -140,6 +140,7 @@ namespace Tetris
                             TetrisGame.gridSize, TetrisGame.gridSize), Color.White);
                 }
             }
+            TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, TetrisGame.PlayerBoard.CurrentPiece.RotationState.ToString(), new Vector2(0, 0), Color.Black);
         }
 
         public static void DrawPause()

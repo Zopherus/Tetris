@@ -102,7 +102,7 @@ namespace Tetris
                 return false;
 
             //If parameter cannot be cast to Rectangle return false
-            Block block = obj as Block;
+            Block block = (Block)obj;
             if ((Object)block == null)
                 return false;
 
