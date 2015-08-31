@@ -1,30 +1,62 @@
-Content\Sprites\Black.xnb
-Content\Sprites\Blocks\blueBlock.xnb
-Content\Sprites\Blocks\cyanBlock.xnb
-Content\Sprites\Blocks\greenBlock.xnb
-Content\Sprites\Blocks\orangeBlock.xnb
-Content\Sprites\Blocks\purpleBlock.xnb
-Content\Sprites\Blocks\redBlock.xnb
-Content\Sprites\Blocks\yellowBlock.xnb
-Content\Sprites\Transparent Square.xnb
-Content\Sprites\Background.xnb
-Content\Sprites\Full Blocks\Iblock.xnb
-Content\Sprites\Full Blocks\Jblock.xnb
-Content\Sprites\Full Blocks\Lblock.xnb
-Content\Sprites\Full Blocks\Oblock.xnb
-Content\Sprites\Full Blocks\Sblock.xnb
-Content\Sprites\Full Blocks\Tblock.xnb
-Content\Sprites\Full Blocks\Zblock.xnb
-Content\Sprites\Menu Sprites\HighscoreButtonPressed.xnb
-Content\Sprites\Menu Sprites\HighscoreButtonUnpressed.xnb
-Content\Sprites\Menu Sprites\Options Button Pressed.xnb
-Content\Sprites\Menu Sprites\Options Button Unpressed.xnb
-Content\Sprites\Menu Sprites\Play Button Pressed.xnb
-Content\Sprites\Menu Sprites\Play Button Unpressed.xnb
-Content\Sprites\Menu Sprites\pokemon sunset.xnb
-Content\Sprites\Menu Sprites\Quit Button Pressed.xnb
-Content\Sprites\Menu Sprites\Quit Button Unpressed.xnb
-Content\Sprites\Blocks\bordersquare.xnb
-Content\Sprites\empty.xnb
-Content\Sprites\Blocks\shadowBlock.xnb
 Content\Press Start 2P.xnb
+Content\Original\Black.xnb
+Content\Original\Transparent Square.xnb
+Content\Original\Background.xnb
+Content\Original\Menu Sprites\HighscoreButtonPressed.xnb
+Content\Original\Menu Sprites\HighscoreButtonUnpressed.xnb
+Content\Original\Menu Sprites\Options Button Pressed.xnb
+Content\Original\Menu Sprites\Options Button Unpressed.xnb
+Content\Original\Menu Sprites\Play Button Pressed.xnb
+Content\Original\Menu Sprites\Play Button Unpressed.xnb
+Content\Original\Menu Sprites\pokemon sunset.xnb
+Content\Original\Menu Sprites\Quit Button Pressed.xnb
+Content\Original\Menu Sprites\Quit Button Unpressed.xnb
+Content\Original\Blocks\bordersquare.xnb
+Content\Original\empty.xnb
+Content\Original\Blocks\shadowBlock.xnb
+Content\Original\Blocks\JBlock.xnb
+Content\Original\Blocks\IBlock.xnb
+Content\Original\Blocks\SBlock.xnb
+Content\Original\Blocks\LBlock.xnb
+Content\Original\Blocks\TBlock.xnb
+Content\Original\Blocks\ZBlock.xnb
+Content\Original\Blocks\OBlock.xnb
+Content\Original\Full Blocks\IFullBlock.xnb
+Content\Original\Full Blocks\JFullBlock.xnb
+Content\Original\Full Blocks\LFullBlock.xnb
+Content\Original\Full Blocks\OFullBlock.xnb
+Content\Original\Full Blocks\SFullBlock.xnb
+Content\Original\Full Blocks\TFullBlock.xnb
+Content\Original\Full Blocks\ZFullBlock.xnb
+Content\Original\Blocks\trashblock.xnb
+Content\Pokemon\Blocks\8bit pokeball.xnb
+Content\Pokemon\Blocks\OBlock.xnb
+Content\Pokemon\Blocks\SBlock.xnb
+Content\Pokemon\Blocks\JBlock.xnb
+Content\Pokemon\Blocks\TBlock.xnb
+Content\Pokemon\Blocks\IBlock.xnb
+Content\Pokemon\Blocks\ZBlock.xnb
+Content\Pokemon\Blocks\LBlock.xnb
+Content\Pokemon\Full Blocks\IFullBlock.xnb
+Content\Pokemon\Full Blocks\JFullBlock.xnb
+Content\Pokemon\Full Blocks\LFullBlock.xnb
+Content\Pokemon\Full Blocks\OFullBlock.xnb
+Content\Pokemon\Full Blocks\SFullBlock.xnb
+Content\Pokemon\Full Blocks\TFullBlock.xnb
+Content\Pokemon\Full Blocks\ZFullBlock.xnb
+Content\Pokemon\Background.xnb
+Content\Pokemon\Black.xnb
+Content\Pokemon\empty.xnb
+Content\Pokemon\Transparent Square.xnb
+Content\Pokemon\Blocks\shadowBlock.xnb
+Content\Pokemon\Blocks\trashblock.xnb
+Content\Pokemon\Menu Sprites\HighscoreButtonPressed.xnb
+Content\Pokemon\Menu Sprites\HighscoreButtonUnpressed.xnb
+Content\Pokemon\Menu Sprites\Options Button Pressed.xnb
+Content\Pokemon\Menu Sprites\Options Button Unpressed.xnb
+Content\Pokemon\Menu Sprites\Play Button Pressed.xnb
+Content\Pokemon\Menu Sprites\Play Button Unpressed.xnb
+Content\Pokemon\Menu Sprites\pokemon sunset.xnb
+Content\Pokemon\Menu Sprites\Quit Button Pressed.xnb
+Content\Pokemon\Menu Sprites\Quit Button Unpressed.xnb
+Content\Pokemon\Blocks\bordersquare.xnb

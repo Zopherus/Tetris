@@ -179,8 +179,8 @@ namespace Tetris
             {
                 if (Highscore.Scores[counter] != null)
                 {
-                    TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, counter.ToString() + ". " + Highscore.Scores[counter].ToString(),
-                        new Vector2(TetrisGame.screenWidth / 3, TetrisGame.screenHeight / 15 + (counter) * lineSpacing * 4), Color.Black);
+                    TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, (counter+1).ToString() + ". " + Highscore.Scores[counter].ToString(),
+                        new Vector2(TetrisGame.screenWidth / 3, TetrisGame.screenHeight / 15 + (counter) * lineSpacing * 2), Color.Black);
                 }
             }
         }
@@ -221,25 +221,25 @@ namespace Tetris
                 switch (piece.PieceType)
                 {
                     case BlockType.I:
-                        texture = TetrisGame.IblockTexture;
+                        texture = TetrisGame.IFullBlockTexture;
                         break;
                     case BlockType.J:
-                        texture = TetrisGame.JblockTexture;
+                        texture = TetrisGame.JFullBlockTexture;
                         break;
                     case BlockType.L:
-                        texture = TetrisGame.LblockTexture;
+                        texture = TetrisGame.LFullBlockTexture;
                         break;
                     case BlockType.O:
-                        texture = TetrisGame.OblockTexture;
+                        texture = TetrisGame.OFullBlockTexture;
                         break;
                     case BlockType.S:
-                        texture = TetrisGame.SblockTexture;
+                        texture = TetrisGame.SFullBlockTexture;
                         break;
                     case BlockType.T:
-                        texture = TetrisGame.TblockTexture;
+                        texture = TetrisGame.TFullBlockTexture;
                         break;
                     case BlockType.Z:
-                        texture = TetrisGame.ZblockTexture;
+                        texture = TetrisGame.ZFullBlockTexture;
                         break;
                 }
                 return texture;
@@ -253,25 +253,25 @@ namespace Tetris
             {
                 //I is Cyan, O is Yellow, L is Orange, Z is Red, S is green, T is Purple, J is Blue
                 case BlockType.I:
-                    texture = TetrisGame.CyanBlockTexture;
+                    texture = TetrisGame.IBlockTexture;
                     break;
                 case BlockType.J:
-                    texture = TetrisGame.BlueBlockTexture;
+                    texture = TetrisGame.JBlockTexture;
                     break;
                 case BlockType.L:
-                    texture = TetrisGame.OrangeBlockTexture;
+                    texture = TetrisGame.LBlockTexture;
                     break;
                 case BlockType.O:
-                    texture = TetrisGame.YellowBlockTexture;
+                    texture = TetrisGame.OBlockTexture;
                     break;
                 case BlockType.S:
-                    texture = TetrisGame.GreenBlockTexture;
+                    texture = TetrisGame.SBlockTexture;
                     break;
                 case BlockType.T:
-                    texture = TetrisGame.PurpleBlockTexture;
+                    texture = TetrisGame.TBlockTexture;
                     break;
                 case BlockType.Z:
-                    texture = TetrisGame.RedBlockTexture;
+                    texture = TetrisGame.ZBlockTexture;
                     break;
             }
             return texture;
