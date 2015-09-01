@@ -29,7 +29,7 @@ namespace Tetris
 
         public static int gridSize;
 
-        public static string theme = "Original";
+        public static string theme = "Pokemon";
 
         public static GraphicsDeviceManager graphics;
         public static SpriteBatch spriteBatch;
@@ -65,8 +65,10 @@ namespace Tetris
         public static Texture2D TFullBlockTexture;
         public static Texture2D ZFullBlockTexture;
 
-        public static Texture2D bordersquareTexture;
+        public static Texture2D OptionsCheckTexture;
+        public static Texture2D OptionsUncheckTexture;
 
+        public static Texture2D bordersquareTexture;
         public static Texture2D emptyTexture;
 
         public static SpriteFont PressStartFont;
@@ -140,7 +142,24 @@ namespace Tetris
              *                  : Great Ball = S Block
              */
                                 
+            /* EMOJI THEME      : Angel = I Block
+             *                  : Asian = L Block
+             *                  : Confused = J Block
+             *                  : Lazy = Z Block
+             *                  : Love = T Block
+             *                  : Nerd = O Block
+             *                  : Sparkly = S Block
+             */ 
 
+            /* FOOD THEME       : Watermelon = I Block
+             *                  : Taco = L Block
+             *                  : Cupcake = J Block
+             *                  : Donut = Z Block
+             *                  : Apple = T Block
+             *                  : Pizza = O Block
+             *                  : Cake = S Block
+             */
+             
             OptionsButtonPressedTexture = Content.Load<Texture2D>(theme + "/Menu Sprites/Options Button Pressed");
             OptionsButtonUnpressedTexture = Content.Load<Texture2D>(theme + "/Menu Sprites/Options Button Unpressed");
             PlayButtonPressedTexture = Content.Load<Texture2D>(theme + "/Menu Sprites/Play Button Pressed");
@@ -159,8 +178,10 @@ namespace Tetris
             TFullBlockTexture = Content.Load<Texture2D>(theme + "/Full Blocks/TFullBlock");
             ZFullBlockTexture = Content.Load<Texture2D>(theme + "/Full Blocks/ZFullBlock");
 
-            bordersquareTexture = Content.Load<Texture2D>(theme + "/Blocks/bordersquare");
+            OptionsCheckTexture = Content.Load<Texture2D>(theme + "/Blocks/OptionsCheck");
+            OptionsUncheckTexture = Content.Load<Texture2D>(theme + "/Blocks/OptionsUncheck");
 
+            bordersquareTexture = Content.Load<Texture2D>(theme + "/Blocks/bordersquare");
             emptyTexture = Content.Load<Texture2D>(theme + "/empty");
 
             PressStartFont = Content.Load<SpriteFont>("Press Start 2P");

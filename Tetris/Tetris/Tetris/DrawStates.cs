@@ -11,7 +11,9 @@ namespace Tetris
     {
         //The linespacing, in pixels, used when printing lines of text
         private static int lineSpacing = TetrisGame.gridSize;
+        
 
+        
         public static void DrawMenu()
         {
 
@@ -154,14 +156,24 @@ namespace Tetris
 
         public static void DrawOptions()
         {
+            Point Mouse = new Point(TetrisGame.mouse.X, TetrisGame.mouse.Y);
+
             TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "OPTIONS",
                 new Vector2(TetrisGame.screenWidth / 2 - TetrisGame.PressStartFont.MeasureString("OPTIONS").X / 2, TetrisGame.screenHeight / 60), Color.Black);
 
             TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "*Select to toggle fullscreen",
                 new Vector2(TetrisGame.screenWidth / 5, TetrisGame.screenHeight / 4 + TetrisGame.PressStartFont.MeasureString("*Select to toggle fullscreen").Y / 2), Color.Black);
 
-            TetrisGame.spriteBatch.Draw(TetrisGame.bordersquareTexture, Options.Checkrectangle, Color.White);
+            if (Options.Checkrectangle.Contains(Mouse))
+                TetrisGame.spriteBatch.Draw(TetrisGame.OptionsCheckTexture, Options.Checkrectangle, Color.White);
+            else
+                TetrisGame.spriteBatch.Draw(TetrisGame.OptionsUncheckTexture, Options.Checkrectangle, Color.White);
 
+            if (Options.Tworectangle.Contains(Mouse))
+                TetrisGame.spriteBatch.Draw(TetrisGame.OptionsCheckTexture, Options.Tworectangle, Color.White);
+            else
+                TetrisGame.spriteBatch.Draw(TetrisGame.OptionsUncheckTexture, Options.Tworectangle, Color.White);
+            
             TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "*Additonal Options",
                 new Vector2(TetrisGame.screenWidth / 5, TetrisGame.screenHeight / 4 + 7 * lineSpacing + TetrisGame.PressStartFont.MeasureString("Additonal Options").Y / 2), Color.Black);
 
