@@ -29,7 +29,7 @@ namespace Tetris
 
         public static int gridSize;
 
-        public static string theme = "Pokemon";
+        public static string theme = "Food";
 
         public static GraphicsDeviceManager graphics;
         public static SpriteBatch spriteBatch;

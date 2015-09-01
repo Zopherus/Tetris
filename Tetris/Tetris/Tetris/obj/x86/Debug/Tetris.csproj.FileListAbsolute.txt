@@ -295,3 +295,5 @@ C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Con
 C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Background.xnb
 C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Blocks\OptionsUncheck.xnb
 C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Blocks\OptionsCheck.xnb
+C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Blocks\OptionsCheck.xnb
+C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Blocks\OptionsUncheck.xnb
