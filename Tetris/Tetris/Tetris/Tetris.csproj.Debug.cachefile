@@ -29,13 +29,8 @@ Content\Food\Full Blocks\OFullBlock.xnb
 Content\Food\Full Blocks\SBlockFull.xnb
 Content\Food\Full Blocks\TBlockFull.xnb
 Content\Food\Full Blocks\ZFullBlock.xnb
-Content\Pokemon\Full Blocks\IFullBlock.xnb
-Content\Pokemon\Full Blocks\JFullBlock.xnb
-Content\Pokemon\Full Blocks\LFullBlock.xnb
-Content\Pokemon\Full Blocks\OFullBlock.xnb
-Content\Pokemon\Full Blocks\SFullBlock.xnb
-Content\Pokemon\Full Blocks\TFullBlock.xnb
-Content\Pokemon\Full Blocks\ZFullBlock.xnb
+Content\Pokemon\Blocks\OptionsCheck.xnb
+Content\Pokemon\Blocks\OptionsUncheck.xnb
 Content\Pokemon\Blocks\OBlock.xnb
 Content\Pokemon\Blocks\SBlock.xnb
 Content\Pokemon\Blocks\JBlock.xnb
@@ -43,6 +38,13 @@ Content\Pokemon\Blocks\TBlock.xnb
 Content\Pokemon\Blocks\IBlock.xnb
 Content\Pokemon\Blocks\ZBlock.xnb
 Content\Pokemon\Blocks\LBlock.xnb
+Content\Pokemon\Full Blocks\IFullBlock.xnb
+Content\Pokemon\Full Blocks\JFullBlock.xnb
+Content\Pokemon\Full Blocks\LFullBlock.xnb
+Content\Pokemon\Full Blocks\OFullBlock.xnb
+Content\Pokemon\Full Blocks\SFullBlock.xnb
+Content\Pokemon\Full Blocks\TFullBlock.xnb
+Content\Pokemon\Full Blocks\ZFullBlock.xnb
 Content\Pokemon\Black.xnb
 Content\Pokemon\Transparent Square.xnb
 Content\Pokemon\Blocks\ShadowBlock.xnb
@@ -56,8 +58,6 @@ Content\Pokemon\Menu Sprites\Play Button Pressed.xnb
 Content\Pokemon\Menu Sprites\Play Button Unpressed.xnb
 Content\Pokemon\Menu Sprites\Quit Button Pressed.xnb
 Content\Pokemon\Menu Sprites\Quit Button Unpressed.xnb
-Content\Pokemon\Blocks\OptionsCheck.xnb
-Content\Pokemon\Blocks\OptionsUncheck.xnb
+Content\Pokemon\Menu Sprites\Menu Background.xnb
 Content\Pokemon\Blocks\bordersquare.xnb
 Content\Pokemon\empty.xnb
-Content\Pokemon\Menu Sprites\Menu Background.xnb

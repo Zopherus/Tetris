@@ -75,7 +75,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>HK1NLV30aARJIdKMGef/ly4Ionk=</dsig:DigestValue>
+        <dsig:DigestValue>sfAIcb2dLR9BqH2MgmjG6p2LxnI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -229,7 +229,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>Aq+ESix0lBTiTC+Dj7G08izWv88=</dsig:DigestValue>
+      <dsig:DigestValue>0utAHfGXJ4EooMQejQ4Z3/MWTbM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\Food\Blocks\Donut.xnb" size="64699">
@@ -247,7 +247,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>YxRRD99atp7Xad7dGu0jzmD0RJc=</dsig:DigestValue>
+      <dsig:DigestValue>EsAIwSj4VSZzN6wXLvOuQ846CEs=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\Food\Blocks\OptionsUncheck.xnb" size="1624187">

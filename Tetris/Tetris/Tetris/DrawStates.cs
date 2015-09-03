@@ -140,7 +140,6 @@ namespace Tetris
                             TetrisGame.gridSize, TetrisGame.gridSize), Color.White);
                 }
             }
-            TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, TetrisGame.PlayerBoard.CurrentPiece.RotationState.ToString(), new Vector2(0, 0), Color.Black);
         }
 
         public static void DrawPause()

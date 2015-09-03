@@ -320,18 +320,12 @@ namespace Tetris
 
         private bool isValid(Piece piece)
         {
-            foreach(Block block in piece.Blocks)
-            {
-                if (!TetrisGame.PlayerBoard.checkOnBoard(block.Position))
-                    return false;
-            }
-            bool value = true;
             foreach (Block block in piece.Blocks)
             {
-                if (TetrisGame.PlayerBoard.BoardState[block.Position.X, block.Position.Y] != null)
-                    value = false;
+                if (!TetrisGame.PlayerBoard.checkOnBoard(block.Position) || TetrisGame.PlayerBoard.BoardState[block.Position.X, block.Position.Y] != null)
+                    return false;
             }
-            return value;
+            return true;
         }
 
         private void clearOldPosition()
@@ -573,7 +567,7 @@ namespace Tetris
             else
             {
                 bool kicked = kick(piece);
-                if (kicked)
+                if (!kicked)
                 {
                     StackTrace stackTrace = new StackTrace();
                     if (stackTrace.GetFrame(2).GetMethod().Name == "rotateRight")
@@ -591,12 +585,11 @@ namespace Tetris
                 piece.moveUp();
             if (isValid(piece))
             {
-                this.blocks = piece.blocks;
+                blocks = piece.blocks;
                 return true;
             }
             else
             {
-                
                 if (value)
                     piece.fall();
             }
@@ -606,29 +599,28 @@ namespace Tetris
                 piece.moveLeft();
             if (isValid(piece))
             {
-                this.blocks = piece.blocks;
+                blocks = piece.blocks;
                 return true;
             }
             else
             {
-                
                 if (value)
                     piece.moveRight();
             }
 
 
-            value = piece.canMoveLeft();
+            value = piece.canMoveRight();
             if (value)
                 piece.moveRight();
             if (isValid(piece))
             {
-                this.blocks = piece.blocks;
+                blocks = piece.blocks;
                 return true;
             }
             else
             {
                 if (value)
-                    piece.moveRight();
+                    piece.moveLeft();
             }
             return false;
         }

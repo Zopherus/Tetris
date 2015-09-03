@@ -91,7 +91,7 @@ namespace Tetris
             {
                 PreferredBackBufferWidth = screenWidth,
                 PreferredBackBufferHeight = screenHeight,
-                //IsFullScreen = true
+                IsFullScreen = true
             };
             IsMouseVisible = true;
             //2 extra gridsizes on top and 2 on bottom
