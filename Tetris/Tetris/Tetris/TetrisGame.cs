@@ -11,9 +11,9 @@ using Microsoft.Xna.Framework.Media;
 
 namespace Tetris
 {
-    public enum GameState {Menu, Play, Pause, Options, Highscore, EnterName}
+    public enum GameState { Menu, Play, Pause, Options, Highscore, EnterName}
     //I is Cyan, O is Yellow, L is Orange, Z is Red, S is green, T is Purple, J is Blue
-    public enum BlockType {I, J, L, O, S, T, Z};
+    public enum BlockType { I, J, L, O, S, T, Z};
     //Rotation states based off of http://vignette1.wikia.nocookie.net/tetrisconcept/images/3/3d/SRS-pieces.png/revision/latest?cb=20060626173148
     public enum RotationState { One, Two, Three, Four};
     //Block positions as shown in http://imgur.com/7bjA0d9 sorry I can't draw for my life
@@ -29,7 +29,7 @@ namespace Tetris
 
         public static int gridSize;
 
-        public static string theme = "Food";
+        public static string theme = "Pokemon";
 
         public static GraphicsDeviceManager graphics;
         public static SpriteBatch spriteBatch;
@@ -51,7 +51,7 @@ namespace Tetris
         public static Texture2D OptionsButtonUnpressedTexture;
         public static Texture2D PlayButtonPressedTexture;
         public static Texture2D PlayButtonUnpressedTexture;
-        public static Texture2D pokemonsunsetTexture;
+        public static Texture2D MenuBackgroundTexture;
         public static Texture2D QuitButtonPressedTexture;
         public static Texture2D QuitButtonUnpressedTexture;
         public static Texture2D HighscoreButtonPressedTexture;
@@ -141,7 +141,7 @@ namespace Tetris
              *                  : Duskball = O Block
              *                  : Great Ball = S Block
              */
-                                
+
             /* EMOJI THEME      : Angel = I Block
              *                  : Asian = L Block
              *                  : Confused = J Block
@@ -149,7 +149,7 @@ namespace Tetris
              *                  : Love = T Block
              *                  : Nerd = O Block
              *                  : Sparkly = S Block
-             */ 
+             */
 
             /* FOOD THEME       : Watermelon = I Block
              *                  : Taco = L Block
@@ -159,12 +159,12 @@ namespace Tetris
              *                  : Pizza = O Block
              *                  : Cake = S Block
              */
-             
+
             OptionsButtonPressedTexture = Content.Load<Texture2D>(theme + "/Menu Sprites/Options Button Pressed");
             OptionsButtonUnpressedTexture = Content.Load<Texture2D>(theme + "/Menu Sprites/Options Button Unpressed");
             PlayButtonPressedTexture = Content.Load<Texture2D>(theme + "/Menu Sprites/Play Button Pressed");
             PlayButtonUnpressedTexture = Content.Load<Texture2D>(theme + "/Menu Sprites/Play Button Unpressed");
-            pokemonsunsetTexture = Content.Load<Texture2D>(theme + "/Menu Sprites/pokemon sunset");
+            MenuBackgroundTexture = Content.Load<Texture2D>(theme + "/Menu Sprites/Menu Background");
             QuitButtonPressedTexture = Content.Load<Texture2D>(theme + "/Menu Sprites/Quit Button Pressed");
             QuitButtonUnpressedTexture = Content.Load<Texture2D>(theme + "/Menu Sprites/Quit Button Unpressed");
             HighscoreButtonPressedTexture = Content.Load<Texture2D>(theme + "/Menu Sprites/HighscoreButtonPressed");
@@ -277,7 +277,7 @@ namespace Tetris
             PlayerBoard = new Board(new Rectangle((screenWidth - (boardWidth * gridSize)) / 2,
                     (screenHeight - (boardHeight * gridSize)) / 2, boardWidth * gridSize, boardHeight * gridSize));
             GameBoards.Add(PlayerBoard);
-            gameState = GameState.Menu; 
+            gameState = GameState.Play; 
             PlayerBoard.fillUpcomingPieces();
             PlayerBoard.changeCurrentPiece();
             Highscore.ReadFromFile();

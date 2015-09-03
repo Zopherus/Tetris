@@ -1,41 +1,34 @@
 Content\Press Start 2P.xnb
-Content\Original\Black.xnb
-Content\Original\Transparent Square.xnb
-Content\Original\Background.xnb
-Content\Original\Menu Sprites\HighscoreButtonPressed.xnb
-Content\Original\Menu Sprites\HighscoreButtonUnpressed.xnb
-Content\Original\Menu Sprites\Options Button Pressed.xnb
-Content\Original\Menu Sprites\Options Button Unpressed.xnb
-Content\Original\Menu Sprites\Play Button Pressed.xnb
-Content\Original\Menu Sprites\Play Button Unpressed.xnb
-Content\Original\Menu Sprites\pokemon sunset.xnb
-Content\Original\Menu Sprites\Quit Button Pressed.xnb
-Content\Original\Menu Sprites\Quit Button Unpressed.xnb
-Content\Original\Blocks\bordersquare.xnb
-Content\Original\empty.xnb
-Content\Original\Blocks\shadowBlock.xnb
-Content\Original\Blocks\JBlock.xnb
-Content\Original\Blocks\IBlock.xnb
-Content\Original\Blocks\SBlock.xnb
-Content\Original\Blocks\LBlock.xnb
-Content\Original\Blocks\TBlock.xnb
-Content\Original\Blocks\ZBlock.xnb
-Content\Original\Blocks\OBlock.xnb
-Content\Original\Full Blocks\IFullBlock.xnb
-Content\Original\Full Blocks\JFullBlock.xnb
-Content\Original\Full Blocks\LFullBlock.xnb
-Content\Original\Full Blocks\OFullBlock.xnb
-Content\Original\Full Blocks\SFullBlock.xnb
-Content\Original\Full Blocks\TFullBlock.xnb
-Content\Original\Full Blocks\ZFullBlock.xnb
-Content\Original\Blocks\trashblock.xnb
-Content\Pokemon\Blocks\OBlock.xnb
-Content\Pokemon\Blocks\SBlock.xnb
-Content\Pokemon\Blocks\JBlock.xnb
-Content\Pokemon\Blocks\TBlock.xnb
-Content\Pokemon\Blocks\IBlock.xnb
-Content\Pokemon\Blocks\ZBlock.xnb
-Content\Pokemon\Blocks\LBlock.xnb
+Content\Emojis\Blocks\Angel.xnb
+Content\Emojis\Blocks\Asian.xnb
+Content\Emojis\Blocks\Confused.xnb
+Content\Emojis\Blocks\Lazy.xnb
+Content\Emojis\Blocks\Love.xnb
+Content\Emojis\Blocks\Nerd.xnb
+Content\Emojis\Blocks\Sparkly.xnb
+Content\Emojis\Full Blocks\IFullBlock.xnb
+Content\Emojis\Full Blocks\JBlockFull.xnb
+Content\Emojis\Full Blocks\LFullBlock.xnb
+Content\Emojis\Full Blocks\OFullBlock.xnb
+Content\Emojis\Full Blocks\SFullBlock.xnb
+Content\Emojis\Full Blocks\TFullBlock.xnb
+Content\Emojis\Full Blocks\ZFullBlock.xnb
+Content\Food\Blocks\Apple.xnb
+Content\Food\Blocks\Cake.xnb
+Content\Food\Blocks\Cupcake.xnb
+Content\Food\Blocks\Donut.xnb
+Content\Food\Blocks\OptionsCheck.xnb
+Content\Food\Blocks\OptionsUncheck.xnb
+Content\Food\Blocks\Pizza.xnb
+Content\Food\Blocks\Taco.xnb
+Content\Food\Blocks\Watermelon.xnb
+Content\Food\Full Blocks\IBlockFull.xnb
+Content\Food\Full Blocks\JFullBlock.xnb
+Content\Food\Full Blocks\LFullBlock.xnb
+Content\Food\Full Blocks\OFullBlock.xnb
+Content\Food\Full Blocks\SBlockFull.xnb
+Content\Food\Full Blocks\TBlockFull.xnb
+Content\Food\Full Blocks\ZFullBlock.xnb
 Content\Pokemon\Full Blocks\IFullBlock.xnb
 Content\Pokemon\Full Blocks\JFullBlock.xnb
 Content\Pokemon\Full Blocks\LFullBlock.xnb
@@ -43,83 +36,28 @@ Content\Pokemon\Full Blocks\OFullBlock.xnb
 Content\Pokemon\Full Blocks\SFullBlock.xnb
 Content\Pokemon\Full Blocks\TFullBlock.xnb
 Content\Pokemon\Full Blocks\ZFullBlock.xnb
-Content\Pokemon\Background.xnb
+Content\Pokemon\Blocks\OBlock.xnb
+Content\Pokemon\Blocks\SBlock.xnb
+Content\Pokemon\Blocks\JBlock.xnb
+Content\Pokemon\Blocks\TBlock.xnb
+Content\Pokemon\Blocks\IBlock.xnb
+Content\Pokemon\Blocks\ZBlock.xnb
+Content\Pokemon\Blocks\LBlock.xnb
 Content\Pokemon\Black.xnb
-Content\Pokemon\empty.xnb
 Content\Pokemon\Transparent Square.xnb
-Content\Pokemon\Blocks\shadowBlock.xnb
+Content\Pokemon\Blocks\ShadowBlock.xnb
 Content\Pokemon\Blocks\trashblock.xnb
+Content\Pokemon\Background.xnb
 Content\Pokemon\Menu Sprites\HighscoreButtonPressed.xnb
 Content\Pokemon\Menu Sprites\HighscoreButtonUnpressed.xnb
 Content\Pokemon\Menu Sprites\Options Button Pressed.xnb
 Content\Pokemon\Menu Sprites\Options Button Unpressed.xnb
 Content\Pokemon\Menu Sprites\Play Button Pressed.xnb
 Content\Pokemon\Menu Sprites\Play Button Unpressed.xnb
-Content\Pokemon\Menu Sprites\pokemon sunset.xnb
 Content\Pokemon\Menu Sprites\Quit Button Pressed.xnb
 Content\Pokemon\Menu Sprites\Quit Button Unpressed.xnb
-Content\Pokemon\Blocks\bordersquare.xnb
-Content\Emojis\Blocks\IBlock.xnb
-Content\Emojis\Blocks\LBlock.xnb
-Content\Emojis\Blocks\JBlock.xnb
-Content\Emojis\Blocks\ZBlock.xnb
-Content\Emojis\Blocks\TBlock.xnb
-Content\Emojis\Blocks\OBlock.xnb
-Content\Emojis\Blocks\SBlock.xnb
-Content\Emojis\Full Blocks\IFullBlock.xnb
-Content\Emojis\Full Blocks\OFullBlock.xnb
-Content\Emojis\Full Blocks\SFullBlock.xnb
-Content\Emojis\Full Blocks\TFullBlock.xnb
-Content\Emojis\Full Blocks\ZFullBlock.xnb
-Content\Emojis\Full Blocks\LFullBlock.xnb
-Content\Emojis\Transparent Square.xnb
-Content\Emojis\empty.xnb
-Content\Emojis\Black.xnb
-Content\Emojis\Blocks\bordersquare.xnb
-Content\Emojis\Blocks\trashblock.xnb
-Content\Emojis\Blocks\shadowBlock.xnb
-Content\Emojis\Menu Sprites\HighscoreButtonPressed.xnb
-Content\Emojis\Menu Sprites\HighscoreButtonUnpressed.xnb
-Content\Emojis\Menu Sprites\Options Button Pressed.xnb
-Content\Emojis\Menu Sprites\Options Button Unpressed.xnb
-Content\Emojis\Menu Sprites\Play Button Pressed.xnb
-Content\Emojis\Menu Sprites\Play Button Unpressed.xnb
-Content\Emojis\Menu Sprites\pokemon sunset.xnb
-Content\Emojis\Menu Sprites\Quit Button Pressed.xnb
-Content\Emojis\Menu Sprites\Quit Button Unpressed.xnb
-Content\Emojis\Full Blocks\JFullBlock.xnb
-Content\Food\Menu Sprites\HighscoreButtonPressed.xnb
-Content\Food\Menu Sprites\HighscoreButtonUnpressed.xnb
-Content\Food\Menu Sprites\Options Button Pressed.xnb
-Content\Food\Menu Sprites\Options Button Unpressed.xnb
-Content\Food\Menu Sprites\Play Button Pressed.xnb
-Content\Food\Menu Sprites\Play Button Unpressed.xnb
-Content\Food\Menu Sprites\pokemon sunset.xnb
-Content\Food\Menu Sprites\Quit Button Pressed.xnb
-Content\Food\Menu Sprites\Quit Button Unpressed.xnb
-Content\Food\Black.xnb
-Content\Food\empty.xnb
-Content\Food\Transparent Square.xnb
-Content\Food\Blocks\TBlock.xnb
-Content\Food\Blocks\SBlock.xnb
-Content\Food\Blocks\JBlock.xnb
-Content\Food\Blocks\ZBlock.xnb
-Content\Food\Blocks\OBlock.xnb
-Content\Food\Blocks\LBlock.xnb
-Content\Food\Blocks\IBlock.xnb
-Content\Food\Full Blocks\IFullBlock.xnb
-Content\Food\Full Blocks\JFullBlock.xnb
-Content\Food\Full Blocks\LFullBlock.xnb
-Content\Food\Full Blocks\OFullBlock.xnb
-Content\Food\Full Blocks\SFullBlock.xnb
-Content\Food\Full Blocks\TFullBlock.xnb
-Content\Food\Full Blocks\ZFullBlock.xnb
-Content\Food\Blocks\bordersquare.xnb
-Content\Food\Blocks\trashblock.xnb
-Content\Food\Blocks\shadowBlock.xnb
-Content\Food\Background.xnb
-Content\Emojis\Background.xnb
-Content\Pokemon\Blocks\OptionsUncheck.xnb
 Content\Pokemon\Blocks\OptionsCheck.xnb
-Content\Food\Blocks\OptionsCheck.xnb
-Content\Food\Blocks\OptionsUncheck.xnb
+Content\Pokemon\Blocks\OptionsUncheck.xnb
+Content\Pokemon\Blocks\bordersquare.xnb
+Content\Pokemon\empty.xnb
+Content\Pokemon\Menu Sprites\Menu Background.xnb

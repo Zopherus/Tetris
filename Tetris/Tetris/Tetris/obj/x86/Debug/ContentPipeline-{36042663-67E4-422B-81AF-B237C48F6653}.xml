@@ -7,611 +7,71 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Press Start 2P.xnb</Output>
-      <Time>2015-08-30T21:18:32.1576612-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Press Start 2P.xnb</Output>
+      <Time>2015-08-06T20:45:09.8920468-07:00</Time>
     </Item>
     <Item>
-      <Source>Original\Black.png</Source>
-      <Name>Original\Black</Name>
+      <Source>Emojis\Blocks\Angel.png</Source>
+      <Name>Emojis\Blocks\Angel</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Black.xnb</Output>
-      <Time>2015-08-30T21:18:32.1596674-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Blocks\Angel.xnb</Output>
+      <Time>2015-09-01T12:38:21.9176007-07:00</Time>
     </Item>
     <Item>
-      <Source>Original\Transparent Square.png</Source>
-      <Name>Original\Transparent Square</Name>
+      <Source>Emojis\Blocks\Asian.png</Source>
+      <Name>Emojis\Blocks\Asian</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Transparent Square.xnb</Output>
-      <Time>2015-08-30T21:18:32.1786764-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Blocks\Asian.xnb</Output>
+      <Time>2015-09-01T12:38:21.9186008-07:00</Time>
     </Item>
     <Item>
-      <Source>Original\Background.png</Source>
-      <Name>Original\Background</Name>
+      <Source>Emojis\Blocks\Confused.png</Source>
+      <Name>Emojis\Blocks\Confused</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Background.xnb</Output>
-      <Time>2015-08-30T21:18:32.1596674-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Blocks\Confused.xnb</Output>
+      <Time>2015-09-01T12:38:21.9196008-07:00</Time>
     </Item>
     <Item>
-      <Source>Original\Menu Sprites\HighscoreButtonPressed.png</Source>
-      <Name>Original\Menu Sprites\HighscoreButtonPressed</Name>
+      <Source>Emojis\Blocks\Lazy.png</Source>
+      <Name>Emojis\Blocks\Lazy</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Menu Sprites\HighscoreButtonPressed.xnb</Output>
-      <Time>2015-08-30T21:18:32.170671-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Blocks\Lazy.xnb</Output>
+      <Time>2015-09-01T12:38:21.9216009-07:00</Time>
     </Item>
     <Item>
-      <Source>Original\Menu Sprites\HighscoreButtonUnpressed.png</Source>
-      <Name>Original\Menu Sprites\HighscoreButtonUnpressed</Name>
+      <Source>Emojis\Blocks\Love.png</Source>
+      <Name>Emojis\Blocks\Love</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Menu Sprites\HighscoreButtonUnpressed.xnb</Output>
-      <Time>2015-08-30T21:18:32.1716717-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Blocks\Love.xnb</Output>
+      <Time>2015-09-01T12:38:21.922601-07:00</Time>
     </Item>
     <Item>
-      <Source>Original\Menu Sprites\Options Button Pressed.png</Source>
-      <Name>Original\Menu Sprites\Options Button Pressed</Name>
+      <Source>Emojis\Blocks\Nerd.png</Source>
+      <Name>Emojis\Blocks\Nerd</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Menu Sprites\Options Button Pressed.xnb</Output>
-      <Time>2015-08-30T21:18:32.1716717-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Blocks\Nerd.xnb</Output>
+      <Time>2015-09-01T12:38:21.923601-07:00</Time>
     </Item>
     <Item>
-      <Source>Original\Menu Sprites\Options Button Unpressed.png</Source>
-      <Name>Original\Menu Sprites\Options Button Unpressed</Name>
+      <Source>Emojis\Blocks\Sparkly.png</Source>
+      <Name>Emojis\Blocks\Sparkly</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Menu Sprites\Options Button Unpressed.xnb</Output>
-      <Time>2015-08-30T21:18:32.1726724-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Original\Menu Sprites\Play Button Pressed.png</Source>
-      <Name>Original\Menu Sprites\Play Button Pressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Menu Sprites\Play Button Pressed.xnb</Output>
-      <Time>2015-08-30T21:18:32.1726724-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Original\Menu Sprites\Play Button Unpressed.png</Source>
-      <Name>Original\Menu Sprites\Play Button Unpressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Menu Sprites\Play Button Unpressed.xnb</Output>
-      <Time>2015-08-30T21:18:32.1736731-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Original\Menu Sprites\pokemon sunset.png</Source>
-      <Name>Original\Menu Sprites\pokemon sunset</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Menu Sprites\pokemon sunset.xnb</Output>
-      <Time>2015-08-30T21:18:32.1776757-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Original\Menu Sprites\Quit Button Pressed.png</Source>
-      <Name>Original\Menu Sprites\Quit Button Pressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Menu Sprites\Quit Button Pressed.xnb</Output>
-      <Time>2015-08-30T21:18:32.1736731-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Original\Menu Sprites\Quit Button Unpressed.png</Source>
-      <Name>Original\Menu Sprites\Quit Button Unpressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Menu Sprites\Quit Button Unpressed.xnb</Output>
-      <Time>2015-08-30T21:18:32.1746736-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Original\Blocks\bordersquare.png</Source>
-      <Name>Original\Blocks\bordersquare</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Blocks\bordersquare.xnb</Output>
-      <Time>2015-08-30T21:18:32.1606644-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Original\empty.png</Source>
-      <Name>Original\empty</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\empty.xnb</Output>
-      <Time>2015-08-30T21:18:32.1806787-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Original\Blocks\shadowBlock.png</Source>
-      <Name>Original\Blocks\shadowBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Blocks\shadowBlock.xnb</Output>
-      <Time>2015-08-30T21:18:32.163666-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Original\Blocks\JBlock.png</Source>
-      <Name>Original\Blocks\JBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Blocks\JBlock.xnb</Output>
-      <Time>2015-08-30T21:18:32.1606644-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Original\Blocks\IBlock.png</Source>
-      <Name>Original\Blocks\IBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Blocks\IBlock.xnb</Output>
-      <Time>2015-08-30T21:18:32.1616646-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Original\Blocks\SBlock.png</Source>
-      <Name>Original\Blocks\SBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Blocks\SBlock.xnb</Output>
-      <Time>2015-08-30T21:18:32.1616646-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Original\Blocks\LBlock.png</Source>
-      <Name>Original\Blocks\LBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Blocks\LBlock.xnb</Output>
-      <Time>2015-08-30T21:18:32.1626653-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Original\Blocks\TBlock.png</Source>
-      <Name>Original\Blocks\TBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Blocks\TBlock.xnb</Output>
-      <Time>2015-08-30T21:18:32.1626653-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Original\Blocks\ZBlock.png</Source>
-      <Name>Original\Blocks\ZBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Blocks\ZBlock.xnb</Output>
-      <Time>2015-08-30T21:18:32.1626653-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Original\Blocks\OBlock.png</Source>
-      <Name>Original\Blocks\OBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Blocks\OBlock.xnb</Output>
-      <Time>2015-08-30T21:18:32.163666-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Original\Full Blocks\IFullBlock.png</Source>
-      <Name>Original\Full Blocks\IFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Full Blocks\IFullBlock.xnb</Output>
-      <Time>2015-08-30T21:18:32.1646662-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Original\Full Blocks\JFullBlock.png</Source>
-      <Name>Original\Full Blocks\JFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Full Blocks\JFullBlock.xnb</Output>
-      <Time>2015-08-30T21:18:32.1646662-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Original\Full Blocks\LFullBlock.png</Source>
-      <Name>Original\Full Blocks\LFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Full Blocks\LFullBlock.xnb</Output>
-      <Time>2015-08-30T21:18:32.1646662-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Original\Full Blocks\OFullBlock.png</Source>
-      <Name>Original\Full Blocks\OFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Full Blocks\OFullBlock.xnb</Output>
-      <Time>2015-08-30T21:18:32.1656674-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Original\Full Blocks\SFullBlock.png</Source>
-      <Name>Original\Full Blocks\SFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Full Blocks\SFullBlock.xnb</Output>
-      <Time>2015-08-30T21:18:32.1666676-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Original\Full Blocks\TFullBlock.png</Source>
-      <Name>Original\Full Blocks\TFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Full Blocks\TFullBlock.xnb</Output>
-      <Time>2015-08-30T21:18:32.1666676-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Original\Full Blocks\ZFullBlock.png</Source>
-      <Name>Original\Full Blocks\ZFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Full Blocks\ZFullBlock.xnb</Output>
-      <Time>2015-08-30T21:18:32.1676686-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Original\Blocks\trashblock.png</Source>
-      <Name>Original\Blocks\trashblock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Original\Blocks\trashblock.xnb</Output>
-      <Time>2015-08-30T22:08:39.835912-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Blocks\OBlock.png</Source>
-      <Name>Pokemon\Blocks\OBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Blocks\OBlock.xnb</Output>
-      <Time>2015-08-30T22:56:33.4880336-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Blocks\SBlock.png</Source>
-      <Name>Pokemon\Blocks\SBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Blocks\SBlock.xnb</Output>
-      <Time>2015-08-30T22:56:33.4890343-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Blocks\JBlock.png</Source>
-      <Name>Pokemon\Blocks\JBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Blocks\JBlock.xnb</Output>
-      <Time>2015-08-30T22:56:33.491036-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Blocks\TBlock.png</Source>
-      <Name>Pokemon\Blocks\TBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Blocks\TBlock.xnb</Output>
-      <Time>2015-08-30T22:56:33.492037-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Blocks\IBlock.png</Source>
-      <Name>Pokemon\Blocks\IBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Blocks\IBlock.xnb</Output>
-      <Time>2015-08-30T22:56:33.4930383-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Blocks\ZBlock.png</Source>
-      <Name>Pokemon\Blocks\ZBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Blocks\ZBlock.xnb</Output>
-      <Time>2015-08-30T22:56:33.4940376-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Blocks\LBlock.png</Source>
-      <Name>Pokemon\Blocks\LBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Blocks\LBlock.xnb</Output>
-      <Time>2015-08-30T22:56:33.49504-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Full Blocks\IFullBlock.png</Source>
-      <Name>Pokemon\Full Blocks\IFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Full Blocks\IFullBlock.xnb</Output>
-      <Time>2015-08-30T23:42:18.7065636-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Full Blocks\JFullBlock.png</Source>
-      <Name>Pokemon\Full Blocks\JFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Full Blocks\JFullBlock.xnb</Output>
-      <Time>2015-08-30T23:42:29.6826894-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Full Blocks\LFullBlock.png</Source>
-      <Name>Pokemon\Full Blocks\LFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Full Blocks\LFullBlock.xnb</Output>
-      <Time>2015-08-30T23:42:32.8555285-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Full Blocks\OFullBlock.png</Source>
-      <Name>Pokemon\Full Blocks\OFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Full Blocks\OFullBlock.xnb</Output>
-      <Time>2015-08-30T23:42:37.8588097-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Full Blocks\SFullBlock.png</Source>
-      <Name>Pokemon\Full Blocks\SFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Full Blocks\SFullBlock.xnb</Output>
-      <Time>2015-08-30T23:42:40.3536022-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Full Blocks\TFullBlock.png</Source>
-      <Name>Pokemon\Full Blocks\TFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Full Blocks\TFullBlock.xnb</Output>
-      <Time>2015-08-30T23:42:40.3546029-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Full Blocks\ZFullBlock.png</Source>
-      <Name>Pokemon\Full Blocks\ZFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Full Blocks\ZFullBlock.xnb</Output>
-      <Time>2015-08-30T23:42:42.967591-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Background.png</Source>
-      <Name>Pokemon\Background</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Background.xnb</Output>
-      <Time>2015-08-30T23:51:06.8164386-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Black.png</Source>
-      <Name>Pokemon\Black</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Black.xnb</Output>
-      <Time>2015-08-30T23:51:06.8174404-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\empty.png</Source>
-      <Name>Pokemon\empty</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\empty.xnb</Output>
-      <Time>2015-08-30T23:51:06.8184411-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Transparent Square.png</Source>
-      <Name>Pokemon\Transparent Square</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Transparent Square.xnb</Output>
-      <Time>2015-08-30T23:51:06.8194418-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Blocks\shadowBlock.png</Source>
-      <Name>Pokemon\Blocks\shadowBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Blocks\shadowBlock.xnb</Output>
-      <Time>2015-08-30T23:51:52.7292809-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Blocks\trashblock.png</Source>
-      <Name>Pokemon\Blocks\trashblock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Blocks\trashblock.xnb</Output>
-      <Time>2015-08-30T23:52:10.066252-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Menu Sprites\HighscoreButtonPressed.png</Source>
-      <Name>Pokemon\Menu Sprites\HighscoreButtonPressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Menu Sprites\HighscoreButtonPressed.xnb</Output>
-      <Time>2015-08-30T23:53:08.9935351-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Menu Sprites\HighscoreButtonUnpressed.png</Source>
-      <Name>Pokemon\Menu Sprites\HighscoreButtonUnpressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Menu Sprites\HighscoreButtonUnpressed.xnb</Output>
-      <Time>2015-08-30T23:53:08.994537-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Menu Sprites\Options Button Pressed.png</Source>
-      <Name>Pokemon\Menu Sprites\Options Button Pressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Menu Sprites\Options Button Pressed.xnb</Output>
-      <Time>2015-08-30T23:53:08.9960366-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Menu Sprites\Options Button Unpressed.png</Source>
-      <Name>Pokemon\Menu Sprites\Options Button Unpressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Menu Sprites\Options Button Unpressed.xnb</Output>
-      <Time>2015-08-30T23:53:08.997039-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Menu Sprites\Play Button Pressed.png</Source>
-      <Name>Pokemon\Menu Sprites\Play Button Pressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Menu Sprites\Play Button Pressed.xnb</Output>
-      <Time>2015-08-30T23:53:08.99804-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Menu Sprites\Play Button Unpressed.png</Source>
-      <Name>Pokemon\Menu Sprites\Play Button Unpressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Menu Sprites\Play Button Unpressed.xnb</Output>
-      <Time>2015-08-30T23:53:08.9990407-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Menu Sprites\pokemon sunset.png</Source>
-      <Name>Pokemon\Menu Sprites\pokemon sunset</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Menu Sprites\pokemon sunset.xnb</Output>
-      <Time>2015-08-30T23:53:09.0005415-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Menu Sprites\Quit Button Pressed.png</Source>
-      <Name>Pokemon\Menu Sprites\Quit Button Pressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Menu Sprites\Quit Button Pressed.xnb</Output>
-      <Time>2015-08-30T23:53:09.0015422-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Menu Sprites\Quit Button Unpressed.png</Source>
-      <Name>Pokemon\Menu Sprites\Quit Button Unpressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Menu Sprites\Quit Button Unpressed.xnb</Output>
-      <Time>2015-08-30T23:53:09.0025429-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Blocks\bordersquare.png</Source>
-      <Name>Pokemon\Blocks\bordersquare</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Blocks\bordersquare.xnb</Output>
-      <Time>2015-08-30T23:54:16.8549141-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Emojis\Blocks\IBlock.png</Source>
-      <Name>Emojis\Blocks\IBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Blocks\IBlock.xnb</Output>
-      <Time>2015-08-31T00:55:28.3869829-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Emojis\Blocks\LBlock.png</Source>
-      <Name>Emojis\Blocks\LBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Blocks\LBlock.xnb</Output>
-      <Time>2015-08-31T00:55:28.3879859-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Emojis\Blocks\JBlock.png</Source>
-      <Name>Emojis\Blocks\JBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Blocks\JBlock.xnb</Output>
-      <Time>2015-08-31T00:55:28.3889937-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Emojis\Blocks\ZBlock.png</Source>
-      <Name>Emojis\Blocks\ZBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Blocks\ZBlock.xnb</Output>
-      <Time>2015-08-31T00:55:28.3909985-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Emojis\Blocks\TBlock.png</Source>
-      <Name>Emojis\Blocks\TBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Blocks\TBlock.xnb</Output>
-      <Time>2015-08-31T00:55:28.391989-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Emojis\Blocks\OBlock.png</Source>
-      <Name>Emojis\Blocks\OBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Blocks\OBlock.xnb</Output>
-      <Time>2015-08-31T00:55:28.3929871-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Emojis\Blocks\SBlock.png</Source>
-      <Name>Emojis\Blocks\SBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Blocks\SBlock.xnb</Output>
-      <Time>2015-08-31T00:55:28.3949946-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Blocks\Sparkly.xnb</Output>
+      <Time>2015-09-01T12:38:21.9256012-07:00</Time>
     </Item>
     <Item>
       <Source>Emojis\Full Blocks\IFullBlock.png</Source>
@@ -619,44 +79,17 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Full Blocks\IFullBlock.xnb</Output>
-      <Time>2015-08-31T01:14:24.6420305-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Full Blocks\IFullBlock.xnb</Output>
+      <Time>2015-09-01T12:38:21.9266012-07:00</Time>
     </Item>
     <Item>
-      <Source>Emojis\Full Blocks\OFullBlock.png</Source>
-      <Name>Emojis\Full Blocks\OFullBlock</Name>
+      <Source>Emojis\Full Blocks\JBlockFull.png</Source>
+      <Name>Emojis\Full Blocks\JBlockFull</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Full Blocks\OFullBlock.xnb</Output>
-      <Time>2015-08-31T01:14:27.5768161-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Emojis\Full Blocks\SFullBlock.png</Source>
-      <Name>Emojis\Full Blocks\SFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Full Blocks\SFullBlock.xnb</Output>
-      <Time>2015-08-31T01:14:29.5446266-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Emojis\Full Blocks\TFullBlock.png</Source>
-      <Name>Emojis\Full Blocks\TFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Full Blocks\TFullBlock.xnb</Output>
-      <Time>2015-08-31T01:14:31.2003268-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Emojis\Full Blocks\ZFullBlock.png</Source>
-      <Name>Emojis\Full Blocks\ZFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Full Blocks\ZFullBlock.xnb</Output>
-      <Time>2015-08-31T01:14:32.8173113-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Full Blocks\JBlockFull.xnb</Output>
+      <Time>2015-09-01T12:38:21.9276013-07:00</Time>
     </Item>
     <Item>
       <Source>Emojis\Full Blocks\LFullBlock.png</Source>
@@ -664,449 +97,80 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Full Blocks\LFullBlock.xnb</Output>
-      <Time>2015-08-31T01:14:38.0881351-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Full Blocks\LFullBlock.xnb</Output>
+      <Time>2015-09-01T12:38:21.9286013-07:00</Time>
     </Item>
     <Item>
-      <Source>Emojis\Transparent Square.png</Source>
-      <Name>Emojis\Transparent Square</Name>
+      <Source>Emojis\Full Blocks\OFullBlock.png</Source>
+      <Name>Emojis\Full Blocks\OFullBlock</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Transparent Square.xnb</Output>
-      <Time>2015-08-31T01:14:52.9317442-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Full Blocks\OFullBlock.xnb</Output>
+      <Time>2015-09-01T12:38:21.9306014-07:00</Time>
     </Item>
     <Item>
-      <Source>Emojis\empty.png</Source>
-      <Name>Emojis\empty</Name>
+      <Source>Emojis\Full Blocks\SFullBlock.png</Source>
+      <Name>Emojis\Full Blocks\SFullBlock</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\empty.xnb</Output>
-      <Time>2015-08-31T01:14:57.4116551-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Full Blocks\SFullBlock.xnb</Output>
+      <Time>2015-09-01T12:38:21.9316015-07:00</Time>
     </Item>
     <Item>
-      <Source>Emojis\Black.png</Source>
-      <Name>Emojis\Black</Name>
+      <Source>Emojis\Full Blocks\TFullBlock.png</Source>
+      <Name>Emojis\Full Blocks\TFullBlock</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Black.xnb</Output>
-      <Time>2015-08-31T01:15:01.4107895-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Full Blocks\TFullBlock.xnb</Output>
+      <Time>2015-09-01T12:38:21.9326016-07:00</Time>
     </Item>
     <Item>
-      <Source>Emojis\Blocks\bordersquare.png</Source>
-      <Name>Emojis\Blocks\bordersquare</Name>
+      <Source>Emojis\Full Blocks\ZFullBlock.png</Source>
+      <Name>Emojis\Full Blocks\ZFullBlock</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Blocks\bordersquare.xnb</Output>
-      <Time>2015-08-31T01:15:15.4355975-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Full Blocks\ZFullBlock.xnb</Output>
+      <Time>2015-09-01T12:38:21.9336016-07:00</Time>
     </Item>
     <Item>
-      <Source>Emojis\Blocks\trashblock.png</Source>
-      <Name>Emojis\Blocks\trashblock</Name>
+      <Source>Food\Blocks\Apple.png</Source>
+      <Name>Food\Blocks\Apple</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Blocks\trashblock.xnb</Output>
-      <Time>2015-08-31T01:15:22.2113515-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Blocks\Apple.xnb</Output>
+      <Time>2015-09-01T12:38:21.9366018-07:00</Time>
     </Item>
     <Item>
-      <Source>Emojis\Blocks\shadowBlock.png</Source>
-      <Name>Emojis\Blocks\shadowBlock</Name>
+      <Source>Food\Blocks\Cake.png</Source>
+      <Name>Food\Blocks\Cake</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Blocks\shadowBlock.xnb</Output>
-      <Time>2015-08-31T01:15:30.40312-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Blocks\Cake.xnb</Output>
+      <Time>2015-09-01T12:38:21.9386019-07:00</Time>
     </Item>
     <Item>
-      <Source>Emojis\Menu Sprites\HighscoreButtonPressed.png</Source>
-      <Name>Emojis\Menu Sprites\HighscoreButtonPressed</Name>
+      <Source>Food\Blocks\Cupcake.png</Source>
+      <Name>Food\Blocks\Cupcake</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Menu Sprites\HighscoreButtonPressed.xnb</Output>
-      <Time>2015-08-31T01:16:14.9133177-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Blocks\Cupcake.xnb</Output>
+      <Time>2015-09-01T12:38:21.9386019-07:00</Time>
     </Item>
     <Item>
-      <Source>Emojis\Menu Sprites\HighscoreButtonUnpressed.png</Source>
-      <Name>Emojis\Menu Sprites\HighscoreButtonUnpressed</Name>
+      <Source>Food\Blocks\Donut.png</Source>
+      <Name>Food\Blocks\Donut</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Menu Sprites\HighscoreButtonUnpressed.xnb</Output>
-      <Time>2015-08-31T01:16:14.9033106-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Emojis\Menu Sprites\Options Button Pressed.png</Source>
-      <Name>Emojis\Menu Sprites\Options Button Pressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Menu Sprites\Options Button Pressed.xnb</Output>
-      <Time>2015-08-31T01:16:14.9043113-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Emojis\Menu Sprites\Options Button Unpressed.png</Source>
-      <Name>Emojis\Menu Sprites\Options Button Unpressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Menu Sprites\Options Button Unpressed.xnb</Output>
-      <Time>2015-08-31T01:16:14.9063127-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Emojis\Menu Sprites\Play Button Pressed.png</Source>
-      <Name>Emojis\Menu Sprites\Play Button Pressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Menu Sprites\Play Button Pressed.xnb</Output>
-      <Time>2015-08-31T01:16:14.9073126-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Emojis\Menu Sprites\Play Button Unpressed.png</Source>
-      <Name>Emojis\Menu Sprites\Play Button Unpressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Menu Sprites\Play Button Unpressed.xnb</Output>
-      <Time>2015-08-31T01:16:14.9083138-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Emojis\Menu Sprites\pokemon sunset.png</Source>
-      <Name>Emojis\Menu Sprites\pokemon sunset</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Menu Sprites\pokemon sunset.xnb</Output>
-      <Time>2015-08-31T01:16:14.9093143-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Emojis\Menu Sprites\Quit Button Pressed.png</Source>
-      <Name>Emojis\Menu Sprites\Quit Button Pressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Menu Sprites\Quit Button Pressed.xnb</Output>
-      <Time>2015-08-31T01:16:14.9103153-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Emojis\Menu Sprites\Quit Button Unpressed.png</Source>
-      <Name>Emojis\Menu Sprites\Quit Button Unpressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Menu Sprites\Quit Button Unpressed.xnb</Output>
-      <Time>2015-08-31T01:16:14.9123167-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Emojis\Full Blocks\JFullBlock.png</Source>
-      <Name>Emojis\Full Blocks\JFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Full Blocks\JFullBlock.xnb</Output>
-      <Time>2015-08-31T01:14:35.7933019-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Menu Sprites\HighscoreButtonPressed.png</Source>
-      <Name>Food\Menu Sprites\HighscoreButtonPressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Menu Sprites\HighscoreButtonPressed.xnb</Output>
-      <Time>2015-08-31T01:52:35.2604585-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Menu Sprites\HighscoreButtonUnpressed.png</Source>
-      <Name>Food\Menu Sprites\HighscoreButtonUnpressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Menu Sprites\HighscoreButtonUnpressed.xnb</Output>
-      <Time>2015-08-31T01:52:35.2614595-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Menu Sprites\Options Button Pressed.png</Source>
-      <Name>Food\Menu Sprites\Options Button Pressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Menu Sprites\Options Button Pressed.xnb</Output>
-      <Time>2015-08-31T01:52:35.2644613-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Menu Sprites\Options Button Unpressed.png</Source>
-      <Name>Food\Menu Sprites\Options Button Unpressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Menu Sprites\Options Button Unpressed.xnb</Output>
-      <Time>2015-08-31T01:52:35.2654634-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Menu Sprites\Play Button Pressed.png</Source>
-      <Name>Food\Menu Sprites\Play Button Pressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Menu Sprites\Play Button Pressed.xnb</Output>
-      <Time>2015-08-31T01:52:35.266463-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Menu Sprites\Play Button Unpressed.png</Source>
-      <Name>Food\Menu Sprites\Play Button Unpressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Menu Sprites\Play Button Unpressed.xnb</Output>
-      <Time>2015-08-31T01:52:35.2674637-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Menu Sprites\pokemon sunset.png</Source>
-      <Name>Food\Menu Sprites\pokemon sunset</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Menu Sprites\pokemon sunset.xnb</Output>
-      <Time>2015-08-31T01:52:35.2684644-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Menu Sprites\Quit Button Pressed.png</Source>
-      <Name>Food\Menu Sprites\Quit Button Pressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Menu Sprites\Quit Button Pressed.xnb</Output>
-      <Time>2015-08-31T01:52:35.2694651-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Menu Sprites\Quit Button Unpressed.png</Source>
-      <Name>Food\Menu Sprites\Quit Button Unpressed</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Menu Sprites\Quit Button Unpressed.xnb</Output>
-      <Time>2015-08-31T01:52:35.2704659-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Black.png</Source>
-      <Name>Food\Black</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Black.xnb</Output>
-      <Time>2015-08-31T01:53:13.4043856-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\empty.png</Source>
-      <Name>Food\empty</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\empty.xnb</Output>
-      <Time>2015-08-31T01:53:18.1400333-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Transparent Square.png</Source>
-      <Name>Food\Transparent Square</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Transparent Square.xnb</Output>
-      <Time>2015-08-31T01:53:42.4596553-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Blocks\TBlock.png</Source>
-      <Name>Food\Blocks\TBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Blocks\TBlock.xnb</Output>
-      <Time>2015-08-31T01:54:10.2919438-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Blocks\SBlock.png</Source>
-      <Name>Food\Blocks\SBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Blocks\SBlock.xnb</Output>
-      <Time>2015-08-31T01:54:10.2934449-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Blocks\JBlock.png</Source>
-      <Name>Food\Blocks\JBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Blocks\JBlock.xnb</Output>
-      <Time>2015-08-31T01:54:10.2944459-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Blocks\ZBlock.png</Source>
-      <Name>Food\Blocks\ZBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Blocks\ZBlock.xnb</Output>
-      <Time>2015-08-31T01:54:10.2954463-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Blocks\OBlock.png</Source>
-      <Name>Food\Blocks\OBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Blocks\OBlock.xnb</Output>
-      <Time>2015-08-31T01:54:10.296447-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Blocks\LBlock.png</Source>
-      <Name>Food\Blocks\LBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Blocks\LBlock.xnb</Output>
-      <Time>2015-08-31T01:54:10.2974486-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Blocks\IBlock.png</Source>
-      <Name>Food\Blocks\IBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Blocks\IBlock.xnb</Output>
-      <Time>2015-08-31T01:54:10.2999495-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Full Blocks\IFullBlock.png</Source>
-      <Name>Food\Full Blocks\IFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Full Blocks\IFullBlock.xnb</Output>
-      <Time>2015-08-31T01:54:18.9869558-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Full Blocks\JFullBlock.png</Source>
-      <Name>Food\Full Blocks\JFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Full Blocks\JFullBlock.xnb</Output>
-      <Time>2015-08-31T01:54:18.9879556-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Full Blocks\LFullBlock.png</Source>
-      <Name>Food\Full Blocks\LFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Full Blocks\LFullBlock.xnb</Output>
-      <Time>2015-08-31T01:54:18.9889572-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Full Blocks\OFullBlock.png</Source>
-      <Name>Food\Full Blocks\OFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Full Blocks\OFullBlock.xnb</Output>
-      <Time>2015-08-31T01:54:18.9899576-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Full Blocks\SFullBlock.png</Source>
-      <Name>Food\Full Blocks\SFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Full Blocks\SFullBlock.xnb</Output>
-      <Time>2015-08-31T01:54:18.9909581-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Full Blocks\TFullBlock.png</Source>
-      <Name>Food\Full Blocks\TFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Full Blocks\TFullBlock.xnb</Output>
-      <Time>2015-08-31T01:54:18.9929612-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Full Blocks\ZFullBlock.png</Source>
-      <Name>Food\Full Blocks\ZFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Full Blocks\ZFullBlock.xnb</Output>
-      <Time>2015-08-31T01:54:18.9939625-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Blocks\bordersquare.png</Source>
-      <Name>Food\Blocks\bordersquare</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Blocks\bordersquare.xnb</Output>
-      <Time>2015-08-31T01:56:59.5167289-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Blocks\trashblock.png</Source>
-      <Name>Food\Blocks\trashblock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Blocks\trashblock.xnb</Output>
-      <Time>2015-08-31T01:57:07.340275-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Blocks\shadowBlock.png</Source>
-      <Name>Food\Blocks\shadowBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Blocks\shadowBlock.xnb</Output>
-      <Time>2015-08-31T01:57:12.1880315-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Food\Background.jpg</Source>
-      <Name>Food\Background</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Background.xnb</Output>
-      <Time>2015-08-31T11:24:40.1741154-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Emojis\Background.jpg</Source>
-      <Name>Emojis\Background</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Emojis\Background.xnb</Output>
-      <Time>2015-08-31T23:19:01.4762954-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Blocks\OptionsUncheck.png</Source>
-      <Name>Pokemon\Blocks\OptionsUncheck</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Blocks\OptionsUncheck.xnb</Output>
-      <Time>2015-08-30T22:56:33.4870335-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Pokemon\Blocks\OptionsCheck.png</Source>
-      <Name>Pokemon\Blocks\OptionsCheck</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Blocks\OptionsCheck.xnb</Output>
-      <Time>2015-09-01T10:52:32.7701124-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Blocks\Donut.xnb</Output>
+      <Time>2015-09-01T12:38:21.939602-07:00</Time>
     </Item>
     <Item>
       <Source>Food\Blocks\OptionsCheck.png</Source>
@@ -1114,8 +178,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Blocks\OptionsCheck.xnb</Output>
-      <Time>2015-09-01T11:43:59.9562431-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Blocks\OptionsCheck.xnb</Output>
+      <Time>2015-09-01T12:38:21.940602-07:00</Time>
     </Item>
     <Item>
       <Source>Food\Blocks\OptionsUncheck.png</Source>
@@ -1123,8 +187,386 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Blocks\OptionsUncheck.xnb</Output>
-      <Time>2015-09-01T11:44:03.7933184-07:00</Time>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Blocks\OptionsUncheck.xnb</Output>
+      <Time>2015-09-01T12:38:21.9416021-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Food\Blocks\Pizza.png</Source>
+      <Name>Food\Blocks\Pizza</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Blocks\Pizza.xnb</Output>
+      <Time>2015-09-01T12:38:21.9416021-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Food\Blocks\Taco.png</Source>
+      <Name>Food\Blocks\Taco</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Blocks\Taco.xnb</Output>
+      <Time>2015-09-01T12:38:21.9426021-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Food\Blocks\Watermelon.png</Source>
+      <Name>Food\Blocks\Watermelon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Blocks\Watermelon.xnb</Output>
+      <Time>2015-09-01T12:38:21.9436022-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Food\Full Blocks\IBlockFull.png</Source>
+      <Name>Food\Full Blocks\IBlockFull</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Full Blocks\IBlockFull.xnb</Output>
+      <Time>2015-09-01T12:38:21.9446022-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Food\Full Blocks\JFullBlock.png</Source>
+      <Name>Food\Full Blocks\JFullBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Full Blocks\JFullBlock.xnb</Output>
+      <Time>2015-09-01T12:38:21.9446022-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Food\Full Blocks\LFullBlock.png</Source>
+      <Name>Food\Full Blocks\LFullBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Full Blocks\LFullBlock.xnb</Output>
+      <Time>2015-09-01T12:38:21.9456023-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Food\Full Blocks\OFullBlock.png</Source>
+      <Name>Food\Full Blocks\OFullBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Full Blocks\OFullBlock.xnb</Output>
+      <Time>2015-09-01T12:38:21.9466024-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Food\Full Blocks\SBlockFull.png</Source>
+      <Name>Food\Full Blocks\SBlockFull</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Full Blocks\SBlockFull.xnb</Output>
+      <Time>2015-09-01T12:38:21.9476024-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Food\Full Blocks\TBlockFull.png</Source>
+      <Name>Food\Full Blocks\TBlockFull</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Full Blocks\TBlockFull.xnb</Output>
+      <Time>2015-09-01T12:38:21.9486025-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Food\Full Blocks\ZFullBlock.png</Source>
+      <Name>Food\Full Blocks\ZFullBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Food\Full Blocks\ZFullBlock.xnb</Output>
+      <Time>2015-09-01T12:38:21.9486025-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Full Blocks\IFullBlock.png</Source>
+      <Name>Pokemon\Full Blocks\IFullBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Full Blocks\IFullBlock.xnb</Output>
+      <Time>2015-09-01T12:38:21.9556029-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Full Blocks\JFullBlock.png</Source>
+      <Name>Pokemon\Full Blocks\JFullBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Full Blocks\JFullBlock.xnb</Output>
+      <Time>2015-09-01T12:38:21.9566029-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Full Blocks\LFullBlock.png</Source>
+      <Name>Pokemon\Full Blocks\LFullBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Full Blocks\LFullBlock.xnb</Output>
+      <Time>2015-09-01T12:38:21.957603-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Full Blocks\OFullBlock.png</Source>
+      <Name>Pokemon\Full Blocks\OFullBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Full Blocks\OFullBlock.xnb</Output>
+      <Time>2015-09-01T12:38:21.958603-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Full Blocks\SFullBlock.png</Source>
+      <Name>Pokemon\Full Blocks\SFullBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Full Blocks\SFullBlock.xnb</Output>
+      <Time>2015-09-01T12:38:21.958603-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Full Blocks\TFullBlock.png</Source>
+      <Name>Pokemon\Full Blocks\TFullBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Full Blocks\TFullBlock.xnb</Output>
+      <Time>2015-09-01T12:38:21.9596031-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Full Blocks\ZFullBlock.png</Source>
+      <Name>Pokemon\Full Blocks\ZFullBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Full Blocks\ZFullBlock.xnb</Output>
+      <Time>2015-09-01T12:38:21.9606032-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Blocks\OBlock.png</Source>
+      <Name>Pokemon\Blocks\OBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Blocks\OBlock.xnb</Output>
+      <Time>2015-09-01T12:38:21.9516026-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Blocks\SBlock.png</Source>
+      <Name>Pokemon\Blocks\SBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Blocks\SBlock.xnb</Output>
+      <Time>2015-09-01T12:38:21.9516026-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Blocks\JBlock.png</Source>
+      <Name>Pokemon\Blocks\JBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Blocks\JBlock.xnb</Output>
+      <Time>2015-09-01T12:38:21.9526027-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Blocks\TBlock.png</Source>
+      <Name>Pokemon\Blocks\TBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Blocks\TBlock.xnb</Output>
+      <Time>2015-09-01T12:38:21.9526027-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Blocks\IBlock.png</Source>
+      <Name>Pokemon\Blocks\IBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Blocks\IBlock.xnb</Output>
+      <Time>2015-09-01T12:38:21.9536028-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Blocks\ZBlock.png</Source>
+      <Name>Pokemon\Blocks\ZBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Blocks\ZBlock.xnb</Output>
+      <Time>2015-09-01T12:38:21.9546028-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Blocks\LBlock.png</Source>
+      <Name>Pokemon\Blocks\LBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Blocks\LBlock.xnb</Output>
+      <Time>2015-09-01T12:38:21.9546028-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Black.png</Source>
+      <Name>Pokemon\Black</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Black.xnb</Output>
+      <Time>2015-09-01T12:41:26.5901634-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Transparent Square.png</Source>
+      <Name>Pokemon\Transparent Square</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Transparent Square.xnb</Output>
+      <Time>2015-09-01T12:41:34.7806318-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Blocks\ShadowBlock.png</Source>
+      <Name>Pokemon\Blocks\ShadowBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Blocks\ShadowBlock.xnb</Output>
+      <Time>2015-09-01T12:41:43.4631284-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Blocks\trashblock.png</Source>
+      <Name>Pokemon\Blocks\trashblock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Blocks\trashblock.xnb</Output>
+      <Time>2015-09-01T12:44:04.5801999-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Background.png</Source>
+      <Name>Pokemon\Background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Background.xnb</Output>
+      <Time>2015-09-02T19:42:27.2123703-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Menu Sprites\HighscoreButtonPressed.png</Source>
+      <Name>Pokemon\Menu Sprites\HighscoreButtonPressed</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Menu Sprites\HighscoreButtonPressed.xnb</Output>
+      <Time>2015-09-01T12:49:18.76117-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Menu Sprites\HighscoreButtonUnpressed.png</Source>
+      <Name>Pokemon\Menu Sprites\HighscoreButtonUnpressed</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Menu Sprites\HighscoreButtonUnpressed.xnb</Output>
+      <Time>2015-09-01T12:49:18.7691705-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Menu Sprites\Options Button Pressed.png</Source>
+      <Name>Pokemon\Menu Sprites\Options Button Pressed</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Menu Sprites\Options Button Pressed.xnb</Output>
+      <Time>2015-09-01T12:49:18.7821712-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Menu Sprites\Options Button Unpressed.png</Source>
+      <Name>Pokemon\Menu Sprites\Options Button Unpressed</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Menu Sprites\Options Button Unpressed.xnb</Output>
+      <Time>2015-09-01T12:49:18.7911717-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Menu Sprites\Play Button Pressed.png</Source>
+      <Name>Pokemon\Menu Sprites\Play Button Pressed</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Menu Sprites\Play Button Pressed.xnb</Output>
+      <Time>2015-09-01T12:49:18.796172-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Menu Sprites\Play Button Unpressed.png</Source>
+      <Name>Pokemon\Menu Sprites\Play Button Unpressed</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Menu Sprites\Play Button Unpressed.xnb</Output>
+      <Time>2015-09-01T12:49:18.8051725-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Menu Sprites\Quit Button Pressed.png</Source>
+      <Name>Pokemon\Menu Sprites\Quit Button Pressed</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Menu Sprites\Quit Button Pressed.xnb</Output>
+      <Time>2015-09-01T12:49:18.8241736-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Menu Sprites\Quit Button Unpressed.png</Source>
+      <Name>Pokemon\Menu Sprites\Quit Button Unpressed</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Menu Sprites\Quit Button Unpressed.xnb</Output>
+      <Time>2015-09-01T12:49:18.8261737-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Blocks\OptionsCheck.png</Source>
+      <Name>Pokemon\Blocks\OptionsCheck</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Blocks\OptionsCheck.xnb</Output>
+      <Time>2015-09-01T12:38:21.9496025-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Blocks\OptionsUncheck.png</Source>
+      <Name>Pokemon\Blocks\OptionsUncheck</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Blocks\OptionsUncheck.xnb</Output>
+      <Time>2015-09-01T12:38:21.9506026-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Blocks\bordersquare.png</Source>
+      <Name>Pokemon\Blocks\bordersquare</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Blocks\bordersquare.xnb</Output>
+      <Time>2015-09-01T12:50:33.7024564-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\empty.png</Source>
+      <Name>Pokemon\empty</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\empty.xnb</Output>
+      <Time>2015-09-01T12:50:45.7281442-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Pokemon\Menu Sprites\Menu Background.png</Source>
+      <Name>Pokemon\Menu Sprites\Menu Background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\Pokemon\Menu Sprites\Menu Background.xnb</Output>
+      <Time>2015-09-01T12:49:34.1280489-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -1133,10 +575,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\TetrisContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Reimundo\Documents\GitHub\Tetris\Tetris\Tetris\Tetris\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Eric\Desktop\Tetris\Tetris\TetrisContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Eric\Desktop\Tetris\Tetris\Tetris\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -1164,8 +606,8 @@
         <Value>2011-09-01T16:22:30-07:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2015-08-04T23:36:25.060729-07:00</Value>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2015-06-22T18:06:10.1037805-07:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

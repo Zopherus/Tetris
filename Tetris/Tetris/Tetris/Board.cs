@@ -57,6 +57,11 @@ namespace Tetris
         public int Points
         {
             get { return points; }
+            set
+            {
+                if (value >= 0)
+                    points = value;
+            }
         }
 
         public Piece CurrentPiece
@@ -141,8 +146,8 @@ namespace Tetris
         //checks if a point is within the boundaries of the board
         public bool checkOnBoard(Point point) 
         {
-            return point.X >= rightBorder && point.X < rightBorder + TetrisGame.boardWidth
-                && point.Y >= topBorder && point.Y < topBorder + TetrisGame.boardHeight;
+            return point.X >= leftBorder && point.X < leftBorder + TetrisGame.boardWidth
+                && point.Y >= 0 && point.Y < topBorder + TetrisGame.boardHeight;
         }
 
         //Returns false if the whole piece is off the board, returns true otherwise
@@ -206,7 +211,7 @@ namespace Tetris
         {
             if (!canHold)
                 return false;
-            for (int x = rightBorder; x < rightBorder + TetrisGame.boardWidth; x++)
+            for (int x = leftBorder; x < leftBorder + TetrisGame.boardWidth; x++)
             {
                 for (int y = 0; y < topBorder; y++)
                 {

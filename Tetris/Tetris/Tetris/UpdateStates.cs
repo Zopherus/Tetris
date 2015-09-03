@@ -136,7 +136,8 @@ namespace Tetris
                             //cause the block to fall right away which will switch the current piece
                             fallBlockTimers.ElementAt(0).TimeMilliseconds = fallBlockStartingInterval;
                             fall = false;
-                        }
+                            TetrisGame.PlayerBoard.Points += 10;
+                            }
                         break;
                     case Keys.X:
                         if (TetrisGame.oldKeyboard.IsKeyUp(Keys.X))
@@ -161,6 +162,7 @@ namespace Tetris
                             TetrisGame.PlayerBoard.CurrentPiece.fall();
                             timer.reset();
                             fall = false;
+                            TetrisGame.PlayerBoard.Points += 1;
                         }
                         break;
                     case Keys.Left:

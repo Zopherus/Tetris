@@ -1,0 +1,667 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Tetris.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="Game.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Tetris" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="Tetris.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Xna.Framework" version="4.0.0.0" publicKeyToken="842CF8BE1DE50553" language="neutral" processorArchitecture="x86" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Xna.Framework.Game" version="4.0.0.0" publicKeyToken="842CF8BE1DE50553" language="neutral" processorArchitecture="x86" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Xna.Framework.GamerServices" version="4.0.0.0" publicKeyToken="842CF8BE1DE50553" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Xna.Framework.Graphics" version="4.0.0.0" publicKeyToken="842CF8BE1DE50553" language="neutral" processorArchitecture="x86" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Xna.Framework.Input.Touch" version="4.0.0.0" publicKeyToken="842CF8BE1DE50553" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Tetris.exe" size="45992">
+      <assemblyIdentity name="Tetris" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>HK1NLV30aARJIdKMGef/ly4Ionk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Content\Emojis\Blocks\Angel.xnb" size="65723">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>hCVgixeozzH1NabLlffDC8bMQFQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Emojis\Blocks\Asian.xnb" size="65723">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>9+wyKVv9Ok1MwU5dFu4WDC5vxhU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Emojis\Blocks\Confused.xnb" size="65723">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>dtEM6UeIOlOLzBY206DoWABqBEc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Emojis\Blocks\Lazy.xnb" size="65723">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>8JywKXZfvQ/AxUD2PVW6qeCFzis=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Emojis\Blocks\Love.xnb" size="65723">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>NG6mTgZOJebZ2Ngw2xAa2Vhwg7k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Emojis\Blocks\Nerd.xnb" size="65723">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>YIhxpP6An3Mshh9W08vRGm1xcyY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Emojis\Blocks\Sparkly.xnb" size="65723">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>HlaffoEM/hhF82mA5K/HIbETlMc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Emojis\Full Blocks\IFullBlock.xnb" size="524475">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>40q/CUMNAuIPtnx355eaMlX1yHQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Emojis\Full Blocks\JBlockFull.xnb" size="524475">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>SADPxDwXxLD+mAx2hlcehv6aSj4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Emojis\Full Blocks\LFullBlock.xnb" size="524475">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Qp1A0vItWbYHjrtEJkXpBiJENbw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Emojis\Full Blocks\OFullBlock.xnb" size="524475">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>V7Ob7vljGb2Ezcl37KOeMtDDPBQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Emojis\Full Blocks\SFullBlock.xnb" size="524475">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>VopSiY/RxV1EfITeMsg3PKi3/AM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Emojis\Full Blocks\TFullBlock.xnb" size="524475">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>gcrj7fbCTrcx+vwrk3SlulnWQEg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Emojis\Full Blocks\ZFullBlock.xnb" size="524475">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>h7Qw3uYZtKZQA9XzReukH4aiubo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Food\Blocks\Apple.xnb" size="77499">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>AOwFj5SC6PxccXp+AgENGm4aBfI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Food\Blocks\Cake.xnb" size="75963">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>MBHeLInURmIApz+fpk7GGxOR1hI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Food\Blocks\Cupcake.xnb" size="80047">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Aq+ESix0lBTiTC+Dj7G08izWv88=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Food\Blocks\Donut.xnb" size="64699">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>5xwDNF4GWOQ3nKiMJRr1aV6NoQM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Food\Blocks\OptionsCheck.xnb" size="1400187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>YxRRD99atp7Xad7dGu0jzmD0RJc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Food\Blocks\OptionsUncheck.xnb" size="1624187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>hKfhg0hjpq5+HFcMPX0qw8igrbI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Food\Blocks\Pizza.xnb" size="80047">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>8Sox/Nia7SblBI5RVymMnEePeSU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Food\Blocks\Taco.xnb" size="99891">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>xusLdv8CTn2uCsWm46npNrPl1as=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Food\Blocks\Watermelon.xnb" size="63163">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>gks4NTrGnkST06C99cB4h9aPCQM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Food\Full Blocks\IBlockFull.xnb" size="503995">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>9OQl4yRAOpNAbSK+i/BW9JEzj9Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Food\Full Blocks\JFullBlock.xnb" size="639067">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>3365jImCZl5tpQ25XZDO8q2POr8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Food\Full Blocks\LFullBlock.xnb" size="797819">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>T5bwfNs9GIHwET0OYnGIUXTbNE4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Food\Full Blocks\OFullBlock.xnb" size="639067">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>FplOhMpL/JrD903wDVTQ1qEoddg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Food\Full Blocks\SBlockFull.xnb" size="606395">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>6KDRTfzR6BEgKcluHQ3WAqCZt1E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Food\Full Blocks\TBlockFull.xnb" size="618683">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>FzER53JCgiHzw65k9Z1ErrPcP0E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Food\Full Blocks\ZFullBlock.xnb" size="516283">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>k46dTvVNR+tNOeyTJ05d3idjsAQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Background.xnb" size="8294587">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>aHQeGFpkj+iFBoH9x0jDgR18vQY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Black.xnb" size="191">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>V6vNsz2+1IArAmcQbjw66n8dEJg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Blocks\bordersquare.xnb" size="1000187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>KtTniV34z6Go5vW7LJ+ddEptgwo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Blocks\IBlock.xnb" size="160187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>2o0kg3dmcFrxLdjAlq8aq1Fm2c4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Blocks\JBlock.xnb" size="160187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>tD+cHVP0NvR2DktsM2zZw+Lk6r4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Blocks\LBlock.xnb" size="160187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>lJ9P0eBLQfptAhpzQ7cmNygeOt8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Blocks\OBlock.xnb" size="160187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>eZGohU5JwBy1h1jLV5kXgUSlG+g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Blocks\OptionsCheck.xnb" size="1371427">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>zYjLnJx2X1K2eR6Qmwo87or0Txc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Blocks\OptionsUncheck.xnb" size="1371427">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>/6oEpWZ5kJxa3MFDuBeHFPYQMgo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Blocks\SBlock.xnb" size="160187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Y5EN7HUswaR6AW1qboP0NCpE1wE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Blocks\ShadowBlock.xnb" size="1000187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>FmiDy/zxgOsKqwzSsvnM2pJV+OY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Blocks\TBlock.xnb" size="160187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Gjlmos1RqE8GFIBQbtaKubjcyzY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Blocks\trashblock.xnb" size="1000187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>yu0muYV+eKjdTS9pHF+T9bFcJwo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Blocks\ZBlock.xnb" size="160187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>z5gZ9sBvXTYEP6eICMipD+JmI94=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\empty.xnb" size="191">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>moNIxWzpVLbuu5O/CxGHoFH//HU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Full Blocks\IFullBlock.xnb" size="1280187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>FBeABVY7VZQ2BaGSYOR/PcR6a2g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Full Blocks\JFullBlock.xnb" size="1280187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>sCMwDlcUxix+3U6GVqH4nvDVit8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Full Blocks\LFullBlock.xnb" size="1280187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>z45P4q74WMFexPQXNDlhYKovUFc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Full Blocks\OFullBlock.xnb" size="1280187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>YgbJdjn0hRoW405kMfCi+uPKZ4g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Full Blocks\SFullBlock.xnb" size="1280187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>6tCh5YWvH2d/52GcfSs7wYHKvkA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Full Blocks\TFullBlock.xnb" size="1280187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>JV+PXgtXTSqnnIwnk6SFM4unByI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Full Blocks\ZFullBlock.xnb" size="1280187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>S6Tblvmf4eihP+ELZce9N68GP/4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Menu Sprites\HighscoreButtonPressed.xnb" size="960187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>9MhwEzWLmx0YuL3rlwmcXHchn9M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Menu Sprites\HighscoreButtonUnpressed.xnb" size="960187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>8DQdz3dYIhrIfecydlRzi/9giuM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Menu Sprites\Menu Background.xnb" size="8294587">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>mF5gmdrkkCV/yr+8Uou+Z28okPw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Menu Sprites\Options Button Pressed.xnb" size="960187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>T1dWIAkQ8m4M/GZXYq8v1J9ctsg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Menu Sprites\Options Button Unpressed.xnb" size="960187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4zAmQd7Lwz77OHRpeEVtCKhkby0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Menu Sprites\Play Button Pressed.xnb" size="960187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>suCaYZ8qyRJe8RoxINWmqH7Vlu4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Menu Sprites\Play Button Unpressed.xnb" size="960187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>s80dxqKDc0m7f18DVQlh/Bl6Q64=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Menu Sprites\Quit Button Pressed.xnb" size="960187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>5CK/OMgGPYJmVZIZWLymb/6CIcE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Menu Sprites\Quit Button Unpressed.xnb" size="960187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>fjRABuZGPE3uslBO4nYuBvlNNl8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Pokemon\Transparent Square.xnb" size="1000187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>F5AXNuyT5vH5rEhFVdib2KU1LMU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Press Start 2P.xnb" size="136366">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>HHRLgBJgrpTbj3RtBFYecQcJAk8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Game.ico" size="4286">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>/y21PfwGnUAkwpPwwaFuIIyWENo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="GameThumbnail.png" size="5734">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>diNvdcDpDtGEMuMQIHpkKK3qVHc=</dsig:DigestValue>
+    </hash>
+  </file>
+</asmv1:assembly>

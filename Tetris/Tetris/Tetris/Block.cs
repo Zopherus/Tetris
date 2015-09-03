@@ -13,14 +13,27 @@ namespace Tetris
         private BlockType blockType;
 
         //Describes the position of the block within the board
-        private Point position;
+        private Point position = new Point();
 
         //The piece that the block is in
         public Piece piece;
 
+        
+
         public Block(BlockType blockType)
         {
             this.blockType = blockType; 
+        }
+
+        public Block(Point position)
+        {
+            this.position = position;
+        }
+
+        public Block(BlockType blockType, Piece piece) 
+        {
+            this.blockType = blockType;
+            this.piece = piece;
         }
 
         public Block(BlockType blockType, Point position, Piece piece)
@@ -38,11 +51,11 @@ namespace Tetris
         public Point Position
         {
             get { return position; }
-            set
+            set 
             {
-                if (value.X >= Board.leftBorder && value.X <  TetrisGame.boardWidth + Board.leftBorder 
-                    && value.Y >= Board.topBorder - 2 && value.Y < TetrisGame.boardHeight + Board.topBorder)
-                    position = value;
+                if (value.X >= 0 && value.X < TetrisGame.boardWidth + Board.rightBorder + Board.leftBorder &&
+                    value.Y >= 0 && value.Y < TetrisGame.boardHeight + Board.topBorder + Board.bottomBorder)
+                position = value; 
             }
         }
 
@@ -52,7 +65,7 @@ namespace Tetris
             //first line checks if the block will still be on the board after it moves one to the right
             //second and third line checks if the space one to the right is also a block in the same piece and if that block can also move right
             //fourth line checks if the space one to the right is empty
-            return position.X + 1 < TetrisGame.boardWidth + Board.rightBorder &&
+            return position.X + 1 < TetrisGame.boardWidth + Board.leftBorder &&
                ((piece.Blocks.Contains(TetrisGame.PlayerBoard.BoardState[position.X + 1, position.Y])
                && TetrisGame.PlayerBoard.BoardState[position.X + 1, position.Y].canMoveRight())
                || TetrisGame.PlayerBoard.BoardState[position.X + 1, position.Y] == null);
@@ -64,7 +77,7 @@ namespace Tetris
             //first line checks if the block will still be on the board after it moves one to the left
             //second and third line checks if the space one to the left is also a block in the same piece and if that block can also move left
             //fourth line checks if the space one to the left is empty
-             return position.X - 1 >= Board.rightBorder &&
+             return position.X - 1 >= Board.leftBorder &&
                ((piece.Blocks.Contains(TetrisGame.PlayerBoard.BoardState[position.X - 1, position.Y])
                && TetrisGame.PlayerBoard.BoardState[position.X - 1, position.Y].canMoveLeft())
                || TetrisGame.PlayerBoard.BoardState[position.X - 1, position.Y] == null);
@@ -76,10 +89,21 @@ namespace Tetris
             //first line checks if the block will still be on the board after it moves one down
             //second and third line checks if the space one down is also a block in the same piece and if that block can also move down
             //fourth line checks if the space one down is empty
-            return position.Y + 1 < TetrisGame.boardHeight + Board.topBorder &&
+                return position.Y + 1 < TetrisGame.boardHeight + Board.topBorder &&
                 ((piece.Blocks.Contains(TetrisGame.PlayerBoard.BoardState[position.X, position.Y + 1]) 
                 && TetrisGame.PlayerBoard.BoardState[position.X, position.Y + 1].canFall())
                 || TetrisGame.PlayerBoard.BoardState[position.X, position.Y + 1] == null);
+        }
+
+        public bool canMoveUp()
+        {
+            //first line checks if the block will still be on the board after it moves one up
+            //second and third line checks if the space one up is also a block in the same piece and if that block can also move up
+            //fourth line checks if the space one up is empty
+            return position.Y - 1 >= Board.topBorder &&
+                ((piece.Blocks.Contains(TetrisGame.PlayerBoard.BoardState[position.X, position.Y - 1])
+                && TetrisGame.PlayerBoard.BoardState[position.X, position.Y - 1].canMoveUp())
+                || TetrisGame.PlayerBoard.BoardState[position.X, position.Y - 1] == null);
         }
 
         //Return true if the current block is in the currentPiece of the board

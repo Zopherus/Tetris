@@ -11,13 +11,11 @@ namespace Tetris
     {
         //The linespacing, in pixels, used when printing lines of text
         private static int lineSpacing = TetrisGame.gridSize;
-        
 
-        
         public static void DrawMenu()
         {
 
-            TetrisGame.spriteBatch.Draw(TetrisGame.pokemonsunsetTexture, new Rectangle(0, 0, TetrisGame.screenWidth, TetrisGame.screenHeight), Color.White);
+            TetrisGame.spriteBatch.Draw(TetrisGame.MenuBackgroundTexture, new Rectangle(0, 0, TetrisGame.screenWidth, TetrisGame.screenHeight), Color.White);
 
             Point Mouse = new Point(TetrisGame.mouse.X, TetrisGame.mouse.Y);
 
@@ -121,12 +119,12 @@ namespace Tetris
             {
                 //only draws the block if it is not null and is within the boundaries of the board
                 if (block != null && block.Position.X >= Board.leftBorder && block.Position.X < TetrisGame.boardWidth + Board.leftBorder
-                    && block.Position.Y >= Board.topBorder - 5 && block.Position.Y < TetrisGame.boardHeight + Board.topBorder)
+                    && block.Position.Y >= Board.topBorder && block.Position.Y < TetrisGame.boardHeight + Board.topBorder)
                 {
                     Texture2D texture = blockTextureForBlock(block);
                     //The actual board starts on the 3rd row and 2nd column so subtract to compensate for the shift
                     TetrisGame.spriteBatch.Draw(texture,
-                        new Rectangle(TetrisGame.PlayerBoard.Position.X + TetrisGame.gridSize * (block.Position.X - Board.rightBorder),
+                        new Rectangle(TetrisGame.PlayerBoard.Position.X + TetrisGame.gridSize * (block.Position.X - Board.leftBorder),
                         TetrisGame.PlayerBoard.Position.Y + TetrisGame.gridSize * (block.Position.Y - Board.topBorder),
                         TetrisGame.gridSize, TetrisGame.gridSize), Color.White);
                 }
@@ -137,7 +135,7 @@ namespace Tetris
                 if (block != null)
                 {
                     if (TetrisGame.PlayerBoard.BoardState[block.Position.X, block.Position.Y] == null)
-                        TetrisGame.spriteBatch.Draw(TetrisGame.ShadowBlockTexture, new Rectangle(TetrisGame.PlayerBoard.Position.X + TetrisGame.gridSize * (block.Position.X - Board.rightBorder),
+                        TetrisGame.spriteBatch.Draw(TetrisGame.ShadowBlockTexture, new Rectangle(TetrisGame.PlayerBoard.Position.X + TetrisGame.gridSize * (block.Position.X - Board.leftBorder),
                             TetrisGame.PlayerBoard.Position.Y + TetrisGame.gridSize * (block.Position.Y - Board.topBorder),
                             TetrisGame.gridSize, TetrisGame.gridSize), Color.White);
                 }
@@ -173,7 +171,7 @@ namespace Tetris
                 TetrisGame.spriteBatch.Draw(TetrisGame.OptionsCheckTexture, Options.Tworectangle, Color.White);
             else
                 TetrisGame.spriteBatch.Draw(TetrisGame.OptionsUncheckTexture, Options.Tworectangle, Color.White);
-            
+
             TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "*Additonal Options",
                 new Vector2(TetrisGame.screenWidth / 5, TetrisGame.screenHeight / 4 + 7 * lineSpacing + TetrisGame.PressStartFont.MeasureString("Additonal Options").Y / 2), Color.Black);
 
@@ -191,8 +189,8 @@ namespace Tetris
             {
                 if (Highscore.Scores[counter] != null)
                 {
-                    TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, (counter+1).ToString() + ". " + Highscore.Scores[counter].ToString(),
-                        new Vector2(TetrisGame.screenWidth / 3, TetrisGame.screenHeight / 15 + (counter) * lineSpacing * 2), Color.Black);
+                    TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, counter.ToString() + ". " + Highscore.Scores[counter].ToString(),
+                        new Vector2(TetrisGame.screenWidth / 3, TetrisGame.screenHeight / 15 + (counter) * lineSpacing * 4), Color.Black);
                 }
             }
         }
@@ -288,6 +286,5 @@ namespace Tetris
             }
             return texture;
         }
-
     }
 }
