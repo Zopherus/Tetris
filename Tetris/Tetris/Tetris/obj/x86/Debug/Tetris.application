@@ -8,14 +8,14 @@
     <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Tetris.exe.manifest" size="30610">
+    <dependentAssembly dependencyType="install" codebase="Tetris.exe.manifest" size="17500">
       <assemblyIdentity name="Tetris.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>zWn6ZoazZmAP+q5TFzEJ4OR5ROo=</dsig:DigestValue>
+        <dsig:DigestValue>Ys6pg0nVlJlN7+ywMuCKGPk/pwU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

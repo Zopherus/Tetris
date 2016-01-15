@@ -30,6 +30,64 @@
     <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Sprites\Black.png">
+      <Name>Black</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Blocks\blueBlock.png">
+      <Name>blueBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Blocks\cyanBlock.png">
+      <Name>cyanBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Blocks\greenBlock.png">
+      <Name>greenBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Blocks\orangeBlock.png">
+      <Name>orangeBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Blocks\purpleBlock.png">
+      <Name>purpleBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Blocks\redBlock.png">
+      <Name>redBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Blocks\yellowBlock.png">
+      <Name>yellowBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Transparent Square.png">
+      <Name>Transparent Square</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Background.png">
+      <Name>Background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Press Start 2P.spritefont">
       <Name>Press Start 2P</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -37,331 +95,106 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Emojis\Blocks\Angel.png">
-      <Name>Angel</Name>
+    <Compile Include="Sprites\Full Blocks\Iblock.png">
+      <Name>Iblock</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Emojis\Blocks\Asian.png">
-      <Name>Asian</Name>
+    <Compile Include="Sprites\Full Blocks\Jblock.png">
+      <Name>Jblock</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Emojis\Blocks\Confused.png">
-      <Name>Confused</Name>
+    <Compile Include="Sprites\Full Blocks\Lblock.png">
+      <Name>Lblock</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Emojis\Blocks\Lazy.png">
-      <Name>Lazy</Name>
+    <Compile Include="Sprites\Full Blocks\Oblock.png">
+      <Name>Oblock</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Emojis\Blocks\Love.png">
-      <Name>Love</Name>
+    <Compile Include="Sprites\Full Blocks\Sblock.png">
+      <Name>Sblock</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Emojis\Blocks\Nerd.png">
-      <Name>Nerd</Name>
+    <Compile Include="Sprites\Full Blocks\Tblock.png">
+      <Name>Tblock</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Emojis\Blocks\Sparkly.png">
-      <Name>Sparkly</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Emojis\Full Blocks\IFullBlock.png">
-      <Name>IFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Emojis\Full Blocks\JBlockFull.png">
-      <Name>JBlockFull</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Emojis\Full Blocks\LFullBlock.png">
-      <Name>LFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Emojis\Full Blocks\OFullBlock.png">
-      <Name>OFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Emojis\Full Blocks\SFullBlock.png">
-      <Name>SFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Emojis\Full Blocks\TFullBlock.png">
-      <Name>TFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Emojis\Full Blocks\ZFullBlock.png">
-      <Name>ZFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Food\Blocks\Apple.png">
-      <Name>Apple</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Food\Blocks\Cake.png">
-      <Name>Cake</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Food\Blocks\Cupcake.png">
-      <Name>Cupcake</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Food\Blocks\Donut.png">
-      <Name>Donut</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Food\Blocks\OptionsCheck.png">
-      <Name>OptionsCheck</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Food\Blocks\OptionsUncheck.png">
-      <Name>OptionsUncheck</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Food\Blocks\Pizza.png">
-      <Name>Pizza</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Food\Blocks\Taco.png">
-      <Name>Taco</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Food\Blocks\Watermelon.png">
-      <Name>Watermelon</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Food\Full Blocks\IBlockFull.png">
-      <Name>IBlockFull</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Food\Full Blocks\JFullBlock.png">
-      <Name>JFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Food\Full Blocks\LFullBlock.png">
-      <Name>LFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Food\Full Blocks\OFullBlock.png">
-      <Name>OFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Food\Full Blocks\SBlockFull.png">
-      <Name>SBlockFull</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Food\Full Blocks\TBlockFull.png">
-      <Name>TBlockFull</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Food\Full Blocks\ZFullBlock.png">
-      <Name>ZFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Pokemon\Blocks\OptionsCheck.png">
-      <Name>OptionsCheck</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Pokemon\Blocks\OptionsUncheck.png">
-      <Name>OptionsUncheck</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Pokemon\Blocks\OBlock.png">
-      <Name>OBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Pokemon\Blocks\SBlock.png">
-      <Name>SBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Pokemon\Blocks\JBlock.png">
-      <Name>JBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Pokemon\Blocks\TBlock.png">
-      <Name>TBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Pokemon\Blocks\IBlock.png">
-      <Name>IBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Pokemon\Blocks\ZBlock.png">
-      <Name>ZBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Pokemon\Blocks\LBlock.png">
-      <Name>LBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Pokemon\Full Blocks\IFullBlock.png">
-      <Name>IFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Pokemon\Full Blocks\JFullBlock.png">
-      <Name>JFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Pokemon\Full Blocks\LFullBlock.png">
-      <Name>LFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Pokemon\Full Blocks\OFullBlock.png">
-      <Name>OFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Pokemon\Full Blocks\SFullBlock.png">
-      <Name>SFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Pokemon\Full Blocks\TFullBlock.png">
-      <Name>TFullBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Pokemon\Full Blocks\ZFullBlock.png">
-      <Name>ZFullBlock</Name>
+    <Compile Include="Sprites\Full Blocks\Zblock.png">
+      <Name>Zblock</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pokemon\Black.png">
-      <Name>Black</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Pokemon\Transparent Square.png">
-      <Name>Transparent Square</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Pokemon\Blocks\ShadowBlock.png">
-      <Name>ShadowBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Pokemon\Blocks\trashblock.png">
-      <Name>trashblock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Pokemon\Background.png">
-      <Name>Background</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Pokemon\Menu Sprites\HighscoreButtonPressed.png">
+    <Compile Include="Sprites\Menu Sprites\HighscoreButtonPressed.png">
       <Name>HighscoreButtonPressed</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Pokemon\Menu Sprites\HighscoreButtonUnpressed.png">
+    <Compile Include="Sprites\Menu Sprites\HighscoreButtonUnpressed.png">
       <Name>HighscoreButtonUnpressed</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Pokemon\Menu Sprites\Options Button Pressed.png">
+    <Compile Include="Sprites\Menu Sprites\Options Button Pressed.png">
       <Name>Options Button Pressed</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Pokemon\Menu Sprites\Options Button Unpressed.png">
+    <Compile Include="Sprites\Menu Sprites\Options Button Unpressed.png">
       <Name>Options Button Unpressed</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Pokemon\Menu Sprites\Play Button Pressed.png">
+    <Compile Include="Sprites\Menu Sprites\Play Button Pressed.png">
       <Name>Play Button Pressed</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Pokemon\Menu Sprites\Play Button Unpressed.png">
+    <Compile Include="Sprites\Menu Sprites\Play Button Unpressed.png">
       <Name>Play Button Unpressed</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Pokemon\Menu Sprites\Quit Button Pressed.png">
+    <Compile Include="Sprites\Menu Sprites\pokemon sunset.png">
+      <Name>pokemon sunset</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Menu Sprites\Quit Button Pressed.png">
       <Name>Quit Button Pressed</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Pokemon\Menu Sprites\Quit Button Unpressed.png">
+    <Compile Include="Sprites\Menu Sprites\Quit Button Unpressed.png">
       <Name>Quit Button Unpressed</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pokemon\Menu Sprites\Menu Background.png">
-      <Name>Menu Background</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Pokemon\Blocks\bordersquare.png">
+    <Compile Include="Sprites\Blocks\bordersquare.png">
       <Name>bordersquare</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pokemon\empty.png">
+    <Compile Include="Sprites\empty.png">
       <Name>empty</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Blocks\shadowBlock.png">
+      <Name>shadowBlock</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

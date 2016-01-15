@@ -29,46 +29,41 @@ namespace Tetris
 
         public static int gridSize;
 
-        public static string theme = "Pokemon";
-
         public static GraphicsDeviceManager graphics;
         public static SpriteBatch spriteBatch;
 
         public static Texture2D BlackTexture;
-        public static Texture2D JBlockTexture;
-        public static Texture2D IBlockTexture;
-        public static Texture2D SBlockTexture;
-        public static Texture2D LBlockTexture;
-        public static Texture2D TBlockTexture;
-        public static Texture2D ZBlockTexture;
-        public static Texture2D OBlockTexture;
+        public static Texture2D BlueBlockTexture;
+        public static Texture2D CyanBlockTexture;
+        public static Texture2D GreenBlockTexture;
+        public static Texture2D OrangeBlockTexture;
+        public static Texture2D PurpleBlockTexture;
+        public static Texture2D RedBlockTexture;
+        public static Texture2D YellowBlockTexture;
         public static Texture2D TransparentSquareTexture;
         public static Texture2D ShadowBlockTexture;
         public static Texture2D BackgroundTexture;
-        public static Texture2D TrashBlockTexture;
 
         public static Texture2D OptionsButtonPressedTexture;
         public static Texture2D OptionsButtonUnpressedTexture;
         public static Texture2D PlayButtonPressedTexture;
         public static Texture2D PlayButtonUnpressedTexture;
-        public static Texture2D MenuBackgroundTexture;
+        public static Texture2D pokemonsunsetTexture;
         public static Texture2D QuitButtonPressedTexture;
         public static Texture2D QuitButtonUnpressedTexture;
         public static Texture2D HighscoreButtonPressedTexture;
         public static Texture2D HighscoreButtonUnpressedTexture;
 
-        public static Texture2D IFullBlockTexture;
-        public static Texture2D JFullBlockTexture;
-        public static Texture2D LFullBlockTexture;
-        public static Texture2D OFullBlockTexture;
-        public static Texture2D SFullBlockTexture;
-        public static Texture2D TFullBlockTexture;
-        public static Texture2D ZFullBlockTexture;
-
-        public static Texture2D OptionsCheckTexture;
-        public static Texture2D OptionsUncheckTexture;
+        public static Texture2D IblockTexture;
+        public static Texture2D JblockTexture;
+        public static Texture2D LblockTexture;
+        public static Texture2D OblockTexture;
+        public static Texture2D SblockTexture;
+        public static Texture2D TblockTexture;
+        public static Texture2D ZblockTexture;
 
         public static Texture2D bordersquareTexture;
+
         public static Texture2D emptyTexture;
 
         public static SpriteFont PressStartFont;
@@ -91,7 +86,7 @@ namespace Tetris
             {
                 PreferredBackBufferWidth = screenWidth,
                 PreferredBackBufferHeight = screenHeight,
-                IsFullScreen = true
+                //IsFullScreen = true
             };
             IsMouseVisible = true;
             //2 extra gridsizes on top and 2 on bottom
@@ -120,69 +115,39 @@ namespace Tetris
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            BlackTexture = Content.Load<Texture2D>(theme + "/Black");
-            JBlockTexture = Content.Load<Texture2D>(theme + "/Blocks/JBlock");
-            IBlockTexture = Content.Load<Texture2D>(theme + "/Blocks/IBlock");
-            SBlockTexture = Content.Load<Texture2D>(theme + "/Blocks/SBlock");
-            LBlockTexture = Content.Load<Texture2D>(theme + "/Blocks/LBlock");
-            TBlockTexture = Content.Load<Texture2D>(theme + "/Blocks/TBlock");
-            ZBlockTexture = Content.Load<Texture2D>(theme + "/Blocks/ZBlock");
-            OBlockTexture = Content.Load<Texture2D>(theme + "/Blocks/OBlock");
-            TransparentSquareTexture = Content.Load<Texture2D>(theme + "/Transparent Square");
-            ShadowBlockTexture = Content.Load<Texture2D>(theme + "/Blocks/shadowBlock");
-            BackgroundTexture = Content.Load<Texture2D>(theme + "/Background");
-            TrashBlockTexture = Content.Load<Texture2D>(theme + "/Blocks/trashblock");
+            BlackTexture = Content.Load<Texture2D>("Sprites/Black");
+            BlueBlockTexture = Content.Load<Texture2D>("Sprites/Blocks/blueBlock");
+            CyanBlockTexture = Content.Load<Texture2D>("Sprites/Blocks/cyanBlock");
+            GreenBlockTexture = Content.Load<Texture2D>("Sprites/Blocks/greenBlock");
+            OrangeBlockTexture = Content.Load<Texture2D>("Sprites/Blocks/orangeBlock");
+            PurpleBlockTexture = Content.Load<Texture2D>("Sprites/Blocks/purpleBlock");
+            RedBlockTexture = Content.Load<Texture2D>("Sprites/Blocks/redBlock");
+            YellowBlockTexture = Content.Load<Texture2D>("Sprites/Blocks/yellowBlock");
+            TransparentSquareTexture = Content.Load<Texture2D>("Sprites/Transparent Square");
+            ShadowBlockTexture = Content.Load<Texture2D>("Sprites/Blocks/shadowBlock");
+            BackgroundTexture = Content.Load<Texture2D>("Sprites/Background");
 
-            /* POKEMON THEME    : Pokeball = I Block
-             *                  : Ultraball = L Block
-             *                  : Masterball = J Block
-             *                  : Premierball = Z Block
-             *                  : Netball = T Block
-             *                  : Duskball = O Block
-             *                  : Great Ball = S Block
-             */
+            OptionsButtonPressedTexture = Content.Load<Texture2D>("Sprites/Menu Sprites/Options Button Pressed");
+            OptionsButtonUnpressedTexture = Content.Load<Texture2D>("Sprites/Menu Sprites/Options Button Unpressed");
+            PlayButtonPressedTexture = Content.Load<Texture2D>("Sprites/Menu Sprites/Play Button Pressed");
+            PlayButtonUnpressedTexture = Content.Load<Texture2D>("Sprites/Menu Sprites/Play Button Unpressed");
+            pokemonsunsetTexture = Content.Load<Texture2D>("Sprites/Menu Sprites/pokemon sunset");
+            QuitButtonPressedTexture = Content.Load<Texture2D>("Sprites/Menu Sprites/Quit Button Pressed");
+            QuitButtonUnpressedTexture = Content.Load<Texture2D>("Sprites/Menu Sprites/Quit Button Unpressed");
+            HighscoreButtonPressedTexture = Content.Load<Texture2D>("Sprites/Menu Sprites/HighscoreButtonPressed");
+            HighscoreButtonUnpressedTexture = Content.Load<Texture2D>("Sprites/Menu Sprites/HighscoreButtonUnpressed");
 
-            /* EMOJI THEME      : Angel = I Block
-             *                  : Asian = L Block
-             *                  : Confused = J Block
-             *                  : Lazy = Z Block
-             *                  : Love = T Block
-             *                  : Nerd = O Block
-             *                  : Sparkly = S Block
-             */
+            IblockTexture = Content.Load<Texture2D>("Sprites/Full Blocks/Iblock");
+            JblockTexture = Content.Load<Texture2D>("Sprites/Full Blocks/Jblock");
+            LblockTexture = Content.Load<Texture2D>("Sprites/Full Blocks/Lblock");
+            OblockTexture = Content.Load<Texture2D>("Sprites/Full Blocks/Oblock");
+            SblockTexture = Content.Load<Texture2D>("Sprites/Full Blocks/Sblock");
+            TblockTexture = Content.Load<Texture2D>("Sprites/Full Blocks/Tblock");
+            ZblockTexture = Content.Load<Texture2D>("Sprites/Full Blocks/Zblock");
 
-            /* FOOD THEME       : Watermelon = I Block
-             *                  : Taco = L Block
-             *                  : Cupcake = J Block
-             *                  : Donut = Z Block
-             *                  : Apple = T Block
-             *                  : Pizza = O Block
-             *                  : Cake = S Block
-             */
+            bordersquareTexture = Content.Load<Texture2D>("Sprites/Blocks/bordersquare");
 
-            OptionsButtonPressedTexture = Content.Load<Texture2D>(theme + "/Menu Sprites/Options Button Pressed");
-            OptionsButtonUnpressedTexture = Content.Load<Texture2D>(theme + "/Menu Sprites/Options Button Unpressed");
-            PlayButtonPressedTexture = Content.Load<Texture2D>(theme + "/Menu Sprites/Play Button Pressed");
-            PlayButtonUnpressedTexture = Content.Load<Texture2D>(theme + "/Menu Sprites/Play Button Unpressed");
-            MenuBackgroundTexture = Content.Load<Texture2D>(theme + "/Menu Sprites/Menu Background");
-            QuitButtonPressedTexture = Content.Load<Texture2D>(theme + "/Menu Sprites/Quit Button Pressed");
-            QuitButtonUnpressedTexture = Content.Load<Texture2D>(theme + "/Menu Sprites/Quit Button Unpressed");
-            HighscoreButtonPressedTexture = Content.Load<Texture2D>(theme + "/Menu Sprites/HighscoreButtonPressed");
-            HighscoreButtonUnpressedTexture = Content.Load<Texture2D>(theme + "/Menu Sprites/HighscoreButtonUnpressed");
-
-            IFullBlockTexture = Content.Load<Texture2D>(theme + "/Full Blocks/IFullBlock");
-            JFullBlockTexture = Content.Load<Texture2D>(theme + "/Full Blocks/JFullBlock");
-            LFullBlockTexture = Content.Load<Texture2D>(theme + "/Full Blocks/LFullBlock");
-            OFullBlockTexture = Content.Load<Texture2D>(theme + "/Full Blocks/OFullBlock");
-            SFullBlockTexture = Content.Load<Texture2D>(theme + "/Full Blocks/SFullBlock");
-            TFullBlockTexture = Content.Load<Texture2D>(theme + "/Full Blocks/TFullBlock");
-            ZFullBlockTexture = Content.Load<Texture2D>(theme + "/Full Blocks/ZFullBlock");
-
-            OptionsCheckTexture = Content.Load<Texture2D>(theme + "/Blocks/OptionsCheck");
-            OptionsUncheckTexture = Content.Load<Texture2D>(theme + "/Blocks/OptionsUncheck");
-
-            bordersquareTexture = Content.Load<Texture2D>(theme + "/Blocks/bordersquare");
-            emptyTexture = Content.Load<Texture2D>(theme + "/empty");
+            emptyTexture = Content.Load<Texture2D>("Sprites/empty");
 
             PressStartFont = Content.Load<SpriteFont>("Press Start 2P");
             // TODO: use this.Content to load your game content here

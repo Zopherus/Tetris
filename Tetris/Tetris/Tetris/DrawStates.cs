@@ -15,7 +15,7 @@ namespace Tetris
         public static void DrawMenu()
         {
 
-            TetrisGame.spriteBatch.Draw(TetrisGame.MenuBackgroundTexture, new Rectangle(0, 0, TetrisGame.screenWidth, TetrisGame.screenHeight), Color.White);
+            TetrisGame.spriteBatch.Draw(TetrisGame.pokemonsunsetTexture, new Rectangle(0, 0, TetrisGame.screenWidth, TetrisGame.screenHeight), Color.White);
 
             Point Mouse = new Point(TetrisGame.mouse.X, TetrisGame.mouse.Y);
 
@@ -140,6 +140,14 @@ namespace Tetris
                             TetrisGame.gridSize, TetrisGame.gridSize), Color.White);
                 }
             }
+            
+            TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, TetrisGame.PlayerBoard.CurrentPiece.RotationState.ToString(), new Vector2(0, 0), Color.Black);
+            /*foreach (Point point in TetrisGame.PlayerBoard.CurrentPiece.BoundingSquare)
+            {
+                TetrisGame.spriteBatch.Draw(TetrisGame.ShadowBlockTexture, new Rectangle(TetrisGame.PlayerBoard.Position.X + TetrisGame.gridSize * (point.X - Board.leftBorder),
+                            TetrisGame.PlayerBoard.Position.Y + TetrisGame.gridSize * (point.Y - Board.topBorder),
+                            TetrisGame.gridSize, TetrisGame.gridSize), Color.White);
+            }*/
         }
 
         public static void DrawPause()
@@ -153,23 +161,13 @@ namespace Tetris
 
         public static void DrawOptions()
         {
-            Point Mouse = new Point(TetrisGame.mouse.X, TetrisGame.mouse.Y);
-
             TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "OPTIONS",
                 new Vector2(TetrisGame.screenWidth / 2 - TetrisGame.PressStartFont.MeasureString("OPTIONS").X / 2, TetrisGame.screenHeight / 60), Color.Black);
 
             TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "*Select to toggle fullscreen",
                 new Vector2(TetrisGame.screenWidth / 5, TetrisGame.screenHeight / 4 + TetrisGame.PressStartFont.MeasureString("*Select to toggle fullscreen").Y / 2), Color.Black);
 
-            if (Options.Checkrectangle.Contains(Mouse))
-                TetrisGame.spriteBatch.Draw(TetrisGame.OptionsCheckTexture, Options.Checkrectangle, Color.White);
-            else
-                TetrisGame.spriteBatch.Draw(TetrisGame.OptionsUncheckTexture, Options.Checkrectangle, Color.White);
-
-            if (Options.Tworectangle.Contains(Mouse))
-                TetrisGame.spriteBatch.Draw(TetrisGame.OptionsCheckTexture, Options.Tworectangle, Color.White);
-            else
-                TetrisGame.spriteBatch.Draw(TetrisGame.OptionsUncheckTexture, Options.Tworectangle, Color.White);
+            TetrisGame.spriteBatch.Draw(TetrisGame.bordersquareTexture, Options.Checkrectangle, Color.White);
 
             TetrisGame.spriteBatch.DrawString(TetrisGame.PressStartFont, "*Additonal Options",
                 new Vector2(TetrisGame.screenWidth / 5, TetrisGame.screenHeight / 4 + 7 * lineSpacing + TetrisGame.PressStartFont.MeasureString("Additonal Options").Y / 2), Color.Black);
@@ -230,25 +228,25 @@ namespace Tetris
                 switch (piece.PieceType)
                 {
                     case BlockType.I:
-                        texture = TetrisGame.IFullBlockTexture;
+                        texture = TetrisGame.IblockTexture;
                         break;
                     case BlockType.J:
-                        texture = TetrisGame.JFullBlockTexture;
+                        texture = TetrisGame.JblockTexture;
                         break;
                     case BlockType.L:
-                        texture = TetrisGame.LFullBlockTexture;
+                        texture = TetrisGame.LblockTexture;
                         break;
                     case BlockType.O:
-                        texture = TetrisGame.OFullBlockTexture;
+                        texture = TetrisGame.OblockTexture;
                         break;
                     case BlockType.S:
-                        texture = TetrisGame.SFullBlockTexture;
+                        texture = TetrisGame.SblockTexture;
                         break;
                     case BlockType.T:
-                        texture = TetrisGame.TFullBlockTexture;
+                        texture = TetrisGame.TblockTexture;
                         break;
                     case BlockType.Z:
-                        texture = TetrisGame.ZFullBlockTexture;
+                        texture = TetrisGame.ZblockTexture;
                         break;
                 }
                 return texture;
@@ -262,28 +260,29 @@ namespace Tetris
             {
                 //I is Cyan, O is Yellow, L is Orange, Z is Red, S is green, T is Purple, J is Blue
                 case BlockType.I:
-                    texture = TetrisGame.IBlockTexture;
+                    texture = TetrisGame.CyanBlockTexture;
                     break;
                 case BlockType.J:
-                    texture = TetrisGame.JBlockTexture;
+                    texture = TetrisGame.BlueBlockTexture;
                     break;
                 case BlockType.L:
-                    texture = TetrisGame.LBlockTexture;
+                    texture = TetrisGame.OrangeBlockTexture;
                     break;
                 case BlockType.O:
-                    texture = TetrisGame.OBlockTexture;
+                    texture = TetrisGame.YellowBlockTexture;
                     break;
                 case BlockType.S:
-                    texture = TetrisGame.SBlockTexture;
+                    texture = TetrisGame.GreenBlockTexture;
                     break;
                 case BlockType.T:
-                    texture = TetrisGame.TBlockTexture;
+                    texture = TetrisGame.PurpleBlockTexture;
                     break;
                 case BlockType.Z:
-                    texture = TetrisGame.ZBlockTexture;
+                    texture = TetrisGame.RedBlockTexture;
                     break;
             }
             return texture;
         }
+
     }
 }

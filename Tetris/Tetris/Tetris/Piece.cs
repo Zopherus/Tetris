@@ -590,6 +590,19 @@ namespace Tetris
             }
             else
             {
+                bool value1 = piece.canMoveUp();
+                if (value1)
+                    piece.moveUp();
+                if (isValid(piece))
+                {
+                    blocks = piece.blocks;
+                    return true;
+                }
+                else
+                {
+                    if (value1)
+                        piece.fall();
+                }
                 if (value)
                     piece.fall();
             }
@@ -604,6 +617,19 @@ namespace Tetris
             }
             else
             {
+                bool value1 = piece.canMoveLeft();
+                if (value1)
+                    piece.moveLeft();
+                if (isValid(piece))
+                {
+                    blocks = piece.blocks;
+                    return true;
+                }
+                else
+                {
+                    if (value1)
+                        piece.moveRight();
+                }
                 if (value)
                     piece.moveRight();
             }
@@ -619,6 +645,19 @@ namespace Tetris
             }
             else
             {
+                bool value1 = piece.canMoveRight();
+                if (value1)
+                    piece.moveRight();
+                if (isValid(piece))
+                {
+                    blocks = piece.blocks;
+                    return true;
+                }
+                else
+                {
+                    if (value1)
+                        piece.moveLeft();
+                }
                 if (value)
                     piece.moveLeft();
             }
